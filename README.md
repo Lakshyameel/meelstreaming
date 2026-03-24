@@ -22,7 +22,7 @@
 **MeelStreaming is a media center that prioritizes and emphasizes complete freedom and flexibility for users and developers.** MeelStreaming is an extension-based multimedia player with tracking support. There are extensions to view videos from: 
 
 + [Librevox (audio-books)](https://librivox.org/) 
-+ [Youtube](https://www.youtube.com/)
++ [YouTube](https://www.youtube.com/)
 + [Twitch](https://www.twitch.tv/)
 + [iptv-org (A collection of publicly available IPTV channels)](https://github.com/iptv-org/iptv) 
 + [nginx](https://nginx.org/)
@@ -51,12 +51,13 @@ Our documentation is unmaintained and open to contributions; therefore, apps and
 
 Our documentation provides the steps to install and configure MeelStreaming for your streaming needs.
 
-[Getting Started With MeelStreaming:](https://github.com/Lakshyameel/meelstreaming/releases/latest)
+[Getting Started With MeelStreaming:](#installation)
 
 <a id="contributing"></a>
 
 ## Contributing:
 We **happily** accept any contributions to our project. To find out where you can start contributing towards the project, please look [at our issues tab](https://github.com/Lakshyameel/meelstreaming/issues)
+
 
 
 <a id="issues"></a> 
@@ -90,9 +91,9 @@ As well as providing clear install steps, our [GitHub](https://github.com/Lakshy
 - [Troubleshooting](https://github.com/Lakshyameel/meelstreaming/issues)
 - [Further MeelStreaming Repositories](https://github.com/Lakshyameel/meelstreaming) 
 - Set-Up for other devices, such as:
-  - [Android TV](https://github.com/Lakshyameel/meelstreaming/releases)
-  - [Windows](https://github.com/Lakshyameel/meelstreaming)
-  - [Linux](https://github.com/Lakshyameel/meelstreaming)
+  - [Android TV Support](https://github.com/Lakshyameel/meelstreaming/releases/latest)
+  - [Windows Support](https://github.com/Lakshyameel/meelstreaming)
+  - [Linux Support](https://github.com/Lakshyameel/meelstreaming)
 - And more...
 
 <a id="languages"> </a>  
