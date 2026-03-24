@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.network
+package com.lagradost.meelstream3.network
 
 import android.util.Log
 import android.webkit.CookieManager
 import androidx.annotation.AnyThread
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.debugWarning
-import com.lagradost.cloudstream3.mvvm.safe
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.debugWarning
+import com.lagradost.meelstream3.mvvm.safe
 import com.lagradost.nicehttp.Requests.Companion.await
 import com.lagradost.nicehttp.cookies
 import kotlinx.coroutines.runBlocking

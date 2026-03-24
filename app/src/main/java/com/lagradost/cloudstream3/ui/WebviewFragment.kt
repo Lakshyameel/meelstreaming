@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui
+package com.lagradost.meelstream3.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,11 +13,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.media3.common.util.UnstableApi
 import androidx.navigation.fragment.findNavController
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.databinding.FragmentWebviewBinding
-import com.lagradost.cloudstream3.network.WebViewResolver
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadRepository
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.databinding.FragmentWebviewBinding
+import com.lagradost.meelstream3.network.WebViewResolver
+import com.lagradost.meelstream3.utils.AppContextUtils.loadRepository
 
 
 class WebviewFragment : Fragment() {

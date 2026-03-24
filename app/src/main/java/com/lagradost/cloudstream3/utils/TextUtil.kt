@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.content.Context
 import android.util.Log
@@ -6,8 +6,8 @@ import android.widget.TextView
 import androidx.annotation.StringRes
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.utils.AppContextUtils.html
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.utils.AppContextUtils.html
 
 sealed class UiText {
     companion object {

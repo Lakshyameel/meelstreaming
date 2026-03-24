@@ -1,13 +1,13 @@
-package com.lagradost.cloudstream3.syncproviders
+package com.lagradost.meelstream3.syncproviders
 
-import com.lagradost.cloudstream3.AcraApplication.Companion.openBrowser
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.NONE_ID
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.AcraApplication.Companion.openBrowser
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.NONE_ID
+import com.lagradost.meelstream3.utils.txt
 
 /** Safe abstraction for AuthAPI that provides both a catching interface, and automatic token management. */
 abstract class AuthRepo(open val api: AuthAPI) {

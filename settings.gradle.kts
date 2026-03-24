@@ -1,4 +1,4 @@
-rootProject.name = "CloudStream"
+rootProject.name = "meelstream"
 
 include(":app")
 include(":library")

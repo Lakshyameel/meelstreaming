@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.account
+package com.lagradost.meelstream3.ui.account
 
 import android.app.Activity
 import android.content.Context
@@ -21,24 +21,24 @@ import coil3.ImageLoader
 import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.lagradost.cloudstream3.AcraApplication.Companion.getActivity
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.AccountEditDialogBinding
-import com.lagradost.cloudstream3.databinding.AccountSelectLinearBinding
-import com.lagradost.cloudstream3.databinding.BottomInputDialogBinding
-import com.lagradost.cloudstream3.databinding.LockPinDialogBinding
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.ui.result.setLinearListLayout
-import com.lagradost.cloudstream3.utils.AppContextUtils.setDefaultFocus
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getDefaultAccount
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
-import com.lagradost.cloudstream3.utils.UIHelper.showInputMethod
+import com.lagradost.meelstream3.AcraApplication.Companion.getActivity
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.AccountEditDialogBinding
+import com.lagradost.meelstream3.databinding.AccountSelectLinearBinding
+import com.lagradost.meelstream3.databinding.BottomInputDialogBinding
+import com.lagradost.meelstream3.databinding.LockPinDialogBinding
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.ui.result.setLinearListLayout
+import com.lagradost.meelstream3.utils.AppContextUtils.setDefaultFocus
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.DataStoreHelper.getDefaultAccount
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.utils.UIHelper.showInputMethod
 
 object AccountHelper {
     fun showAccountEditDialog(

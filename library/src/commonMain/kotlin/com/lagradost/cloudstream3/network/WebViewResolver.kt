@@ -1,6 +1,6 @@
-package com.lagradost.cloudstream3.network
+package com.lagradost.meelstream3.network
 
-import com.lagradost.cloudstream3.USER_AGENT
+import com.lagradost.meelstream3.USER_AGENT
 import okhttp3.Interceptor
 import okhttp3.Request
 

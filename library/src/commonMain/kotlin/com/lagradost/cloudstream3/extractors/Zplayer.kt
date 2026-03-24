@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.M3u8Helper
-import com.lagradost.cloudstream3.utils.getAndUnpack
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.M3u8Helper
+import com.lagradost.meelstream3.utils.getAndUnpack
 
 class Zplayer: ZplayerV2() {
     override var name: String = "Zplayer"

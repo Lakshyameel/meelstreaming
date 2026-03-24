@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3
+package com.lagradost.meelstream3
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings.extensions
+package com.lagradost.meelstream3.ui.settings.extensions
 
 import android.content.res.ColorStateList
 import android.os.Bundle
@@ -9,21 +9,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.lagradost.cloudstream3.AcraApplication.Companion.openBrowser
-import com.lagradost.cloudstream3.databinding.FragmentPluginDetailsBinding
-import com.lagradost.cloudstream3.plugins.PluginManager
-import com.lagradost.cloudstream3.plugins.VotingApi.canVote
-import com.lagradost.cloudstream3.plugins.VotingApi.getVotes
-import com.lagradost.cloudstream3.plugins.VotingApi.hasVoted
-import com.lagradost.cloudstream3.plugins.VotingApi.vote
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.getImageFromDrawable
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.SubtitleHelper.getNameNextToFlagEmoji
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.AcraApplication.Companion.openBrowser
+import com.lagradost.meelstream3.databinding.FragmentPluginDetailsBinding
+import com.lagradost.meelstream3.plugins.PluginManager
+import com.lagradost.meelstream3.plugins.VotingApi.canVote
+import com.lagradost.meelstream3.plugins.VotingApi.getVotes
+import com.lagradost.meelstream3.plugins.VotingApi.hasVoted
+import com.lagradost.meelstream3.plugins.VotingApi.vote
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.getImageFromDrawable
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.SubtitleHelper.getNameNextToFlagEmoji
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.utils.UIHelper.toPx
 
 
 class PluginDetailsFragment(val data: PluginViewData) : BottomSheetDialogFragment() {
@@ -101,7 +101,7 @@ class PluginDetailsFragment(val data: PluginViewData) : BottomSheetDialogFragmen
             if (data.isDownloaded) {
                 // On local plugins page the filepath is provided instead of url.
                 val plugin =
-                    (PluginManager.urlPlugins[metadata.url] ?: PluginManager.plugins[metadata.url]) as? com.lagradost.cloudstream3.plugins.Plugin
+                    (PluginManager.urlPlugins[metadata.url] ?: PluginManager.plugins[metadata.url]) as? com.lagradost.meelstream3.plugins.Plugin
                 if (plugin?.openSettings != null && context != null) {
                     actionSettings.isVisible = true
                     actionSettings.setOnClickListener {

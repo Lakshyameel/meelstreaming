@@ -1,21 +1,21 @@
-package com.lagradost.cloudstream3.metaproviders
+package com.lagradost.meelstream3.metaproviders
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.APIHolder.apis
-import com.lagradost.cloudstream3.APIHolder.getApiFromNameNull
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.MovieLoadResponse
-import com.lagradost.cloudstream3.MovieSearchResponse
-import com.lagradost.cloudstream3.SearchResponseList
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.toNewSearchResponseList
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
-import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.APIHolder.apis
+import com.lagradost.meelstream3.APIHolder.getApiFromNameNull
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.MovieLoadResponse
+import com.lagradost.meelstream3.MovieSearchResponse
+import com.lagradost.meelstream3.SearchResponseList
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.toNewSearchResponseList
+import com.lagradost.meelstream3.utils.AppUtils.toJson
+import com.lagradost.meelstream3.utils.AppUtils.tryParseJson
+import com.lagradost.meelstream3.utils.ExtractorLink
 
 class CrossTmdbProvider : TmdbProvider() {
     override var name = "MultiMovie"

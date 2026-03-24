@@ -1,17 +1,17 @@
-package com.lagradost.cloudstream3.syncproviders
+package com.lagradost.meelstream3.syncproviders
 
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.syncproviders.providers.Addic7ed
-import com.lagradost.cloudstream3.syncproviders.providers.AniListApi
-import com.lagradost.cloudstream3.syncproviders.providers.LocalList
-import com.lagradost.cloudstream3.syncproviders.providers.MALApi
-import com.lagradost.cloudstream3.syncproviders.providers.OpenSubtitlesApi
-import com.lagradost.cloudstream3.syncproviders.providers.SimklApi
-import com.lagradost.cloudstream3.syncproviders.providers.SubDlApi
-import com.lagradost.cloudstream3.syncproviders.providers.SubSourceApi
-import com.lagradost.cloudstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.syncproviders.providers.Addic7ed
+import com.lagradost.meelstream3.syncproviders.providers.AniListApi
+import com.lagradost.meelstream3.syncproviders.providers.LocalList
+import com.lagradost.meelstream3.syncproviders.providers.MALApi
+import com.lagradost.meelstream3.syncproviders.providers.OpenSubtitlesApi
+import com.lagradost.meelstream3.syncproviders.providers.SimklApi
+import com.lagradost.meelstream3.syncproviders.providers.SubDlApi
+import com.lagradost.meelstream3.syncproviders.providers.SubSourceApi
+import com.lagradost.meelstream3.utils.DataStoreHelper
 import java.util.concurrent.TimeUnit
 
 abstract class AccountManager {
@@ -123,15 +123,15 @@ abstract class AccountManager {
             SyncRepo(localListApi)
         )
 
-        const val APP_STRING = "cloudstreamapp"
-        const val APP_STRING_REPO = "cloudstreamrepo"
-        const val APP_STRING_PLAYER = "cloudstreamplayer"
+        const val APP_STRING = "meelstreamapp"
+        const val APP_STRING_REPO = "meelstreamrepo"
+        const val APP_STRING_PLAYER = "meelstreamplayer"
 
         // Instantly start the search given a query
-        const val APP_STRING_SEARCH = "cloudstreamsearch"
+        const val APP_STRING_SEARCH = "meelstreamsearch"
 
         // Instantly resume watching a show
-        const val APP_STRING_RESUME_WATCHING = "cloudstreamcontinuewatching"
+        const val APP_STRING_RESUME_WATCHING = "meelstreamcontinuewatching"
 
         const val APP_STRING_SHARE = "csshare"
 

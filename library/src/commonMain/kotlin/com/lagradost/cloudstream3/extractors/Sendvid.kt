@@ -1,9 +1,9 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.M3u8Helper.Companion.generateM3u8
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.utils.*
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.M3u8Helper.Companion.generateM3u8
 
 open class Sendvid : ExtractorApi() {
     override var name = "Sendvid"

@@ -1,6 +1,6 @@
 // ! Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 class Hotlinger : ContentX() {
     override var name    = "Hotlinger"

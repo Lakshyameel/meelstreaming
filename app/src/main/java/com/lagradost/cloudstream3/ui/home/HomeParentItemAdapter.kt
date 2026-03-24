@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.home
+package com.lagradost.meelstream3.ui.home
 
 import android.os.Build
 import android.os.Bundle
@@ -9,23 +9,23 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.lagradost.cloudstream3.HomePageList
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.HomepageParentBinding
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.BaseAdapter
-import com.lagradost.cloudstream3.ui.BaseDiffCallback
-import com.lagradost.cloudstream3.ui.ViewHolderState
-import com.lagradost.cloudstream3.ui.result.FOCUS_SELF
-import com.lagradost.cloudstream3.ui.result.setLinearListLayout
-import com.lagradost.cloudstream3.ui.search.SearchClickCallback
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.PHONE
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.AppContextUtils.isRecyclerScrollable
-import com.lagradost.cloudstream3.utils.AppContextUtils.setMaxViewPoolSize
+import com.lagradost.meelstream3.HomePageList
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.HomepageParentBinding
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.BaseAdapter
+import com.lagradost.meelstream3.ui.BaseDiffCallback
+import com.lagradost.meelstream3.ui.ViewHolderState
+import com.lagradost.meelstream3.ui.result.FOCUS_SELF
+import com.lagradost.meelstream3.ui.result.setLinearListLayout
+import com.lagradost.meelstream3.ui.search.SearchClickCallback
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.PHONE
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.AppContextUtils.isRecyclerScrollable
+import com.lagradost.meelstream3.utils.AppContextUtils.setMaxViewPoolSize
 
 class LoadClickCallback(
     val action: Int = 0,

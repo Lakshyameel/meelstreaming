@@ -1,6 +1,6 @@
-package com.lagradost.cloudstream3.subtitles
+package com.lagradost.meelstream3.subtitles
 
-import com.lagradost.cloudstream3.TvType
+import com.lagradost.meelstream3.TvType
 
 class AbstractSubtitleEntities {
     data class SubtitleEntity(

@@ -1,8 +1,8 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.*
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.*
 
 open class Maxstream : ExtractorApi() {
     override var name = "Maxstream"

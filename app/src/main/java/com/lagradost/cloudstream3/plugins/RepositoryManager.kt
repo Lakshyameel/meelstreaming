@@ -1,21 +1,21 @@
-package com.lagradost.cloudstream3.plugins
+package com.lagradost.meelstream3.plugins
 
 import android.content.Context
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.AcraApplication.Companion.context
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.mvvm.safeAsync
-import com.lagradost.cloudstream3.plugins.PluginManager.getPluginSanitizedFileName
-import com.lagradost.cloudstream3.plugins.PluginManager.unloadPlugin
-import com.lagradost.cloudstream3.ui.settings.extensions.REPOSITORIES_KEY
-import com.lagradost.cloudstream3.ui.settings.extensions.RepositoryData
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
+import com.lagradost.meelstream3.AcraApplication.Companion.context
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.mvvm.safeAsync
+import com.lagradost.meelstream3.plugins.PluginManager.getPluginSanitizedFileName
+import com.lagradost.meelstream3.plugins.PluginManager.unloadPlugin
+import com.lagradost.meelstream3.ui.settings.extensions.REPOSITORIES_KEY
+import com.lagradost.meelstream3.ui.settings.extensions.RepositoryData
+import com.lagradost.meelstream3.utils.AppUtils.tryParseJson
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import java.io.BufferedInputStream
@@ -89,8 +89,8 @@ object RepositoryManager {
         val fixedUrl = url.trim()
         return if (fixedUrl.contains("^https?://".toRegex())) {
             fixedUrl
-        } else if (fixedUrl.contains("^(cloudstreamrepo://)|(https://cs\\.repo/\\??)".toRegex())) {
-            fixedUrl.replace("^(cloudstreamrepo://)|(https://cs\\.repo/\\??)".toRegex(), "").let {
+        } else if (fixedUrl.contains("^(meelstreamrepo://)|(https://cs\\.repo/\\??)".toRegex())) {
+            fixedUrl.replace("^(meelstreamrepo://)|(https://cs\\.repo/\\??)".toRegex(), "").let {
                 return@let if (!it.contains("^https?://".toRegex()))
                     "https://${it}"
                 else fixedUrl

@@ -1,16 +1,16 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
 import androidx.appcompat.app.AppCompatActivity
-import com.lagradost.cloudstream3.CommonActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.ui.player.OfflinePlaybackHelper.playLink
-import com.lagradost.cloudstream3.ui.player.OfflinePlaybackHelper.playUri
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
+import com.lagradost.meelstream3.CommonActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.ui.player.OfflinePlaybackHelper.playLink
+import com.lagradost.meelstream3.ui.player.OfflinePlaybackHelper.playUri
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
 
 class DownloadedPlayerActivity : AppCompatActivity() {
     private val dTAG = "DownloadedPlayerAct"

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3
+package com.lagradost.meelstream3
 
 import android.app.Activity
 import android.app.PictureInPictureParams
@@ -28,26 +28,26 @@ import androidx.preference.PreferenceManager
 import com.google.android.gms.cast.framework.CastSession
 import com.google.android.material.chip.ChipGroup
 import com.google.android.material.navigationrail.NavigationRailView
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKey
-import com.lagradost.cloudstream3.actions.OpenInAppAction
-import com.lagradost.cloudstream3.actions.VideoClickActionHolder
-import com.lagradost.cloudstream3.databinding.ToastBinding
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.syncproviders.AccountManager
-import com.lagradost.cloudstream3.ui.player.PlayerEventType
-import com.lagradost.cloudstream3.ui.player.Torrent
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.updateTv
-import com.lagradost.cloudstream3.utils.AppContextUtils.isRtl
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Event
-import com.lagradost.cloudstream3.utils.UIHelper
-import com.lagradost.cloudstream3.utils.UIHelper.hasPIPPermission
-import com.lagradost.cloudstream3.utils.UIHelper.shouldShowPIPMode
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
-import com.lagradost.cloudstream3.utils.UiText
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKey
+import com.lagradost.meelstream3.actions.OpenInAppAction
+import com.lagradost.meelstream3.actions.VideoClickActionHolder
+import com.lagradost.meelstream3.databinding.ToastBinding
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.syncproviders.AccountManager
+import com.lagradost.meelstream3.ui.player.PlayerEventType
+import com.lagradost.meelstream3.ui.player.Torrent
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.updateTv
+import com.lagradost.meelstream3.utils.AppContextUtils.isRtl
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Event
+import com.lagradost.meelstream3.utils.UIHelper
+import com.lagradost.meelstream3.utils.UIHelper.hasPIPPermission
+import com.lagradost.meelstream3.utils.UIHelper.shouldShowPIPMode
+import com.lagradost.meelstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.utils.UiText
 import java.lang.ref.WeakReference
 import java.util.Locale
 import kotlin.math.max
@@ -192,7 +192,7 @@ object CommonActivity {
     /**
      * Set locale
      * @param languageTag shall a IETF BCP 47 conformant tag.
-     * Check [com.lagradost.cloudstream3.utils.SubtitleHelper].
+     * Check [com.lagradost.meelstream3.utils.SubtitleHelper].
      *
      * See locales on:
      * https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-core/availableLocales.json

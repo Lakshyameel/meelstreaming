@@ -1,13 +1,13 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.M3u8Helper
-import com.lagradost.cloudstream3.utils.fixUrl
-import com.lagradost.cloudstream3.utils.getAndUnpack
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.M3u8Helper
+import com.lagradost.meelstream3.utils.fixUrl
+import com.lagradost.meelstream3.utils.getAndUnpack
 import org.jsoup.nodes.Element
 
 open class Filegram : ExtractorApi() {

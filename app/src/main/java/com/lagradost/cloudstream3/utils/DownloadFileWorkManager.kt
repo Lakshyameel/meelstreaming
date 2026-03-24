@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.app.Notification
 import android.content.Context
@@ -7,17 +7,17 @@ import android.os.Build.VERSION.SDK_INT
 import androidx.work.CoroutineWorker
 import androidx.work.ForegroundInfo
 import androidx.work.WorkerParameters
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKey
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.DataStore.getKey
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.WORK_KEY_INFO
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.WORK_KEY_PACKAGE
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.downloadCheck
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.downloadEpisode
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.downloadFromResume
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.downloadStatusEvent
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.getDownloadResumePackage
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKey
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.DataStore.getKey
+import com.lagradost.meelstream3.utils.VideoDownloadManager.WORK_KEY_INFO
+import com.lagradost.meelstream3.utils.VideoDownloadManager.WORK_KEY_PACKAGE
+import com.lagradost.meelstream3.utils.VideoDownloadManager.downloadCheck
+import com.lagradost.meelstream3.utils.VideoDownloadManager.downloadEpisode
+import com.lagradost.meelstream3.utils.VideoDownloadManager.downloadFromResume
+import com.lagradost.meelstream3.utils.VideoDownloadManager.downloadStatusEvent
+import com.lagradost.meelstream3.utils.VideoDownloadManager.getDownloadResumePackage
 import kotlinx.coroutines.delay
 
 const val DOWNLOAD_CHECK = "DownloadCheck"

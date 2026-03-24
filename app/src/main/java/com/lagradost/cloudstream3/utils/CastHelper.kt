@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.net.Uri
 import androidx.media3.common.MimeTypes
@@ -7,12 +7,12 @@ import com.google.android.gms.cast.framework.CastSession
 import com.google.android.gms.cast.framework.media.RemoteMediaClient
 import com.google.android.gms.common.api.PendingResult
 import com.google.android.gms.common.images.WebImage
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.MetadataHolder
-import com.lagradost.cloudstream3.ui.player.SubtitleData
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.MetadataHolder
+import com.lagradost.meelstream3.ui.player.SubtitleData
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.AppUtils.toJson
+import com.lagradost.meelstream3.utils.Coroutines.main
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject

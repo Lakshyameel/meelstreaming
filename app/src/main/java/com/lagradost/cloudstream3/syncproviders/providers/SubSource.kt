@@ -1,15 +1,15 @@
-package com.lagradost.cloudstream3.syncproviders.providers
+package com.lagradost.meelstream3.syncproviders.providers
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities
-import com.lagradost.cloudstream3.subtitles.SubtitleResource
-import com.lagradost.cloudstream3.syncproviders.AuthData
-import com.lagradost.cloudstream3.syncproviders.SubtitleAPI
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.SubtitleHelper
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities
+import com.lagradost.meelstream3.subtitles.SubtitleResource
+import com.lagradost.meelstream3.syncproviders.AuthData
+import com.lagradost.meelstream3.syncproviders.SubtitleAPI
+import com.lagradost.meelstream3.utils.AppUtils.parseJson
+import com.lagradost.meelstream3.utils.AppUtils.toJson
+import com.lagradost.meelstream3.utils.SubtitleHelper
 
 class SubSourceApi : SubtitleAPI() {
     override val name = "SubSource"

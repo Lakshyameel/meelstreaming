@@ -1,14 +1,14 @@
-package com.lagradost.cloudstream3.plugins
+package com.lagradost.meelstream3.plugins
 
 import android.util.Log
 import android.widget.Toast
-import com.lagradost.cloudstream3.AcraApplication.Companion.context
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.R
+import com.lagradost.meelstream3.AcraApplication.Companion.context
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.R
 import java.security.MessageDigest
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.Coroutines.main
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 

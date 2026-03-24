@@ -1,9 +1,9 @@
-package com.lagradost.cloudstream3.ui.search
+package com.lagradost.meelstream3.ui.search
 
-import com.lagradost.cloudstream3.Score
-import com.lagradost.cloudstream3.SearchQuality
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.TvType
+import com.lagradost.meelstream3.Score
+import com.lagradost.meelstream3.SearchQuality
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.TvType
 
 //TODO Relevance of this class since it's not used
 class SyncSearchViewModel {

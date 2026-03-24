@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings
+package com.lagradost.meelstream3.ui.settings
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.AccountSingleBinding
-import com.lagradost.cloudstream3.syncproviders.AuthData
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.AccountSingleBinding
+import com.lagradost.meelstream3.syncproviders.AuthData
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
 
 class AccountClickCallback(val action: Int, val view: View, val card: AuthData)
 

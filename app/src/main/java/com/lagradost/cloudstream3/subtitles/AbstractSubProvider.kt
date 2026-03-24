@@ -1,9 +1,9 @@
-package com.lagradost.cloudstream3.subtitles
+package com.lagradost.meelstream3.subtitles
 
 import androidx.core.net.toUri
-import com.lagradost.cloudstream3.MainActivity.Companion.deleteFileOnExit
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.ui.player.SubtitleOrigin
+import com.lagradost.meelstream3.MainActivity.Companion.deleteFileOnExit
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.ui.player.SubtitleOrigin
 import okio.BufferedSource
 import okio.buffer
 import okio.sink

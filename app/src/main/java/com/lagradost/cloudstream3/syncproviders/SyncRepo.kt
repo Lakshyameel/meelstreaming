@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.syncproviders
+package com.lagradost.meelstream3.syncproviders
 
 /** Stateless safe abstraction of SyncAPI */
 class SyncRepo(override val api: SyncAPI) : AuthRepo(api) {

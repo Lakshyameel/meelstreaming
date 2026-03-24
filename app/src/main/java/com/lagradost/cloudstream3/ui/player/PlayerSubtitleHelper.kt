@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.util.Log
 import android.util.TypedValue
@@ -8,10 +8,10 @@ import androidx.annotation.OptIn
 import androidx.media3.common.MimeTypes
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.ui.SubtitleView
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.ui.subtitles.SaveCaptionStyle
-import com.lagradost.cloudstream3.ui.subtitles.SubtitlesFragment.Companion.setSubtitleViewStyle
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.ui.subtitles.SaveCaptionStyle
+import com.lagradost.meelstream3.ui.subtitles.SubtitlesFragment.Companion.setSubtitleViewStyle
+import com.lagradost.meelstream3.utils.UIHelper.toPx
 
 enum class SubtitleStatus {
     IS_ACTIVE,

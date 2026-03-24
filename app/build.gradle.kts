@@ -59,7 +59,7 @@ android {
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.lagradost.cloudstream3"
+        applicationId = "com.meel.meelstreaming"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 67
@@ -146,7 +146,7 @@ android {
         buildConfig = true
     }
 
-    namespace = "com.lagradost.cloudstream3"
+    namespace = "com.meel.meelstreaming"
 }
 
 dependencies {
@@ -274,7 +274,7 @@ tasks.withType<KotlinJvmCompile> {
         freeCompilerArgs.addAll(
             "-Xjvm-default=all-compatibility",
             "-Xannotation-default-target=param-property",
-            "-opt-in=com.lagradost.cloudstream3.Prerelease"
+            "-opt-in=com.meel.meelstreaming.Prerelease"
         )
     }
 }
@@ -291,7 +291,7 @@ dokka {
 
             sourceLink {
                 localDirectory = file("..")
-                remoteUrl("https://github.com/recloudstream/cloudstream/tree/master")
+                remoteUrl("https://github.com/remeelstream/meelstream/tree/master")
                 remoteLineSuffix = "#L"
             }
         }

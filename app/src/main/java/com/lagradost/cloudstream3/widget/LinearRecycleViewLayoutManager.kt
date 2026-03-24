@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.widget
+package com.lagradost.meelstream3.widget
 
 import android.content.Context
 import android.view.View

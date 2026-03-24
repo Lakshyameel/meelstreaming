@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -31,24 +31,24 @@ import coil3.asDrawable
 import coil3.request.ImageRequest
 import coil3.request.SuccessResult
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.APIHolder.getApiFromNameNull
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.BuildConfig
-import com.lagradost.cloudstream3.IDownloadableMinimum
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.launchSafe
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.services.VideoDownloadService
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.DataStore.getKey
-import com.lagradost.cloudstream3.utils.DataStore.removeKey
-import com.lagradost.cloudstream3.utils.SubtitleUtils.deleteMatchingSubtitles
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.APIHolder.getApiFromNameNull
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.BuildConfig
+import com.lagradost.meelstream3.IDownloadableMinimum
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.launchSafe
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.services.VideoDownloadService
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.DataStore.getKey
+import com.lagradost.meelstream3.utils.DataStore.removeKey
+import com.lagradost.meelstream3.utils.SubtitleUtils.deleteMatchingSubtitles
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
 import com.lagradost.safefile.MediaFileContentType
 import com.lagradost.safefile.SafeFile
 import com.lagradost.safefile.closeQuietly
@@ -71,7 +71,7 @@ import java.io.IOException
 import java.io.OutputStream
 import java.util.*
 
-const val DOWNLOAD_CHANNEL_ID = "cloudstream3.general"
+const val DOWNLOAD_CHANNEL_ID = "meelstream3.general"
 const val DOWNLOAD_CHANNEL_NAME = "Downloads"
 const val DOWNLOAD_CHANNEL_DESCRIPT = "The download notification channel"
 

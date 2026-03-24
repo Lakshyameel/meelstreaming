@@ -1,7 +1,7 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.mvvm.logError
+import com.lagradost.meelstream3.*
+import com.lagradost.meelstream3.mvvm.logError
 import kotlinx.coroutines.*
 import org.junit.Assert
 import kotlin.random.Random

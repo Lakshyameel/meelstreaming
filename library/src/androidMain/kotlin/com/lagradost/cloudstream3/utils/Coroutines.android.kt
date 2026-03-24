@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.os.Handler
 import android.os.Looper

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.download.button
+package com.lagradost.meelstream3.ui.download.button
 
 import android.content.Context
 import android.text.format.Formatter.formatShortFileSize
@@ -8,10 +8,10 @@ import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.core.view.isVisible
 import androidx.core.widget.ContentLoadingProgressBar
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Coroutines.mainWork
-import com.lagradost.cloudstream3.utils.VideoDownloadManager
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Coroutines.mainWork
+import com.lagradost.meelstream3.utils.VideoDownloadManager
 
 typealias DownloadStatusTell = VideoDownloadManager.DownloadType
 

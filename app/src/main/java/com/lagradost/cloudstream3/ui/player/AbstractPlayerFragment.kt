@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
@@ -36,25 +36,25 @@ import androidx.preference.PreferenceManager
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.github.rubensousa.previewseekbar.PreviewBar
 import com.github.rubensousa.previewseekbar.media3.PreviewTimeBar
-import com.lagradost.cloudstream3.CommonActivity.canEnterPipMode
-import com.lagradost.cloudstream3.CommonActivity.isInPIPMode
-import com.lagradost.cloudstream3.CommonActivity.keyEventListener
-import com.lagradost.cloudstream3.CommonActivity.playerEventListener
-import com.lagradost.cloudstream3.CommonActivity.screenWidth
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.ui.subtitles.SaveCaptionStyle
-import com.lagradost.cloudstream3.ui.subtitles.SubtitlesFragment
-import com.lagradost.cloudstream3.utils.AppContextUtils
-import com.lagradost.cloudstream3.utils.AppContextUtils.requestLocalAudioFocus
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.EpisodeSkip
-import com.lagradost.cloudstream3.utils.UIHelper
-import com.lagradost.cloudstream3.utils.UIHelper.hideSystemUI
-import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
+import com.lagradost.meelstream3.CommonActivity.canEnterPipMode
+import com.lagradost.meelstream3.CommonActivity.isInPIPMode
+import com.lagradost.meelstream3.CommonActivity.keyEventListener
+import com.lagradost.meelstream3.CommonActivity.playerEventListener
+import com.lagradost.meelstream3.CommonActivity.screenWidth
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.ui.subtitles.SaveCaptionStyle
+import com.lagradost.meelstream3.ui.subtitles.SubtitlesFragment
+import com.lagradost.meelstream3.utils.AppContextUtils
+import com.lagradost.meelstream3.utils.AppContextUtils.requestLocalAudioFocus
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.EpisodeSkip
+import com.lagradost.meelstream3.utils.UIHelper
+import com.lagradost.meelstream3.utils.UIHelper.hideSystemUI
+import com.lagradost.meelstream3.utils.UIHelper.popCurrentPage
 import java.net.SocketTimeoutException
 
 enum class PlayerResize(@StringRes val nameRes: Int) {

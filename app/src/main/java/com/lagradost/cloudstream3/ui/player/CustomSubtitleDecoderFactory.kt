@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.content.Context
 import android.text.Layout
@@ -24,10 +24,10 @@ import androidx.media3.extractor.text.tx3g.Tx3gParser
 import androidx.media3.extractor.text.webvtt.Mp4WebvttParser
 import androidx.media3.extractor.text.webvtt.WebvttParser
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.subtitles.SaveCaptionStyle
-import com.lagradost.cloudstream3.ui.subtitles.SubtitlesFragment
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.subtitles.SaveCaptionStyle
+import com.lagradost.meelstream3.ui.subtitles.SubtitlesFragment
 import org.mozilla.universalchardet.UniversalDetector
 import java.lang.ref.WeakReference
 import java.nio.charset.Charset
@@ -232,7 +232,7 @@ class CustomDecoder(private val fallbackFormat: Format?) : SubtitleParser {
         val trimmedText =
             data.trimStart { it.isWhitespace() || controlCharsRegex.matches(it.toString()) }
 
-        //https://github.com/LagradOst/CloudStream-2/blob/ddd774ee66810137ff7bd65dae70bcf3ba2d2489/CloudStreamForms/CloudStreamForms/Script/MainChrome.cs#L388
+        //https://github.com/LagradOst/meelstream-2/blob/ddd774ee66810137ff7bd65dae70bcf3ba2d2489/meelstreamForms/meelstreamForms/Script/MainChrome.cs#L388
         val subtitleParser = when {
             // "WEBVTT" can be hidden behind invisible characters not filtered by trim
             trimmedText.substring(0, 10).contains("WEBVTT", ignoreCase = true) -> WebvttParser()

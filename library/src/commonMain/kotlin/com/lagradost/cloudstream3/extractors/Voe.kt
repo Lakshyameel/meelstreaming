@@ -1,16 +1,16 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.base64Decode
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.INFER_TYPE
-import com.lagradost.cloudstream3.utils.M3u8Helper
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.base64Decode
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.INFER_TYPE
+import com.lagradost.meelstream3.utils.M3u8Helper
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.newExtractorLink
 
 class Tubeless : Voe() {
     override val name = "Tubeless"

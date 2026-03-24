@@ -1,13 +1,13 @@
-package com.lagradost.cloudstream3.syncproviders.providers
+package com.lagradost.meelstream3.syncproviders.providers
 
-import com.lagradost.cloudstream3.AllLanguagesName
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities.SubtitleEntity
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities.SubtitleSearch
-import com.lagradost.cloudstream3.syncproviders.AuthData
-import com.lagradost.cloudstream3.syncproviders.SubtitleAPI
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.utils.SubtitleHelper.fromTagToEnglishLanguageName
+import com.lagradost.meelstream3.AllLanguagesName
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities.SubtitleEntity
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities.SubtitleSearch
+import com.lagradost.meelstream3.syncproviders.AuthData
+import com.lagradost.meelstream3.syncproviders.SubtitleAPI
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.utils.SubtitleHelper.fromTagToEnglishLanguageName
 
 class Addic7ed : SubtitleAPI() {
     override val name = "Addic7ed"

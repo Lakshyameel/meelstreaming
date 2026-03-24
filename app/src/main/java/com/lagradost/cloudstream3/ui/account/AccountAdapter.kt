@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.account
+package com.lagradost.meelstream3.ui.account
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,16 +7,16 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 import coil3.transform.RoundedCornersTransformation
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.AccountListItemAddBinding
-import com.lagradost.cloudstream3.databinding.AccountListItemBinding
-import com.lagradost.cloudstream3.databinding.AccountListItemEditBinding
-import com.lagradost.cloudstream3.ui.account.AccountHelper.showAccountEditDialog
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.AccountListItemAddBinding
+import com.lagradost.meelstream3.databinding.AccountListItemBinding
+import com.lagradost.meelstream3.databinding.AccountListItemEditBinding
+import com.lagradost.meelstream3.ui.account.AccountHelper.showAccountEditDialog
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
 
 class AccountAdapter(
     private val accounts: List<DataStoreHelper.Account>,

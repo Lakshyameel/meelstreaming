@@ -1,6 +1,6 @@
-package com.lagradost.cloudstream3
+package com.lagradost.meelstream3
 
-import com.lagradost.cloudstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.logError
 import kotlinx.coroutines.*
 import kotlin.coroutines.cancellation.CancellationException
 
@@ -20,7 +20,7 @@ suspend fun <K, V, R> Map<out K, V>.amap(f: suspend (Map.Entry<K, V>) -> R): Lis
  */
 @Deprecated(
     "This blocks with runBlocking, and should not be used inside a suspended context",
-    replaceWith = ReplaceWith("amap(f)", "com.lagradost.cloudstream3.amap")
+    replaceWith = ReplaceWith("amap(f)", "com.lagradost.meelstream3.amap")
 )
 @Throws(CancellationException::class)
 fun <K, V, R> Map<out K, V>.apmap(f: suspend (Map.Entry<K, V>) -> R): List<R> = runBlocking {
@@ -43,7 +43,7 @@ suspend fun <A, B> List<A>.amap(f: suspend (A) -> B): List<B> =
  */
 @Deprecated(
     "This blocks with runBlocking, and should not be used inside a suspended context",
-    replaceWith = ReplaceWith("amap(f)", "com.lagradost.cloudstream3.amap")
+    replaceWith = ReplaceWith("amap(f)", "com.lagradost.meelstream3.amap")
 )
 @Throws(CancellationException::class)
 fun <A, B> List<A>.apmap(f: suspend (A) -> B): List<B> = runBlocking {
@@ -55,7 +55,7 @@ fun <A, B> List<A>.apmap(f: suspend (A) -> B): List<B> = runBlocking {
  */
 @Deprecated(
     "This blocks with runBlocking, and should not be used inside a suspended context",
-    replaceWith = ReplaceWith("amapIndexed(f)", "com.lagradost.cloudstream3.amapIndexed")
+    replaceWith = ReplaceWith("amapIndexed(f)", "com.lagradost.meelstream3.amapIndexed")
 )
 @Throws(CancellationException::class)
 fun <A, B> List<A>.apmapIndexed(f: suspend (index: Int, A) -> B): List<B> = runBlocking {
@@ -81,7 +81,7 @@ suspend fun <A, B> List<A>.amapIndexed(f: suspend (index: Int, A) -> B): List<B>
  */
 @Deprecated(
     "This blocks with runBlocking, and should not be used inside a suspended context",
-    replaceWith = ReplaceWith("runAllAsync(transforms)", "com.lagradost.cloudstream3.runAllAsync")
+    replaceWith = ReplaceWith("runAllAsync(transforms)", "com.lagradost.meelstream3.runAllAsync")
 )
 @Throws(CancellationException::class)
 fun <R> argamap(

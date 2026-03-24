@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 class Event<T> {
     private val observers = mutableSetOf<(T) -> Unit>()

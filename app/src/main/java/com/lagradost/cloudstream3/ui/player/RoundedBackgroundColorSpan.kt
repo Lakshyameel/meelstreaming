@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 /**
  * Inspired by https://medium.com/@Semper_Viventem/simple-implementation-of-rounded-background-for-text-in-android-60a7706c0419

@@ -1,15 +1,15 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.safeAsync
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.INFER_TYPE
-import com.lagradost.cloudstream3.utils.extractorApis
-import com.lagradost.cloudstream3.utils.getQualityFromName
-import com.lagradost.cloudstream3.utils.loadExtractor
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.safeAsync
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.INFER_TYPE
+import com.lagradost.meelstream3.utils.extractorApis
+import com.lagradost.meelstream3.utils.getQualityFromName
+import com.lagradost.meelstream3.utils.loadExtractor
+import com.lagradost.meelstream3.utils.newExtractorLink
 import org.jsoup.Jsoup
 
 /**

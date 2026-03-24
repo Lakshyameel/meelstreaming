@@ -1,13 +1,13 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.APIHolder
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.APIHolder
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.newExtractorLink
 
 class VinovoSi : VinovoTo() {
     override var name = "VinovoSi"

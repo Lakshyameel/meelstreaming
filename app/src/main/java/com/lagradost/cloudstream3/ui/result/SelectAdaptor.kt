@@ -1,15 +1,15 @@
-package com.lagradost.cloudstream3.ui.result
+package com.lagradost.meelstream3.ui.result
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
-import com.lagradost.cloudstream3.databinding.ResultSelectionBinding
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.UiText
-import com.lagradost.cloudstream3.utils.setText
+import com.lagradost.meelstream3.databinding.ResultSelectionBinding
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.UiText
+import com.lagradost.meelstream3.utils.setText
 
 typealias SelectData = Pair<UiText?, Any>
 

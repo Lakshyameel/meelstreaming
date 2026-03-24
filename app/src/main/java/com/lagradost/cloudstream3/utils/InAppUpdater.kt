@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.app.Activity
 import android.content.Context
@@ -11,11 +11,11 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.preference.PreferenceManager
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.*
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.utils.AppUtils.parseJson
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import okio.BufferedSink
@@ -23,9 +23,9 @@ import okio.buffer
 import okio.sink
 import java.io.File
 import android.text.TextUtils
-import com.lagradost.cloudstream3.MainActivity.Companion.deleteFileOnExit
-import com.lagradost.cloudstream3.services.PackageInstallerService
-import com.lagradost.cloudstream3.utils.AppContextUtils.setDefaultFocus
+import com.lagradost.meelstream3.MainActivity.Companion.deleteFileOnExit
+import com.lagradost.meelstream3.services.PackageInstallerService
+import com.lagradost.meelstream3.utils.AppContextUtils.setDefaultFocus
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -33,8 +33,8 @@ import java.io.InputStreamReader
 
 class InAppUpdater {
     companion object {
-        private const val GITHUB_USER_NAME = "recloudstream"
-        private const val GITHUB_REPO = "cloudstream"
+        private const val GITHUB_USER_NAME = "remeelstream"
+        private const val GITHUB_REPO = "meelstream"
 
         private const val LOG_TAG = "InAppUpdater"
 
@@ -208,7 +208,7 @@ class InAppUpdater {
         private suspend fun Activity.downloadUpdate(url: String): Boolean {
             try {
                 Log.d(LOG_TAG, "Downloading update: $url")
-                val appUpdateName = "CloudStream"
+                val appUpdateName = "meelstream"
                 val appUpdateSuffix = "apk"
 
                 // Delete all old updates

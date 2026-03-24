@@ -1,20 +1,20 @@
-package com.lagradost.cloudstream3.ui.settings.extensions
+package com.lagradost.meelstream3.ui.settings.extensions
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.RepositoryItemBinding
-import com.lagradost.cloudstream3.databinding.RepositoryItemTvBinding
-import com.lagradost.cloudstream3.plugins.RepositoryManager.PREBUILT_REPOSITORIES
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.UIHelper.clipboardHelper
-import com.lagradost.cloudstream3.utils.getImageFromDrawable
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.RepositoryItemBinding
+import com.lagradost.meelstream3.databinding.RepositoryItemTvBinding
+import com.lagradost.meelstream3.plugins.RepositoryManager.PREBUILT_REPOSITORIES
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.UIHelper.clipboardHelper
+import com.lagradost.meelstream3.utils.getImageFromDrawable
 
 class RepoAdapter(
     val isSetup: Boolean,

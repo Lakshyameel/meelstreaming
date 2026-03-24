@@ -1,14 +1,14 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 // TODO: FIX
 
 import android.util.Log
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.APIHolder.apis
-//import com.lagradost.cloudstream3.animeproviders.AniflixProvider
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.lagradost.meelstream3.APIHolder.apis
+//import com.lagradost.meelstream3.animeproviders.AniflixProvider
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.utils.AppUtils.parseJson
 import java.util.concurrent.TimeUnit
 
 object SyncUtil {

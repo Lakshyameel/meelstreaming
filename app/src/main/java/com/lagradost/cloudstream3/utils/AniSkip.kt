@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.util.Log
 import androidx.annotation.StringRes
 import com.fasterxml.jackson.databind.annotation.JsonSerialize
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.LoadResponse.Companion.getMalId
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.*
+import com.lagradost.meelstream3.LoadResponse.Companion.getMalId
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.result.ResultEpisode
 import java.lang.Long.min
 
 object EpisodeSkip {

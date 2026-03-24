@@ -1,9 +1,9 @@
-package com.lagradost.cloudstream3.ui.settings
+package com.lagradost.meelstream3.ui.settings
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.databinding.ItemLogcatBinding
+import com.lagradost.meelstream3.databinding.ItemLogcatBinding
 
 class LogcatAdapter(
     private val logs: List<String>

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.search
+package com.lagradost.meelstream3.ui.search
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,12 +7,12 @@ import android.widget.FrameLayout
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.databinding.SearchResultGridBinding
-import com.lagradost.cloudstream3.databinding.SearchResultGridExpandedBinding
-import com.lagradost.cloudstream3.ui.AutofitRecyclerView
-import com.lagradost.cloudstream3.utils.UIHelper.isBottomLayout
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.databinding.SearchResultGridBinding
+import com.lagradost.meelstream3.databinding.SearchResultGridExpandedBinding
+import com.lagradost.meelstream3.ui.AutofitRecyclerView
+import com.lagradost.meelstream3.utils.UIHelper.isBottomLayout
+import com.lagradost.meelstream3.utils.UIHelper.toPx
 import kotlin.math.roundToInt
 
 /** Click */

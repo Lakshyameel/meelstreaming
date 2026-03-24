@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.extractors
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.getAndUnpack
-import com.lagradost.cloudstream3.utils.newExtractorLink
+package com.lagradost.meelstream3.extractors
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.getAndUnpack
+import com.lagradost.meelstream3.utils.newExtractorLink
 
 class Vido : ExtractorApi() {
     override var name = "Vido"

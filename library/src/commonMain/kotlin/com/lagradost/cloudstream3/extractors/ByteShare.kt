@@ -1,6 +1,6 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.utils.*
+import com.lagradost.meelstream3.utils.*
 
 open class ByteShare : ExtractorApi() {
     override val name = "ByteShare"

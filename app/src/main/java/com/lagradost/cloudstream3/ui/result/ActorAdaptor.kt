@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.result
+package com.lagradost.meelstream3.ui.result
 
 import android.app.SearchManager
 import android.content.Intent
@@ -8,13 +8,13 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.ActorData
-import com.lagradost.cloudstream3.ActorRole
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.CastItemBinding
-import com.lagradost.cloudstream3.ui.settings.Globals.PHONE
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.ActorData
+import com.lagradost.meelstream3.ActorRole
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.CastItemBinding
+import com.lagradost.meelstream3.ui.settings.Globals.PHONE
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
 
 class ActorAdaptor(
     private var nextFocusUpId: Int? = null,

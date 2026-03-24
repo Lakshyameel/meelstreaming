@@ -1,8 +1,8 @@
-package com.lagradost.cloudstream3.metaproviders
+package com.lagradost.meelstream3.metaproviders
 
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.mvvm.safeAsync
-import com.lagradost.cloudstream3.syncproviders.SyncIdName
+import com.lagradost.meelstream3.MainAPI
+import com.lagradost.meelstream3.mvvm.safeAsync
+import com.lagradost.meelstream3.syncproviders.SyncIdName
 
 object SyncRedirector {
     private val syncIds =

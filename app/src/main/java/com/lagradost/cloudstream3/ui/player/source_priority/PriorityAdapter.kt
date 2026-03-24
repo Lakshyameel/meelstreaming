@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.ui.player.source_priority
+package com.lagradost.meelstream3.ui.player.source_priority
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.databinding.PlayerPrioritizeItemBinding
-import com.lagradost.cloudstream3.utils.AppContextUtils
+import com.lagradost.meelstream3.databinding.PlayerPrioritizeItemBinding
+import com.lagradost.meelstream3.utils.AppContextUtils
 
 data class SourcePriority<T>(
     val data: T,

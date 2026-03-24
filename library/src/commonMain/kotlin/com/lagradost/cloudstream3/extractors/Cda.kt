@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.AppUtils.tryParseJson
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.newExtractorLink
 import java.net.URLDecoder
 
 open class Cda : ExtractorApi() {

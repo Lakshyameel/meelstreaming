@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings
+package com.lagradost.meelstream3.ui.settings
 
 import android.os.Bundle
 import android.view.View
@@ -6,18 +6,18 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.NavOptions
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.ui.APIRepository
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.getPref
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setPaddingBottom
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
-import com.lagradost.cloudstream3.utils.AppContextUtils.getApiDubstatusSettings
-import com.lagradost.cloudstream3.utils.AppContextUtils.getApiProviderLangSettings
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showMultiDialog
-import com.lagradost.cloudstream3.utils.SubtitleHelper.getNameNextToFlagEmoji
-import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
+import com.lagradost.meelstream3.*
+import com.lagradost.meelstream3.ui.APIRepository
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.getPref
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setPaddingBottom
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
+import com.lagradost.meelstream3.utils.AppContextUtils.getApiDubstatusSettings
+import com.lagradost.meelstream3.utils.AppContextUtils.getApiProviderLangSettings
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showMultiDialog
+import com.lagradost.meelstream3.utils.SubtitleHelper.getNameNextToFlagEmoji
+import com.lagradost.meelstream3.utils.UIHelper.hideKeyboard
 
 class SettingsProviders : PreferenceFragmentCompat() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

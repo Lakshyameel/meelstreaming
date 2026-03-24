@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.ui.result
+package com.lagradost.meelstream3.ui.result
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.databinding.ResultMiniImageBinding
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.databinding.ResultMiniImageBinding
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
 
 const val IMAGE_CLICK = 0
 const val IMAGE_LONG_CLICK = 1

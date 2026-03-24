@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.app
+import com.lagradost.meelstream3.utils.*
+import com.lagradost.meelstream3.app
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.module.kotlin.readValue
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.mapper
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.mapper
+import com.lagradost.meelstream3.utils.AppUtils.parseJson
 
 
 class Cinestart: Tomatomatela() {

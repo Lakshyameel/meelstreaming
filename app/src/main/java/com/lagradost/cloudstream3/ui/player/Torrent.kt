@@ -1,14 +1,14 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.CommonActivity
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.CommonActivity
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.utils.newExtractorLink
 import torrServer.TorrServer
 import java.io.File
 import java.net.ConnectException

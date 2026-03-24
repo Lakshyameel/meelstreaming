@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.actions.temp
+package com.lagradost.meelstream3.actions.temp
 
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import com.lagradost.cloudstream3.actions.OpenInAppAction
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.actions.OpenInAppAction
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.txt
 
 /** https://github.com/devgianlu/Aria2Android */
 @Suppress("unused")

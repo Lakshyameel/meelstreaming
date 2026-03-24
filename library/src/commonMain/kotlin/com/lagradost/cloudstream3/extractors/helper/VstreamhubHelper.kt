@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.extractors.helper
+package com.lagradost.meelstream3.extractors.helper
 
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.loadExtractor
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.loadExtractor
+import com.lagradost.meelstream3.utils.newExtractorLink
 
 class VstreamhubHelper {
     companion object {

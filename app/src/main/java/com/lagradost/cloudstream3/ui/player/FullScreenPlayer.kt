@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
@@ -50,39 +50,39 @@ import androidx.media3.exoplayer.ExoPlayer
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.SimpleItemAnimator
 import com.google.android.material.button.MaterialButton
-import com.lagradost.cloudstream3.CommonActivity.keyEventListener
-import com.lagradost.cloudstream3.CommonActivity.playerEventListener
-import com.lagradost.cloudstream3.CommonActivity.screenHeightWithOrientation
-import com.lagradost.cloudstream3.CommonActivity.screenWidthWithOrientation
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.PlayerCustomLayoutBinding
-import com.lagradost.cloudstream3.databinding.SpeedDialogBinding
-import com.lagradost.cloudstream3.databinding.SubtitleOffsetBinding
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.player.GeneratorPlayer.Companion.subsProvidersIsActive
-import com.lagradost.cloudstream3.ui.player.source_priority.QualityDataHelper
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.PHONE
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.AppContextUtils.isUsingMobileData
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.detachBackPressedCallback
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
-import com.lagradost.cloudstream3.utils.UIHelper.getNavigationBarHeight
-import com.lagradost.cloudstream3.utils.UIHelper.getStatusBarHeight
-import com.lagradost.cloudstream3.utils.UIHelper.hideSystemUI
-import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
-import com.lagradost.cloudstream3.utils.UIHelper.showSystemUI
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
-import com.lagradost.cloudstream3.utils.UserPreferenceDelegate
-import com.lagradost.cloudstream3.utils.Vector2
-import com.lagradost.cloudstream3.utils.setText
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.CommonActivity.keyEventListener
+import com.lagradost.meelstream3.CommonActivity.playerEventListener
+import com.lagradost.meelstream3.CommonActivity.screenHeightWithOrientation
+import com.lagradost.meelstream3.CommonActivity.screenWidthWithOrientation
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.PlayerCustomLayoutBinding
+import com.lagradost.meelstream3.databinding.SpeedDialogBinding
+import com.lagradost.meelstream3.databinding.SubtitleOffsetBinding
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.player.GeneratorPlayer.Companion.subsProvidersIsActive
+import com.lagradost.meelstream3.ui.player.source_priority.QualityDataHelper
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.PHONE
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.AppContextUtils.isUsingMobileData
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.detachBackPressedCallback
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.utils.UIHelper.getNavigationBarHeight
+import com.lagradost.meelstream3.utils.UIHelper.getStatusBarHeight
+import com.lagradost.meelstream3.utils.UIHelper.hideSystemUI
+import com.lagradost.meelstream3.utils.UIHelper.popCurrentPage
+import com.lagradost.meelstream3.utils.UIHelper.showSystemUI
+import com.lagradost.meelstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.utils.UserPreferenceDelegate
+import com.lagradost.meelstream3.utils.Vector2
+import com.lagradost.meelstream3.utils.setText
+import com.lagradost.meelstream3.utils.txt
 import kotlin.math.abs
 import kotlin.math.ceil
 import kotlin.math.max
@@ -1507,7 +1507,7 @@ open class FullScreenPlayer : AbstractPlayerFragment() {
             }
 
             // netflix capture back and hide ~monke
-            // This is removed due to inconsistent behavior on A36 vs A22, see https://github.com/recloudstream/cloudstream/issues/1804
+            // This is removed due to inconsistent behavior on A36 vs A22, see https://github.com/remeelstream/meelstream/issues/1804
             /*KeyEvent.KEYCODE_BACK -> {
                 if (isShowing && isLayout(TV or EMULATOR)) {
                     onClickChange()

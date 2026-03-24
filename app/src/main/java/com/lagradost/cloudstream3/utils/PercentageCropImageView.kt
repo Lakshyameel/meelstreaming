@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 //Reference: https://stackoverflow.com/a/29055283
 import android.content.Context
 import android.graphics.Matrix
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
-import com.lagradost.cloudstream3.R
+import com.lagradost.meelstream3.R
 
 /**
  * A custom [AppCompatImageView] that allows precise control over the visible crop area
@@ -17,7 +17,7 @@ import com.lagradost.cloudstream3.R
  * ### Usage (XML):
  * You can set the crop offset directly in XML using custom attributes:
  * ```xml
- * <com.lagradost.cloudstream3.utils.PercentageCropImageView
+ * <com.lagradost.meelstream3.utils.PercentageCropImageView
  *     android:id="@+id/home_scroll_preview"
  *     android:layout_width="match_parent"
  *     android:layout_height="match_parent"

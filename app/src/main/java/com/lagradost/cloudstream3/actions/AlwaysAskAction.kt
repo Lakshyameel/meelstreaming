@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.actions
+package com.lagradost.meelstream3.actions
 
 import android.content.Context
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.txt
 
 class AlwaysAskAction : VideoClickAction() {
     override val name = txt(R.string.player_settings_always_ask)

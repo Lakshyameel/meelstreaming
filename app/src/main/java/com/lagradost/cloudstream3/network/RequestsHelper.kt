@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.network
+package com.lagradost.meelstream3.network
 
 import android.content.Context
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.mvvm.safe
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.mvvm.safe
 import com.lagradost.nicehttp.Requests
 import com.lagradost.nicehttp.ignoreAllSSLErrors
 import okhttp3.Cache

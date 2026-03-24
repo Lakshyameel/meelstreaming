@@ -1,8 +1,8 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.app
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.app
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.delay
 import javax.crypto.Cipher

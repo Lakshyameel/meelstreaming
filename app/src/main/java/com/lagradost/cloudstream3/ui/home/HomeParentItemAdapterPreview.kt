@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.home
+package com.lagradost.meelstream3.ui.home
 
 import android.content.Context
 import android.os.Bundle
@@ -21,47 +21,47 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 import com.google.android.material.navigation.NavigationBarItemView
-import com.lagradost.cloudstream3.AcraApplication.Companion.getActivity
-import com.lagradost.cloudstream3.CommonActivity.activity
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.HomePageList
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.databinding.FragmentHomeHeadBinding
-import com.lagradost.cloudstream3.databinding.FragmentHomeHeadTvBinding
-import com.lagradost.cloudstream3.mvvm.Resource
-import com.lagradost.cloudstream3.mvvm.debugException
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.ui.APIRepository.Companion.noneApi
-import com.lagradost.cloudstream3.ui.ViewHolderState
-import com.lagradost.cloudstream3.ui.WatchType
-import com.lagradost.cloudstream3.ui.account.AccountHelper.showAccountEditDialog
-import com.lagradost.cloudstream3.ui.account.AccountHelper.showAccountSelectLinear
-import com.lagradost.cloudstream3.ui.account.AccountViewModel
-import com.lagradost.cloudstream3.ui.home.HomeFragment.Companion.selectHomepage
-import com.lagradost.cloudstream3.ui.result.FOCUS_SELF
-import com.lagradost.cloudstream3.ui.result.ResultViewModel2
-import com.lagradost.cloudstream3.ui.result.START_ACTION_RESUME_LATEST
-import com.lagradost.cloudstream3.ui.result.getId
-import com.lagradost.cloudstream3.ui.result.setLinearListLayout
-import com.lagradost.cloudstream3.ui.search.SEARCH_ACTION_LOAD
-import com.lagradost.cloudstream3.ui.search.SEARCH_ACTION_SHOW_METADATA
-import com.lagradost.cloudstream3.ui.search.SearchClickCallback
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.AppContextUtils.html
-import com.lagradost.cloudstream3.utils.AppContextUtils.setDefaultFocus
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialog
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showOptionSelectStringRes
-import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbarMargin
-import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbarView
-import com.lagradost.cloudstream3.utils.UIHelper.populateChips
+import com.lagradost.meelstream3.AcraApplication.Companion.getActivity
+import com.lagradost.meelstream3.CommonActivity.activity
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.HomePageList
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.databinding.FragmentHomeHeadBinding
+import com.lagradost.meelstream3.databinding.FragmentHomeHeadTvBinding
+import com.lagradost.meelstream3.mvvm.Resource
+import com.lagradost.meelstream3.mvvm.debugException
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.ui.APIRepository.Companion.noneApi
+import com.lagradost.meelstream3.ui.ViewHolderState
+import com.lagradost.meelstream3.ui.WatchType
+import com.lagradost.meelstream3.ui.account.AccountHelper.showAccountEditDialog
+import com.lagradost.meelstream3.ui.account.AccountHelper.showAccountSelectLinear
+import com.lagradost.meelstream3.ui.account.AccountViewModel
+import com.lagradost.meelstream3.ui.home.HomeFragment.Companion.selectHomepage
+import com.lagradost.meelstream3.ui.result.FOCUS_SELF
+import com.lagradost.meelstream3.ui.result.ResultViewModel2
+import com.lagradost.meelstream3.ui.result.START_ACTION_RESUME_LATEST
+import com.lagradost.meelstream3.ui.result.getId
+import com.lagradost.meelstream3.ui.result.setLinearListLayout
+import com.lagradost.meelstream3.ui.search.SEARCH_ACTION_LOAD
+import com.lagradost.meelstream3.ui.search.SEARCH_ACTION_SHOW_METADATA
+import com.lagradost.meelstream3.ui.search.SearchClickCallback
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.AppContextUtils.html
+import com.lagradost.meelstream3.utils.AppContextUtils.setDefaultFocus
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialog
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showOptionSelectStringRes
+import com.lagradost.meelstream3.utils.UIHelper.fixPaddingStatusbarMargin
+import com.lagradost.meelstream3.utils.UIHelper.fixPaddingStatusbarView
+import com.lagradost.meelstream3.utils.UIHelper.populateChips
 
 class HomeParentItemAdapterPreview(
     override val fragment: Fragment,
@@ -158,7 +158,7 @@ class HomeParentItemAdapterPreview(
                     val context = v.context ?: return@ResumeItemAdapter
                     val builder: AlertDialog.Builder =
                         AlertDialog.Builder(context)
-                    // Copy pasted from https://github.com/recloudstream/cloudstream/pull/1658/files
+                    // Copy pasted from https://github.com/remeelstream/meelstream/pull/1658/files
                     builder.apply {
                         setTitle(R.string.clear_history)
                         setMessage(

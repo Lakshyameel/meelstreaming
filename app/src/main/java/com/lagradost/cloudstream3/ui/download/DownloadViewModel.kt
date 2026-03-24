@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.download
+package com.lagradost.meelstream3.ui.download
 
 import android.content.Context
 import android.content.DialogInterface
@@ -9,20 +9,20 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.isEpisodeBased
-import com.lagradost.cloudstream3.mvvm.launchSafe
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.utils.AppContextUtils.getNameFull
-import com.lagradost.cloudstream3.utils.AppContextUtils.setDefaultFocus
-import com.lagradost.cloudstream3.utils.DOWNLOAD_EPISODE_CACHE
-import com.lagradost.cloudstream3.utils.DOWNLOAD_HEADER_CACHE
-import com.lagradost.cloudstream3.utils.DataStore.getFolderName
-import com.lagradost.cloudstream3.utils.DataStore.getKey
-import com.lagradost.cloudstream3.utils.DataStore.getKeys
-import com.lagradost.cloudstream3.utils.VideoDownloadHelper
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.deleteFilesAndUpdateSettings
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.getDownloadFileInfoAndUpdateSettings
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.isEpisodeBased
+import com.lagradost.meelstream3.mvvm.launchSafe
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.utils.AppContextUtils.getNameFull
+import com.lagradost.meelstream3.utils.AppContextUtils.setDefaultFocus
+import com.lagradost.meelstream3.utils.DOWNLOAD_EPISODE_CACHE
+import com.lagradost.meelstream3.utils.DOWNLOAD_HEADER_CACHE
+import com.lagradost.meelstream3.utils.DataStore.getFolderName
+import com.lagradost.meelstream3.utils.DataStore.getKey
+import com.lagradost.meelstream3.utils.DataStore.getKeys
+import com.lagradost.meelstream3.utils.VideoDownloadHelper
+import com.lagradost.meelstream3.utils.VideoDownloadManager.deleteFilesAndUpdateSettings
+import com.lagradost.meelstream3.utils.VideoDownloadManager.getDownloadFileInfoAndUpdateSettings
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

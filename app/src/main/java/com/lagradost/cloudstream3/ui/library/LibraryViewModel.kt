@@ -1,20 +1,20 @@
-package com.lagradost.cloudstream3.ui.library
+package com.lagradost.meelstream3.ui.library
 
 import androidx.annotation.StringRes
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.Resource
-import com.lagradost.cloudstream3.mvvm.throwAbleToResource
-import com.lagradost.cloudstream3.syncproviders.AccountManager
-import com.lagradost.cloudstream3.syncproviders.SyncAPI
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.DataStoreHelper.currentAccount
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.Resource
+import com.lagradost.meelstream3.mvvm.throwAbleToResource
+import com.lagradost.meelstream3.syncproviders.AccountManager
+import com.lagradost.meelstream3.syncproviders.SyncAPI
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.DataStoreHelper.currentAccount
 
 enum class ListSorting(@StringRes val stringRes: Int) {
     Query(R.string.none),

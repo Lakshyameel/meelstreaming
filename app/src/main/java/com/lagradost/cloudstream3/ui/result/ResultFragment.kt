@@ -1,20 +1,20 @@
-package com.lagradost.cloudstream3.ui.result
+package com.lagradost.meelstream3.ui.result
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.DubStatus
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.Score
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.SeasonData
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.ui.result.EpisodeAdapter.Companion.getPlayerAction
-import com.lagradost.cloudstream3.utils.AppContextUtils.getApiDubstatusSettings
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getVideoWatchState
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getViewPos
-import com.lagradost.cloudstream3.utils.Event
+import com.lagradost.meelstream3.DubStatus
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.Score
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.SeasonData
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.ui.result.EpisodeAdapter.Companion.getPlayerAction
+import com.lagradost.meelstream3.utils.AppContextUtils.getApiDubstatusSettings
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.DataStoreHelper.getVideoWatchState
+import com.lagradost.meelstream3.utils.DataStoreHelper.getViewPos
+import com.lagradost.meelstream3.utils.Event
 
 const val START_ACTION_RESUME_LATEST = 1
 const val START_ACTION_LOAD_EP = 2

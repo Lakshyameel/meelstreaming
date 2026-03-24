@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.mvvm
+package com.lagradost.meelstream3.mvvm
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData

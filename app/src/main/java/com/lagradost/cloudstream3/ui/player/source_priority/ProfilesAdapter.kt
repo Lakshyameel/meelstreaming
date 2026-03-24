@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player.source_priority
+package com.lagradost.meelstream3.ui.player.source_priority
 
 import android.content.res.ColorStateList
 import android.graphics.Typeface
@@ -11,11 +11,11 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.palette.graphics.Palette
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.PlayerQualityProfileItemBinding
-import com.lagradost.cloudstream3.utils.AppContextUtils
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.drawableToBitmap
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.PlayerQualityProfileItemBinding
+import com.lagradost.meelstream3.utils.AppContextUtils
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.drawableToBitmap
 
 class ProfilesAdapter(
     override val items: MutableList<QualityDataHelper.QualityProfile>,

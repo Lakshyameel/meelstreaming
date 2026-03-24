@@ -1,41 +1,41 @@
-package com.lagradost.cloudstream3.actions.temp
+package com.lagradost.meelstream3.actions.temp
 
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.actions.OpenInAppAction
-import com.lagradost.cloudstream3.BuildConfig
-import com.lagradost.cloudstream3.ui.player.ExtractorUri
-import com.lagradost.cloudstream3.ui.player.SubtitleData
-import com.lagradost.cloudstream3.ui.player.SubtitleOrigin
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getViewPos
-import com.lagradost.cloudstream3.utils.DrmExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkPlayList
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
-import com.lagradost.cloudstream3.utils.newExtractorLink
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.SubtitleHelper.fromCodeToLangTagIETF
-import com.lagradost.cloudstream3.utils.SubtitleHelper.fromLanguageToTagIETF
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.actions.OpenInAppAction
+import com.lagradost.meelstream3.BuildConfig
+import com.lagradost.meelstream3.ui.player.ExtractorUri
+import com.lagradost.meelstream3.ui.player.SubtitleData
+import com.lagradost.meelstream3.ui.player.SubtitleOrigin
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.AppUtils.toJson
+import com.lagradost.meelstream3.utils.DataStoreHelper.getViewPos
+import com.lagradost.meelstream3.utils.DrmExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkPlayList
+import com.lagradost.meelstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.SubtitleHelper.fromCodeToLangTagIETF
+import com.lagradost.meelstream3.utils.SubtitleHelper.fromLanguageToTagIETF
+import com.lagradost.meelstream3.utils.txt
 
 /**
- * If you want to support CloudStream 3 as an external player, then this shows how to play any video link
+ * If you want to support meelstream 3 as an external player, then this shows how to play any video link
  * For basic interactions, just `intent.data = uri` works
  *
- * However for more advanced use, CloudStream 3 also supports playlists of MinimalVideoLink and MinimalSubtitleLink with a `String[]` of JSON
+ * However for more advanced use, meelstream 3 also supports playlists of MinimalVideoLink and MinimalSubtitleLink with a `String[]` of JSON
  * These are passed as LINKS_EXTRA and SUBTITLE_EXTRA respectively
  */
 @Suppress("Unused")
-class CloudStreamPackage : OpenInAppAction(
-    appName = txt("CloudStream"),
-    packageName = BuildConfig.APPLICATION_ID, //"com.lagradost.cloudstream3" or "com.lagradost.cloudstream3.prerelease"
-    intentClass = "com.lagradost.cloudstream3.ui.player.DownloadedPlayerActivity"
+class meelstreamPackage : OpenInAppAction(
+    appName = txt("meelstream"),
+    packageName = BuildConfig.APPLICATION_ID, //"com.lagradost.meelstream3" or "com.lagradost.meelstream3.prerelease"
+    intentClass = "com.lagradost.meelstream3.ui.player.DownloadedPlayerActivity"
 ) {
     override val oneSource: Boolean = false
 

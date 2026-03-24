@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -10,11 +10,11 @@ import android.provider.Settings
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.BuildConfig
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.ui.settings.Globals.PHONE
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.BuildConfig
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.ui.settings.Globals.PHONE
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
 
 private const val PACKAGE_NAME = BuildConfig.APPLICATION_ID
 private const val TAG = "PowerManagerAPI"

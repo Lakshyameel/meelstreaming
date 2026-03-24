@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.widget
+package com.lagradost.meelstream3.widget
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.logError
 import kotlin.math.abs
 import kotlin.math.min
 

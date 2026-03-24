@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.animation.ObjectAnimator
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.view.animation.DecelerateInterpolator
 import androidx.core.view.isInvisible
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.databinding.SubtitleOffsetItemBinding
-import com.lagradost.cloudstream3.utils.AppContextUtils
+import com.lagradost.meelstream3.databinding.SubtitleOffsetItemBinding
+import com.lagradost.meelstream3.utils.AppContextUtils
 import kotlin.math.roundToInt
 
 data class SubtitleCue(val startTimeMs: Long, val durationMs: Long, val text: List<String>) {

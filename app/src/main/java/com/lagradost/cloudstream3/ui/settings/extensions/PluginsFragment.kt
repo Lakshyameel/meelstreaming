@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings.extensions
+package com.lagradost.meelstream3.ui.settings.extensions
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,24 +8,24 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.Fragment
-import com.lagradost.cloudstream3.AllLanguagesName
-import com.lagradost.cloudstream3.BuildConfig
-import com.lagradost.cloudstream3.databinding.FragmentPluginsBinding
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.ui.home.HomeFragment.Companion.bindChips
-import com.lagradost.cloudstream3.ui.result.FOCUS_SELF
-import com.lagradost.cloudstream3.ui.result.setLinearListLayout
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
-import com.lagradost.cloudstream3.utils.AppContextUtils.getApiProviderLangSettings
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showMultiDialog
-import com.lagradost.cloudstream3.utils.SubtitleHelper.getNameNextToFlagEmoji
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.AllLanguagesName
+import com.lagradost.meelstream3.BuildConfig
+import com.lagradost.meelstream3.databinding.FragmentPluginsBinding
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.ui.home.HomeFragment.Companion.bindChips
+import com.lagradost.meelstream3.ui.result.FOCUS_SELF
+import com.lagradost.meelstream3.ui.result.setLinearListLayout
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
+import com.lagradost.meelstream3.utils.AppContextUtils.getApiProviderLangSettings
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showMultiDialog
+import com.lagradost.meelstream3.utils.SubtitleHelper.getNameNextToFlagEmoji
+import com.lagradost.meelstream3.utils.UIHelper.toPx
 
 const val PLUGINS_BUNDLE_NAME = "name"
 const val PLUGINS_BUNDLE_URL = "url"

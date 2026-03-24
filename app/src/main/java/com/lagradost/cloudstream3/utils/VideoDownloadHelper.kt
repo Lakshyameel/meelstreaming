@@ -1,8 +1,8 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.Score
-import com.lagradost.cloudstream3.TvType
+import com.lagradost.meelstream3.Score
+import com.lagradost.meelstream3.TvType
 object VideoDownloadHelper {
     abstract class DownloadCached(
         @JsonProperty("id") open val id: Int,

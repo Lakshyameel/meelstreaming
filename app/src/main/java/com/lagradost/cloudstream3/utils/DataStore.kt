@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -6,10 +6,10 @@ import androidx.preference.PreferenceManager
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.json.JsonMapper
 import com.fasterxml.jackson.module.kotlin.kotlinModule
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKeyClass
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKeyClass
-import com.lagradost.cloudstream3.mvvm.logError
+import com.lagradost.meelstream3.AcraApplication.Companion.getKeyClass
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKeyClass
+import com.lagradost.meelstream3.mvvm.logError
 import kotlin.reflect.KClass
 import kotlin.reflect.KProperty
 

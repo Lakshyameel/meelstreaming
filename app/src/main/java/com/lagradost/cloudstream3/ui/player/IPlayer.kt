@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.util.Rational
-import com.lagradost.cloudstream3.ui.subtitles.SaveCaptionStyle
-import com.lagradost.cloudstream3.utils.EpisodeSkip
-import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.ui.subtitles.SaveCaptionStyle
+import com.lagradost.meelstream3.utils.EpisodeSkip
+import com.lagradost.meelstream3.utils.ExtractorLink
 
 enum class PlayerEventType(val value: Int) {
     Pause(0),

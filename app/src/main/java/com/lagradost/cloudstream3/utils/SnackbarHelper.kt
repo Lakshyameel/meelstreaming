@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.app.Activity
 import android.view.View
@@ -6,9 +6,9 @@ import androidx.annotation.MainThread
 import androidx.annotation.StringRes
 import com.google.android.material.snackbar.Snackbar
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
 
 object SnackbarHelper {
 

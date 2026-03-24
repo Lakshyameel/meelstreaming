@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.account
+package com.lagradost.meelstream3.ui.account
 
 import android.graphics.Rect
 import android.view.View

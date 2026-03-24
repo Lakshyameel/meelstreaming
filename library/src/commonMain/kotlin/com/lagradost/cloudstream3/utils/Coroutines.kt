@@ -1,7 +1,7 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
-import com.lagradost.cloudstream3.mvvm.launchSafe
-import com.lagradost.cloudstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.launchSafe
+import com.lagradost.meelstream3.mvvm.logError
 import kotlinx.coroutines.*
 import java.util.Collections.synchronizedList
 

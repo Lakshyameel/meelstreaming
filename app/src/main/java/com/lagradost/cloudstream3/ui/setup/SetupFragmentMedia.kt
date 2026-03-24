@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.setup
+package com.lagradost.meelstream3.ui.setup
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,12 +10,12 @@ import androidx.core.util.forEach
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.databinding.FragmentSetupMediaBinding
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.databinding.FragmentSetupMediaBinding
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.UIHelper.fixPaddingStatusbar
 
 
 class SetupFragmentMedia : Fragment() {

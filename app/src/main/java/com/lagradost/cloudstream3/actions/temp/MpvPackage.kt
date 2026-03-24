@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.actions.temp
+package com.lagradost.meelstream3.actions.temp
 
 import android.app.Activity
 import android.content.Context
@@ -6,14 +6,14 @@ import android.content.Intent
 import android.net.Uri
 import androidx.core.net.toUri
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.actions.OpenInAppAction
-import com.lagradost.cloudstream3.actions.makeTempM3U8Intent
-import com.lagradost.cloudstream3.actions.updateDurationAndPosition
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getViewPos
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.actions.OpenInAppAction
+import com.lagradost.meelstream3.actions.makeTempM3U8Intent
+import com.lagradost.meelstream3.actions.updateDurationAndPosition
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.DataStoreHelper.getViewPos
+import com.lagradost.meelstream3.utils.ExtractorLinkType
 
 // https://github.com/mpv-android/mpv-android/blob/0eb3cdc6f1632636b9c30d52ec50e4b017661980/app/src/main/java/is/xyz/mpv/MPVActivity.kt#L904
 // https://mpv-android.github.io/mpv-android/intent.html

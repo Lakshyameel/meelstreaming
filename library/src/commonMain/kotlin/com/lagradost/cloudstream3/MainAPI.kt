@@ -4,23 +4,23 @@
     "MemberVisibilityCanBePrivate"
 )
 
-package com.lagradost.cloudstream3
+package com.lagradost.meelstream3
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.json.JsonMapper
 import com.fasterxml.jackson.module.kotlin.kotlinModule
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.syncproviders.SyncIdName
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
-import com.lagradost.cloudstream3.utils.Coroutines.mainWork
-import com.lagradost.cloudstream3.utils.Coroutines.threadSafeListOf
-import com.lagradost.cloudstream3.utils.SubtitleHelper.fromCodeToLangTagIETF
-import com.lagradost.cloudstream3.utils.SubtitleHelper.fromLanguageToTagIETF
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.syncproviders.SyncIdName
+import com.lagradost.meelstream3.utils.*
+import com.lagradost.meelstream3.utils.AppUtils.toJson
+import com.lagradost.meelstream3.utils.AppUtils.tryParseJson
+import com.lagradost.meelstream3.utils.Coroutines.mainWork
+import com.lagradost.meelstream3.utils.Coroutines.threadSafeListOf
+import com.lagradost.meelstream3.utils.SubtitleHelper.fromCodeToLangTagIETF
+import com.lagradost.meelstream3.utils.SubtitleHelper.fromLanguageToTagIETF
 import com.lagradost.nicehttp.RequestBodyTypes
 import okhttp3.Interceptor
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -41,7 +41,7 @@ import kotlin.math.roundToInt
 @Retention(AnnotationRetention.BINARY) // This is only an IDE hint, and will not be used in the runtime
 @RequiresOptIn(
     message = "This API is only available on prerelease builds. " +
-              "Using it will cause CloudStream stable to crash.",
+              "Using it will cause meelstream stable to crash.",
     level = RequiresOptIn.Level.ERROR
 )
 annotation class Prerelease
@@ -492,7 +492,7 @@ abstract class MainAPI {
 
     /**
      * The language as an IETF BCP 47 conformant tag.
-     * Check [com.lagradost.cloudstream3.utils.SubtitleHelper].
+     * Check [com.lagradost.meelstream3.utils.SubtitleHelper].
      *
      * See locales on:
      * https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-core/availableLocales.json

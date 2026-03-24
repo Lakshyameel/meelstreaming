@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.ui.library
+package com.lagradost.meelstream3.ui.library
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import com.lagradost.cloudstream3.R
+import com.lagradost.meelstream3.R
 
 class LoadingPosterAdapter(context: Context, private val itemCount: Int) :
     BaseAdapter() {

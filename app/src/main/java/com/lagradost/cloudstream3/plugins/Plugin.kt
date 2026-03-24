@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.plugins
+package com.lagradost.meelstream3.plugins
 
 import android.content.Context
 import android.content.res.Resources
 import android.util.Log
-import com.lagradost.cloudstream3.actions.VideoClickAction
-import com.lagradost.cloudstream3.actions.VideoClickActionHolder
+import com.lagradost.meelstream3.actions.VideoClickAction
+import com.lagradost.meelstream3.actions.VideoClickActionHolder
 import kotlin.Throws
 
 

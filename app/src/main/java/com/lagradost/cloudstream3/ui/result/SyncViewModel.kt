@@ -1,22 +1,22 @@
-package com.lagradost.cloudstream3.ui.result
+package com.lagradost.meelstream3.ui.result
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.lagradost.cloudstream3.Score
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.mvvm.Resource
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.throwAbleToResource
-import com.lagradost.cloudstream3.syncproviders.AccountManager
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.aniListApi
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.malApi
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.simklApi
-import com.lagradost.cloudstream3.syncproviders.SyncAPI
-import com.lagradost.cloudstream3.ui.SyncWatchType
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.SyncUtil
+import com.lagradost.meelstream3.Score
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.mvvm.Resource
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.throwAbleToResource
+import com.lagradost.meelstream3.syncproviders.AccountManager
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.aniListApi
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.malApi
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.simklApi
+import com.lagradost.meelstream3.syncproviders.SyncAPI
+import com.lagradost.meelstream3.ui.SyncWatchType
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.SyncUtil
 import java.util.*
 
 

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.actions.temp
+package com.lagradost.meelstream3.actions.temp
 
 import android.app.Activity
 import android.content.Context
@@ -6,15 +6,15 @@ import android.content.Intent
 import android.os.Build
 import androidx.core.net.toUri
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.actions.OpenInAppAction
-import com.lagradost.cloudstream3.actions.makeTempM3U8Intent
-import com.lagradost.cloudstream3.actions.updateDurationAndPosition
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.ui.subtitles.SUBTITLE_AUTO_SELECT_KEY
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getViewPos
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.actions.OpenInAppAction
+import com.lagradost.meelstream3.actions.makeTempM3U8Intent
+import com.lagradost.meelstream3.actions.updateDurationAndPosition
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.ui.subtitles.SUBTITLE_AUTO_SELECT_KEY
+import com.lagradost.meelstream3.utils.DataStoreHelper.getViewPos
 
 // https://github.com/videolan/vlc-android/blob/3706c4be2da6800b3d26344fc04fab03ffa4b860/application/vlc-android/src/org/videolan/vlc/gui/video/VideoPlayerActivity.kt#L1898
 // https://wiki.videolan.org/Android_Player_Intents/

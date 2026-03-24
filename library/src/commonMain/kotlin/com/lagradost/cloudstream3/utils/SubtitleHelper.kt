@@ -1,6 +1,6 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
-import com.lagradost.cloudstream3.Prerelease
+import com.lagradost.meelstream3.Prerelease
 import java.util.Locale
 
 // If you find a way to use SettingsGeneral getCurrentLocale()

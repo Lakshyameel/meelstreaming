@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.app.Activity
 import android.app.KeyguardManager
@@ -15,8 +15,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.getString
 import androidx.fragment.app.FragmentActivity
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.R
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.R
 
 object BiometricAuthenticator {
 

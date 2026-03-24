@@ -1,9 +1,9 @@
-package com.lagradost.cloudstream3.syncproviders
+package com.lagradost.meelstream3.syncproviders
 
 import androidx.annotation.WorkerThread
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities.SubtitleEntity
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities.SubtitleSearch
-import com.lagradost.cloudstream3.subtitles.SubtitleResource
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities.SubtitleEntity
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities.SubtitleSearch
+import com.lagradost.meelstream3.subtitles.SubtitleResource
 
 /**
  * Stateless subtitle class for external subtitles.

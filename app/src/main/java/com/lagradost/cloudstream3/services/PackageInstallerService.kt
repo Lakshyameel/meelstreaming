@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.services
+package com.lagradost.meelstream3.services
 
 import android.app.NotificationManager
 import android.app.Service
@@ -10,15 +10,15 @@ import android.os.IBinder
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.app.PendingIntentCompat
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.MainActivity.Companion.deleteFileOnExit
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.utils.ApkInstaller
-import com.lagradost.cloudstream3.utils.AppContextUtils.createNotificationChannel
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.MainActivity.Companion.deleteFileOnExit
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.utils.ApkInstaller
+import com.lagradost.meelstream3.utils.AppContextUtils.createNotificationChannel
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -64,7 +64,7 @@ class PackageInstallerService : Service() {
 
             // Delete all old updates
             ioSafe {
-                val appUpdateName = "CloudStream"
+                val appUpdateName = "meelstream"
                 val appUpdateSuffix = "apk"
 
                 this@PackageInstallerService.cacheDir.listFiles()?.filter {
@@ -173,7 +173,7 @@ class PackageInstallerService : Service() {
     companion object {
         private const val EXTRA_URL = "EXTRA_URL"
 
-        const val UPDATE_CHANNEL_ID = "cloudstream3.updates"
+        const val UPDATE_CHANNEL_ID = "meelstream3.updates"
         const val UPDATE_CHANNEL_NAME = "App Updates"
         const val UPDATE_CHANNEL_DESCRIPTION = "App updates notification channel"
         const val UPDATE_NOTIFICATION_ID = -68454136 // Random unique

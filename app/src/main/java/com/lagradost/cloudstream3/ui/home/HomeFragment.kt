@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.home
+package com.lagradost.meelstream3.ui.home
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -29,52 +29,52 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.chip.Chip
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.APIHolder.apis
-import com.lagradost.cloudstream3.AllLanguagesName
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.databinding.FragmentHomeBinding
-import com.lagradost.cloudstream3.databinding.HomeEpisodesExpandedBinding
-import com.lagradost.cloudstream3.databinding.HomeSelectMainpageBinding
-import com.lagradost.cloudstream3.databinding.TvtypesChipsBinding
-import com.lagradost.cloudstream3.mvvm.Resource
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.mvvm.observeNullable
-import com.lagradost.cloudstream3.ui.APIRepository.Companion.noneApi
-import com.lagradost.cloudstream3.ui.APIRepository.Companion.randomApi
-import com.lagradost.cloudstream3.ui.account.AccountHelper.showAccountSelectLinear
-import com.lagradost.cloudstream3.ui.account.AccountViewModel
-import com.lagradost.cloudstream3.ui.search.SEARCH_ACTION_LOAD
-import com.lagradost.cloudstream3.ui.search.SEARCH_ACTION_PLAY_FILE
-import com.lagradost.cloudstream3.ui.search.SearchAdapter
-import com.lagradost.cloudstream3.ui.search.SearchHelper.handleSearchClickCallback
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.PHONE
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.AppContextUtils.filterProviderByPreferredMedia
-import com.lagradost.cloudstream3.utils.AppContextUtils.getApiProviderLangSettings
-import com.lagradost.cloudstream3.utils.AppContextUtils.isNetworkAvailable
-import com.lagradost.cloudstream3.utils.AppContextUtils.isRecyclerScrollable
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadSearchResult
-import com.lagradost.cloudstream3.utils.AppContextUtils.ownHide
-import com.lagradost.cloudstream3.utils.AppContextUtils.ownShow
-import com.lagradost.cloudstream3.utils.AppContextUtils.setDefaultFocus
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.Event
-import com.lagradost.cloudstream3.utils.SubtitleHelper.getFlagFromIso
-import com.lagradost.cloudstream3.utils.TvChannelUtils
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
-import com.lagradost.cloudstream3.utils.UIHelper.getSpanCount
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
-import com.lagradost.cloudstream3.utils.UIHelper.popupMenuNoIconsAndNoStringRes
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.APIHolder.apis
+import com.lagradost.meelstream3.AllLanguagesName
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.MainAPI
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.databinding.FragmentHomeBinding
+import com.lagradost.meelstream3.databinding.HomeEpisodesExpandedBinding
+import com.lagradost.meelstream3.databinding.HomeSelectMainpageBinding
+import com.lagradost.meelstream3.databinding.TvtypesChipsBinding
+import com.lagradost.meelstream3.mvvm.Resource
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.mvvm.observeNullable
+import com.lagradost.meelstream3.ui.APIRepository.Companion.noneApi
+import com.lagradost.meelstream3.ui.APIRepository.Companion.randomApi
+import com.lagradost.meelstream3.ui.account.AccountHelper.showAccountSelectLinear
+import com.lagradost.meelstream3.ui.account.AccountViewModel
+import com.lagradost.meelstream3.ui.search.SEARCH_ACTION_LOAD
+import com.lagradost.meelstream3.ui.search.SEARCH_ACTION_PLAY_FILE
+import com.lagradost.meelstream3.ui.search.SearchAdapter
+import com.lagradost.meelstream3.ui.search.SearchHelper.handleSearchClickCallback
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.PHONE
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.AppContextUtils.filterProviderByPreferredMedia
+import com.lagradost.meelstream3.utils.AppContextUtils.getApiProviderLangSettings
+import com.lagradost.meelstream3.utils.AppContextUtils.isNetworkAvailable
+import com.lagradost.meelstream3.utils.AppContextUtils.isRecyclerScrollable
+import com.lagradost.meelstream3.utils.AppContextUtils.loadSearchResult
+import com.lagradost.meelstream3.utils.AppContextUtils.ownHide
+import com.lagradost.meelstream3.utils.AppContextUtils.ownShow
+import com.lagradost.meelstream3.utils.AppContextUtils.setDefaultFocus
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.Event
+import com.lagradost.meelstream3.utils.SubtitleHelper.getFlagFromIso
+import com.lagradost.meelstream3.utils.TvChannelUtils
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.utils.UIHelper.getSpanCount
+import com.lagradost.meelstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.utils.UIHelper.popupMenuNoIconsAndNoStringRes
+import com.lagradost.meelstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.utils.txt
 
 
 private const val TAG = "HomeFragment"
@@ -815,7 +815,7 @@ class HomeFragment : Fragment() {
                         homeLoadingError.isVisible = true
                         homeMasterRecycler.isVisible = false
 
-                        // Based on https://github.com/recloudstream/cloudstream/pull/1438
+                        // Based on https://github.com/remeelstream/meelstream/pull/1438
                         val hasNoNetworkConnection = context?.isNetworkAvailable() == false
                         val isNetworkError = data.isNetworkError
 

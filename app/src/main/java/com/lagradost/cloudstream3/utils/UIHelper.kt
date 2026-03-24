@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -57,21 +57,21 @@ import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipDrawable
 import com.google.android.material.chip.ChipGroup
-import com.lagradost.cloudstream3.AcraApplication.Companion.context
-import com.lagradost.cloudstream3.CommonActivity
-import com.lagradost.cloudstream3.CommonActivity.activity
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.settings.Globals
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.AcraApplication.Companion.context
+import com.lagradost.meelstream3.CommonActivity
+import com.lagradost.meelstream3.CommonActivity.activity
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.settings.Globals
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.UIHelper.navigate
 import kotlinx.coroutines.delay
 import kotlin.math.roundToInt
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.disableBackPressedCallback
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.enableBackPressedCallback
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.disableBackPressedCallback
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.enableBackPressedCallback
 
 object UIHelper {
     val Int.toPx: Int get() = (this * Resources.getSystem().displayMetrics.density).toInt()

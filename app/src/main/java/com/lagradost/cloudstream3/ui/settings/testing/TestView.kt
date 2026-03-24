@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings.testing
+package com.lagradost.meelstream3.ui.settings.testing
 
 import android.content.Context
 import android.util.AttributeSet
@@ -12,8 +12,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.core.widget.ContentLoadingProgressBar
 import com.google.android.material.button.MaterialButton
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.utils.AppContextUtils.animateProgressTo
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.utils.AppContextUtils.animateProgressTo
 
 class TestView @JvmOverloads constructor(
     context: Context,

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.actions.temp.fcast
+package com.lagradost.meelstream3.actions.temp.fcast
 
 import android.content.Context
 import android.net.nsd.NsdManager
@@ -7,8 +7,8 @@ import android.net.nsd.NsdServiceInfo
 import android.os.Build
 import android.os.ext.SdkExtensions
 import android.util.Log
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
 
 class FcastManager {
     private var nsdManager: NsdManager? = null
@@ -151,7 +151,7 @@ class FcastManager {
     }
 
     companion object {
-        const val APP_PREFIX = "CloudStream"
+        const val APP_PREFIX = "meelstream"
         private val _currentDevices: MutableList<PublicDeviceInfo> = mutableListOf()
         val currentDevices: List<PublicDeviceInfo> = _currentDevices
 

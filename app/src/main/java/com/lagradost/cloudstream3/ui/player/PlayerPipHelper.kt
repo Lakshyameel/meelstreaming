@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.app.Activity
 import android.app.PendingIntent
@@ -10,8 +10,8 @@ import android.os.Build
 import android.util.Rational
 import androidx.annotation.RequiresApi
 import androidx.annotation.StringRes
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.safe
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.safe
 import kotlin.math.roundToInt
 
 class PlayerPipHelper {

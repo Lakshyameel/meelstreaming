@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.setup
+package com.lagradost.meelstream3.ui.setup
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,17 +7,17 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.lagradost.cloudstream3.APIHolder.apis
-import com.lagradost.cloudstream3.MainActivity.Companion.afterRepositoryLoadedEvent
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.FragmentSetupExtensionsBinding
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.plugins.RepositoryManager
-import com.lagradost.cloudstream3.plugins.RepositoryManager.PREBUILT_REPOSITORIES
-import com.lagradost.cloudstream3.ui.settings.extensions.PluginsViewModel
-import com.lagradost.cloudstream3.ui.settings.extensions.RepoAdapter
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
+import com.lagradost.meelstream3.APIHolder.apis
+import com.lagradost.meelstream3.MainActivity.Companion.afterRepositoryLoadedEvent
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.FragmentSetupExtensionsBinding
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.plugins.RepositoryManager
+import com.lagradost.meelstream3.plugins.RepositoryManager.PREBUILT_REPOSITORIES
+import com.lagradost.meelstream3.ui.settings.extensions.PluginsViewModel
+import com.lagradost.meelstream3.ui.settings.extensions.RepoAdapter
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.UIHelper.fixPaddingStatusbar
 
 
 class SetupFragmentExtensions : Fragment() {

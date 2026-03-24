@@ -1,8 +1,8 @@
-package com.lagradost.cloudstream3.mvvm
+package com.lagradost.meelstream3.mvvm
 
 import com.lagradost.api.BuildConfig
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.ErrorLoadingException
+import com.lagradost.meelstream3.ErrorLoadingException
 import kotlinx.coroutines.*
 import java.io.InterruptedIOException
 import java.net.SocketTimeoutException

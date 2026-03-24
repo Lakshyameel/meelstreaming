@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings.extensions
+package com.lagradost.meelstream3.ui.settings.extensions
 
 import android.content.ClipboardManager
 import android.content.Context
@@ -18,26 +18,26 @@ import androidx.core.view.marginTop
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.MainActivity.Companion.afterRepositoryLoadedEvent
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.AddRepoInputBinding
-import com.lagradost.cloudstream3.databinding.FragmentExtensionsBinding
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.mvvm.observeNullable
-import com.lagradost.cloudstream3.plugins.RepositoryManager
-import com.lagradost.cloudstream3.ui.result.FOCUS_SELF
-import com.lagradost.cloudstream3.ui.result.setLinearListLayout
-import com.lagradost.cloudstream3.utils.setText
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
-import com.lagradost.cloudstream3.utils.AppContextUtils.addRepositoryDialog
-import com.lagradost.cloudstream3.utils.AppContextUtils.setDefaultFocus
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.MainActivity.Companion.afterRepositoryLoadedEvent
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.AddRepoInputBinding
+import com.lagradost.meelstream3.databinding.FragmentExtensionsBinding
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.mvvm.observeNullable
+import com.lagradost.meelstream3.plugins.RepositoryManager
+import com.lagradost.meelstream3.ui.result.FOCUS_SELF
+import com.lagradost.meelstream3.ui.result.setLinearListLayout
+import com.lagradost.meelstream3.utils.setText
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
+import com.lagradost.meelstream3.utils.AppContextUtils.addRepositoryDialog
+import com.lagradost.meelstream3.utils.AppContextUtils.setDefaultFocus
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
 
 class ExtensionsFragment : Fragment() {
     var binding: FragmentExtensionsBinding? = null

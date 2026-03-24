@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.services
+package com.lagradost.meelstream3.services
 
 import android.content.Context
 import android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC
@@ -11,13 +11,13 @@ import androidx.work.ForegroundInfo
 import androidx.work.PeriodicWorkRequest
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.utils.AppContextUtils.createNotificationChannel
-import com.lagradost.cloudstream3.utils.BackupUtils
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.utils.AppContextUtils.createNotificationChannel
+import com.lagradost.meelstream3.utils.BackupUtils
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
 import java.util.concurrent.TimeUnit
 
-const val BACKUP_CHANNEL_ID = "cloudstream3.backups"
+const val BACKUP_CHANNEL_ID = "meelstream3.backups"
 const val BACKUP_WORK_NAME = "work_backup"
 const val BACKUP_CHANNEL_NAME = "Backups"
 const val BACKUP_CHANNEL_DESCRIPTION = "Notifications for background backups"
@@ -75,7 +75,7 @@ class BackupWorkManager(val context: Context, workerParams: WorkerParameters) :
             .setContentTitle(context.getString(R.string.pref_category_backup))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setColor(context.colorFromAttribute(R.attr.colorPrimary))
-            .setSmallIcon(R.drawable.ic_cloudstream_monochrome_big)
+            .setSmallIcon(R.drawable.ic_meelstream_monochrome_big)
 
     override suspend fun doWork(): Result {
         context.createNotificationChannel(

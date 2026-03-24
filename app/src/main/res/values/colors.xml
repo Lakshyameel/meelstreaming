@@ -1,113 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#3d50fa</color>
-    <color name="colorPrimarySecond">@color/colorPrimary</color>
-    <color name="colorSearch">#303135</color> <!--#3444D1 @color/itemBackground-->
-    <color name="colorOngoing">#F53B66</color> <!--FF8181-->
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#3b65f5</color> <!-- 818fff-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meel_home_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryGrayBackground"
+    tools:context=".ui.home.HomeFragment">
 
-    <color name="primaryGrayBackground">#2B2C30</color> <!--0f0f10 0E0E10 303135 2B2C30-->
-    <color name="primaryBlackBackground">#111111</color> <!--1C1C20 191a1f 19181E 202125 1C1C20-->
-    <color name="iconGrayBackground">#1C1C20</color> <!--141419 202125-->
-    <color name="boxItemBackground">#161616</color> <!-- 17171B 1B1B20-->
+    <FrameLayout
+        android:id="@+id/meel_home_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
 
-    <color name="textColor">#e9eaee</color> <!--FFF-->
-    <color name="grayTextColor">#9ba0a4</color> <!-- 5e5f62-->
-    <color name="grayShimmer">#DCDCDC</color> <!-- 5e5f62-->
+        <ProgressBar
+            android:id="@+id/meel_main_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="gone" />
 
-    <color name="searchColorTransparent">#1AFFFFFF</color> <!--DADADA-->
-    <color name="transparent">#00000000</color>
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/meel_home_loading_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            app:shimmer_auto_start="true"
+            app:shimmer_base_alpha="0.2"
+            app:shimmer_duration="@integer/loading_time"
+            app:shimmer_highlight_alpha="0.3">
 
-    <color name="white">#FFF</color>
-    <color name="black">#000</color>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <color name="whiteText">#FFF</color>
-    <color name="blackText">#000</color>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-    <color name="progressBackgroundColor">#1AFFFFFF</color>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="125dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/loading_margin"
+                        android:background="@color/grayShimmer"
+                        android:translationX="-164dp"
+                        app:cardCornerRadius="@dimen/loading_radius" />
 
-    <color name="dubColorText">#121950</color> <!--3b65f5 f18c82 8294F1-->
-    <color name="amoledModeLight">#121213</color>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="148dp"
+                        android:layout_height="234dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/loading_margin"
+                        android:background="@color/grayShimmer"
+                        app:cardCornerRadius="@dimen/loading_radius" />
 
-    <color name="dubColorBg">#3B65F5</color>
-    <color name="subColorText">#571711</color> <!--F53B66 FA3D79-->
-    <color name="subColorBg">#F53B66</color>
-    <color name="typeColorText">#BEC8FF</color>
-    <color name="typeColorBg">#3700B3</color>
-    <!--
-    <color name="ratingColor">#4C3115</color>
-    <color name="ratingColorBg">#FFA662</color>
-    -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="125dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/loading_margin"
+                        android:background="@color/grayShimmer"
+                        android:translationX="164dp"
+                        app:cardCornerRadius="@dimen/loading_radius" />
+                </FrameLayout>
 
-    <color name="adultColor">#FF6F63</color> <!-- same as sub color -->
+                <include layout="@layout/loading_line_short_center" />
 
-    <color name="video_ripple">#80FFFFFF</color>
-    <color name="video_button_ripple">#32FFFFFF</color>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/result_padding"
+                    android:orientation="vertical">
+                    <include layout="@layout/loading_list" />
+                    <include layout="@layout/loading_list" />
+                    <include layout="@layout/loading_list" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
 
-    <color name="black_overlay">#66000000</color>
-    <color name="darkBarTransparent">#C0121212</color>
-    <color name="skipOpTransparent">#4D121212</color>
-    <color name="darkBar">#121212</color>
-    <color name="videoProgress">#66B5B5B5</color> <!--66B5B5B5-->
-    <!--<color name="videoCache">#663D50FA</color>--> <!--66B5B5B5-->
+        <LinearLayout
+            android:id="@+id/meel_home_api_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@color/transparent"
+            android:orientation="horizontal"
+            android:visibility="gone">
 
-    <color name="iconColor">#9ba0a6</color>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/meel_home_change_api"
+                style="@style/RegularButtonTV"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/player_button_tv_attr_no_bg" />
 
-    <!-- <color name="usedStorageColor">?attr/white</color>#fff-->
-    <!-- <color name="freeStorageColor">?attr/grayTextColor</color> #676767-->
+            <ImageView
+                android:id="@+id/meel_home_reload_provider"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_refresh"
+                app:tint="@color/colorPrimary" />
 
-    <!--Light Mode -->
-    <color name="lightPrimaryGrayBackground">#f1f1f1</color>
-    <color name="lightBitDarkerGrayBackground">#fff</color>
-    <color name="lightGrayBackground">#eeeeee</color>
-    <color name="lightItemBackground">#eeeeee</color>
-    <color name="lightTextColor">#202125</color>
-    <color name="lightGrayTextColor">#5f6267</color>
-    <color name="lightIconColor">#5f6267</color>
+            <ImageView
+                android:id="@+id/meel_home_search_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/search_icon"
+                app:tint="@color/white" />
 
-    <!--Dracula Theme-->
-    <color name="DraculaPrimaryGrayBackground">#414450</color>
-    <color name="DraculaBitDarkerGrayBackground">#282a36</color>
-    <color name="DraculaGrayBackground">#44475A</color>
-    <color name="DraculaItemBackground">#373844</color>
-    <color name="DraculaTextColor">#F8F8F2</color>
-    <color name="DraculaGrayTextColor">#6272A4</color>
-    <color name="DraculaIconColor">#6272A4</color>
+            <ImageView
+                android:id="@+id/meel_home_switch_account"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_outline_account_circle_24"
+                app:tint="@color/white" />
+        </LinearLayout>
+    </FrameLayout>
 
-    <!-- Lavender Dreams Theme -->
-    <color name="LavenderPrimaryGrayBackground">#f7eefc</color>
-    <color name="LavenderBitDarkerGrayBackground">#fdf0fb</color>
-    <color name="LavenderGrayBackground">#b794f6</color>
-    <color name="LavenderItemBackground">#f8f5ff</color>
-    <color name="LavenderTextColor">#2d1b47</color>
-    <color name="LavenderGrayTextColor">#9ab3ff</color>
-    <color name="LavenderIconColor">#7c3aed</color>
+    <LinearLayout
+        android:id="@+id/meel_home_loading_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
 
-    <!--Other Colors -->
-    <color name="colorPrimaryBlue">#5664B7</color>
-    <color name="colorPrimaryRed">#D50000</color>
-    <color name="colorPrimaryPurple">#6200EA</color> <!-- Burple-->
-    <color name="colorPrimaryGreen">#00BFA5</color>
-    <color name="colorPrimaryGreenApple">#48E484</color>
-    <color name="colorPrimaryBanana">#E4D448</color>
-    <color name="colorPrimaryParty">#ea596e</color>
-    <color name="colorPrimaryPink">#ff1493</color>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/meel_home_reload_button"
+            style="@style/WhiteButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:minWidth="200dp"
+            android:text="@string/reload_error"
+            app:icon="@drawable/ic_baseline_autorenew_24" />
 
-    <color name="colorPrimaryCarnationPink">#BD5DA5</color>
-    <color name="colorPrimaryDarkGreen">#004500</color>
-    <color name="colorPrimaryMaroon">#451010</color>
-    <color name="colorPrimaryNavyBlue">#000080</color>
-    <color name="colorPrimaryGrey">#515151</color>
-    <color name="colorPrimaryWhite">#FFFFFF</color>
-    <color name="colorPrimaryBrown">#622C00</color>
-    <color name="colorPrimaryOrange">#CE8500</color>
-    <color name="colorPrimaryDandelionYellow">#F5BB00</color>
-    <color name="colorPrimaryCoolBlue">#408cac</color>
-    <color name="colorPrimaryLavender">#6F55AF</color>
+        <TextView
+            android:id="@+id/meel_result_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/textColor" />
+    </LinearLayout>
 
-    <color name="colorTestPass">#48E484</color>
-    <color name="colorTestFail">#ea596e</color>
-    <color name="colorTestWarning">#FF9800</color>
-    <color name="playIconBackground">#B3000000</color>
-</resources>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/meel_home_master_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="afterDescendants"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/homepage_parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/meel_home_api_fab"
+        style="@style/ExtendedFloatingActionButton"
+        android:text="@string/home_source"
+        android:textColor="@color/textColor"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@drawable/ic_baseline_filter_list_24"
+        tools:visibility="visible" />
+
+</FrameLayout>

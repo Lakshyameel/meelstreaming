@@ -53,7 +53,7 @@
 
         <meta-data
             android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
-            android:value="com.lagradost.cloudstream3.utils.CastOptionsProvider" />
+            android:value="com.lagradost.meelstream3.utils.CastOptionsProvider" />
 
         <profileable
             android:shell="true"
@@ -66,7 +66,7 @@
             android:resizeableActivity="true"
             android:screenOrientation="userLandscape"
             android:supportsPictureInPicture="true"
-            android:taskAffinity="com.lagradost.cloudstream3.downloadedplayer"
+            android:taskAffinity="com.lagradost.meelstream3.downloadedplayer"
             android:launchMode="singleTask"
             tools:ignore="DiscouragedApi">
             <intent-filter>
@@ -119,14 +119,14 @@
             android:resizeableActivity="true"
             android:supportsPictureInPicture="true">
 
-            <!-- cloudstreamplayer://encodedUrl?name=Dune -->
+            <!-- meelstreamplayer://encodedUrl?name=Dune -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="cloudstreamplayer" />
+                <data android:scheme="meelstreamplayer" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -134,7 +134,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="cloudstreamapp" />
+                <data android:scheme="meelstreamapp" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -142,7 +142,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="cloudstreamrepo" />
+                <data android:scheme="meelstreamrepo" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -152,18 +152,18 @@
 
                 <data android:scheme="csshare" />
             </intent-filter>
-            <!-- Allow searching with intents: cloudstreamsearch://Your%20Name -->
+            <!-- Allow searching with intents: meelstreamsearch://Your%20Name -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="cloudstreamsearch" />
+                <data android:scheme="meelstreamsearch" />
             </intent-filter>
 
             <!--
-            Allow opening from continue watching with intents: cloudstreamsearch://1234
+            Allow opening from continue watching with intents: meelstreamsearch://1234
             Used on Android TV Watch Next
              -->
             <intent-filter>
@@ -172,7 +172,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="cloudstreamcontinuewatching" />
+                <data android:scheme="meelstreamcontinuewatching" />
             </intent-filter>
 
             <intent-filter>

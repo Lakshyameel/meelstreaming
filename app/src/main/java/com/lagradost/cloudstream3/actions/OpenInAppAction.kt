@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.actions
+package com.lagradost.meelstream3.actions
 
 import android.app.Activity
 import android.content.ComponentName
@@ -6,17 +6,17 @@ import android.content.Context
 import android.content.Intent
 import androidx.core.content.FileProvider
 import androidx.core.net.toUri
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.ui.result.ResultFragment
-import com.lagradost.cloudstream3.utils.UiText
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.AppContextUtils.isAppInstalled
-import com.lagradost.cloudstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.ui.result.ResultFragment
+import com.lagradost.meelstream3.utils.UiText
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.AppContextUtils.isAppInstalled
+import com.lagradost.meelstream3.utils.DataStoreHelper
 import java.io.File
 
 fun updateDurationAndPosition(position: Long, duration: Long) {

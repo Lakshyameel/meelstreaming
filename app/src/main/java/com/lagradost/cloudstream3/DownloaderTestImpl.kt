@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3
+package com.lagradost.meelstream3
 
 import okhttp3.OkHttpClient
 import okhttp3.RequestBody

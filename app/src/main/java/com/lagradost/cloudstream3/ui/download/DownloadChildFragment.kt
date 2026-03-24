@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.download
+package com.lagradost.meelstream3.ui.download
 
 import android.os.Bundle
 import android.os.Handler
@@ -10,19 +10,19 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.FragmentChildDownloadsBinding
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.ui.download.DownloadButtonSetup.handleDownloadClick
-import com.lagradost.cloudstream3.ui.result.FOCUS_SELF
-import com.lagradost.cloudstream3.ui.result.setLinearListLayout
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.PHONE
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.detachBackPressedCallback
-import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
-import com.lagradost.cloudstream3.utils.UIHelper.setAppBarNoScrollFlagsOnTV
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.FragmentChildDownloadsBinding
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.ui.download.DownloadButtonSetup.handleDownloadClick
+import com.lagradost.meelstream3.ui.result.FOCUS_SELF
+import com.lagradost.meelstream3.ui.result.setLinearListLayout
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.PHONE
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.detachBackPressedCallback
+import com.lagradost.meelstream3.utils.UIHelper.fixPaddingStatusbar
+import com.lagradost.meelstream3.utils.UIHelper.setAppBarNoScrollFlagsOnTV
 
 class DownloadChildFragment : Fragment() {
     private lateinit var downloadsViewModel: DownloadViewModel

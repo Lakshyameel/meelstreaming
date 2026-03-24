@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 open class VidhideExtractor : VidHidePro() {
     override var name = "VidHide"

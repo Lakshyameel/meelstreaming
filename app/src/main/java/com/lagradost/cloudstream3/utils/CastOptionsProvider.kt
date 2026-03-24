@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.content.Context
 import com.google.android.gms.cast.CastMediaControlIntent
@@ -8,8 +8,8 @@ import com.google.android.gms.cast.framework.SessionProvider
 import com.google.android.gms.cast.framework.media.CastMediaOptions
 import com.google.android.gms.cast.framework.media.MediaIntentReceiver
 import com.google.android.gms.cast.framework.media.NotificationOptions
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.ui.ControllerActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.ui.ControllerActivity
 import java.util.*
 
 class CastOptionsProvider : OptionsProvider {

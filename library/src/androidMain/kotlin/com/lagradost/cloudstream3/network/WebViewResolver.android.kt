@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.network
+package com.lagradost.meelstream3.network
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,13 +8,13 @@ import android.os.Looper
 import android.webkit.*
 import com.lagradost.api.Log
 import com.lagradost.api.getContext
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.debugException
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.Coroutines.mainWork
-import com.lagradost.cloudstream3.utils.Coroutines.threadSafeListOf
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.debugException
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.Coroutines.mainWork
+import com.lagradost.meelstream3.utils.Coroutines.threadSafeListOf
 import com.lagradost.nicehttp.requestCreator
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking

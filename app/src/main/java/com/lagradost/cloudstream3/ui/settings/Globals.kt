@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.ui.settings
+package com.lagradost.meelstream3.ui.settings
 
 import android.app.UiModeManager
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Build
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.R
+import com.lagradost.meelstream3.R
 
 object Globals {
     var beneneCount = 0

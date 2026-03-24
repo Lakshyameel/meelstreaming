@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.download.button
+package com.lagradost.meelstream3.ui.download.button
 
 import android.content.Context
 import android.os.Looper
@@ -12,20 +12,20 @@ import androidx.annotation.MainThread
 import androidx.core.content.ContextCompat
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKey
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_DELETE_FILE
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_DOWNLOAD
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_LONG_CLICK
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_PAUSE_DOWNLOAD
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_PLAY_FILE
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_RESUME_DOWNLOAD
-import com.lagradost.cloudstream3.ui.download.DownloadClickEvent
-import com.lagradost.cloudstream3.utils.UIHelper.popupMenuNoIcons
-import com.lagradost.cloudstream3.utils.VideoDownloadHelper
-import com.lagradost.cloudstream3.utils.VideoDownloadManager
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.KEY_RESUME_PACKAGES
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKey
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_DELETE_FILE
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_DOWNLOAD
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_LONG_CLICK
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_PAUSE_DOWNLOAD
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_PLAY_FILE
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_RESUME_DOWNLOAD
+import com.lagradost.meelstream3.ui.download.DownloadClickEvent
+import com.lagradost.meelstream3.utils.UIHelper.popupMenuNoIcons
+import com.lagradost.meelstream3.utils.VideoDownloadHelper
+import com.lagradost.meelstream3.utils.VideoDownloadManager
+import com.lagradost.meelstream3.utils.VideoDownloadManager.KEY_RESUME_PACKAGES
 
 open class PieFetchButton(context: Context, attributeSet: AttributeSet) :
     BaseFetchButton(context, attributeSet) {

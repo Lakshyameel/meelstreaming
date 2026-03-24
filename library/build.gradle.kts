@@ -29,7 +29,7 @@ kotlin {
 
     sourceSets {
         all {
-            languageSettings.optIn("com.lagradost.cloudstream3.Prerelease")
+            languageSettings.optIn("com.lagradost.meelstream3.Prerelease")
         }
 
         commonMain.dependencies {
@@ -81,7 +81,7 @@ android {
         minSdk = libs.versions.minSdk.get().toInt()
     }
 
-    // If this is the same com.lagradost.cloudstream3.R stops working
+    // If this is the same com.lagradost.meelstream3.R stops working
     namespace = "com.lagradost.api"
 
     compileOptions {
@@ -119,7 +119,7 @@ dokka {
 
             sourceLink {
                 localDirectory = file("..")
-                remoteUrl("https://github.com/recloudstream/cloudstream/tree/master")
+                remoteUrl("https://github.com/remeelstream/meelstream/tree/master")
                 remoteLineSuffix = "#L"
             }
         }

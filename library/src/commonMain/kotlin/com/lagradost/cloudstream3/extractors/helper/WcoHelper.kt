@@ -1,7 +1,7 @@
-package com.lagradost.cloudstream3.extractors.helper
+package com.lagradost.meelstream3.extractors.helper
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.app
+import com.lagradost.meelstream3.app
 
 class WcoHelper {
     companion object {
@@ -27,7 +27,7 @@ class WcoHelper {
         private var newKeys: NewExternalKeys? = null
         private suspend fun getKeys() {
             keys = keys
-                ?: app.get("https://raw.githubusercontent.com/reduplicated/Cloudstream/master/docs/keys.json")
+                ?: app.get("https://raw.githubusercontent.com/reduplicated/meelstream/master/docs/keys.json")
                     .parsedSafe<ExternalKeys>()
         }
 

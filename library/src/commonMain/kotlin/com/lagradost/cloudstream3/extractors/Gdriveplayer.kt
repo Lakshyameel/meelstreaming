@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.extractors.helper.AesHelper.cryptoAESHandler
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
+import com.lagradost.meelstream3.*
+import com.lagradost.meelstream3.extractors.helper.AesHelper.cryptoAESHandler
+import com.lagradost.meelstream3.utils.*
+import com.lagradost.meelstream3.utils.AppUtils.tryParseJson
 import org.jsoup.nodes.Element
 
 class DatabaseGdrive2 : Gdriveplayer() {

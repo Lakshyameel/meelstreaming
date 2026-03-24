@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.content.ComponentName
 import android.content.ContentUris
@@ -9,13 +9,13 @@ import android.util.Log
 import androidx.tvprovider.media.tv.Channel
 import androidx.tvprovider.media.tv.PreviewProgram
 import androidx.tvprovider.media.tv.TvContractCompat
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.base64Encode
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING_SHARE
-import com.lagradost.cloudstream3.utils.DataStore.getKey
-import com.lagradost.cloudstream3.utils.DataStore.setKey
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.base64Encode
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING_SHARE
+import com.lagradost.meelstream3.utils.DataStore.getKey
+import com.lagradost.meelstream3.utils.DataStore.setKey
 import java.net.URLEncoder
 
 const val PROGRAM_ID_LIST_KEY = "persistent_program_ids"
@@ -142,7 +142,7 @@ object TvChannelUtils {
             .setAppLinkIconUri(iconUri)
             .setDisplayName(context.getString(R.string.app_name))
             .setAppLinkIntent(Intent(Intent.ACTION_VIEW).apply {
-                data = Uri.parse("cloudstreamapp://open")
+                data = Uri.parse("meelstreamapp://open")
             })
             .setInputId(inputId)
             .build()

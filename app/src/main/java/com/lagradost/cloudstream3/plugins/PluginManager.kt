@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.plugins
+package com.lagradost.meelstream3.plugins
 
 import android.Manifest
 import android.app.Activity
@@ -18,42 +18,42 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.fragment.app.FragmentActivity
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.APIHolder
-import com.lagradost.cloudstream3.APIHolder.removePluginMapping
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.AllLanguagesName
-import com.lagradost.cloudstream3.AutoDownloadMode
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.MainAPI.Companion.settingsForProvider
-import com.lagradost.cloudstream3.MainActivity.Companion.afterPluginsLoadedEvent
-import com.lagradost.cloudstream3.PROVIDER_STATUS_DOWN
-import com.lagradost.cloudstream3.PROVIDER_STATUS_OK
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.actions.VideoClickAction
-import com.lagradost.cloudstream3.actions.VideoClickActionHolder
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.mvvm.debugPrint
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.plugins.RepositoryManager.ONLINE_PLUGINS_FOLDER
-import com.lagradost.cloudstream3.plugins.RepositoryManager.PREBUILT_REPOSITORIES
-import com.lagradost.cloudstream3.plugins.RepositoryManager.downloadPluginToFile
-import com.lagradost.cloudstream3.plugins.RepositoryManager.getRepoPlugins
-import com.lagradost.cloudstream3.ui.settings.extensions.REPOSITORIES_KEY
-import com.lagradost.cloudstream3.ui.settings.extensions.RepositoryData
-import com.lagradost.cloudstream3.utils.AppContextUtils.getApiProviderLangSettings
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
-import com.lagradost.cloudstream3.utils.UiText
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.sanitizeFilename
-import com.lagradost.cloudstream3.utils.extractorApis
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.APIHolder
+import com.lagradost.meelstream3.APIHolder.removePluginMapping
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.AllLanguagesName
+import com.lagradost.meelstream3.AutoDownloadMode
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.MainAPI
+import com.lagradost.meelstream3.MainAPI.Companion.settingsForProvider
+import com.lagradost.meelstream3.MainActivity.Companion.afterPluginsLoadedEvent
+import com.lagradost.meelstream3.PROVIDER_STATUS_DOWN
+import com.lagradost.meelstream3.PROVIDER_STATUS_OK
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.actions.VideoClickAction
+import com.lagradost.meelstream3.actions.VideoClickActionHolder
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.mvvm.debugPrint
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.plugins.RepositoryManager.ONLINE_PLUGINS_FOLDER
+import com.lagradost.meelstream3.plugins.RepositoryManager.PREBUILT_REPOSITORIES
+import com.lagradost.meelstream3.plugins.RepositoryManager.downloadPluginToFile
+import com.lagradost.meelstream3.plugins.RepositoryManager.getRepoPlugins
+import com.lagradost.meelstream3.ui.settings.extensions.REPOSITORIES_KEY
+import com.lagradost.meelstream3.ui.settings.extensions.RepositoryData
+import com.lagradost.meelstream3.utils.AppContextUtils.getApiProviderLangSettings
+import com.lagradost.meelstream3.utils.AppUtils.parseJson
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.utils.UiText
+import com.lagradost.meelstream3.utils.VideoDownloadManager.sanitizeFilename
+import com.lagradost.meelstream3.utils.extractorApis
+import com.lagradost.meelstream3.utils.txt
 import dalvik.system.PathClassLoader
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -64,7 +64,7 @@ import java.io.InputStreamReader
 const val PLUGINS_KEY = "PLUGINS_KEY"
 const val PLUGINS_KEY_LOCAL = "PLUGINS_KEY_LOCAL"
 
-const val EXTENSIONS_CHANNEL_ID = "cloudstream3.extensions"
+const val EXTENSIONS_CHANNEL_ID = "meelstream3.extensions"
 const val EXTENSIONS_CHANNEL_NAME = "Extensions"
 const val EXTENSIONS_CHANNEL_DESCRIPT = "Extension notification channel"
 
@@ -174,7 +174,7 @@ object PluginManager {
     }
 
     private val CLOUD_STREAM_FOLDER =
-        Environment.getExternalStorageDirectory().absolutePath + "/Cloudstream3/"
+        Environment.getExternalStorageDirectory().absolutePath + "/meelstream3/"
 
     private val LOCAL_PLUGINS_PATH = CLOUD_STREAM_FOLDER + "plugins"
 

@@ -1,8 +1,8 @@
-package com.lagradost.cloudstream3.services
+package com.lagradost.meelstream3.services
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
-import com.lagradost.cloudstream3.utils.VideoDownloadManager
+import com.lagradost.meelstream3.utils.VideoDownloadManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel

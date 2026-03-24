@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.download
+package com.lagradost.meelstream3.ui.download
 
 import android.text.format.Formatter.formatShortFileSize
 import android.view.LayoutInflater
@@ -10,16 +10,16 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.DownloadChildEpisodeBinding
-import com.lagradost.cloudstream3.databinding.DownloadHeaderEpisodeBinding
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.download.button.DownloadStatusTell
-import com.lagradost.cloudstream3.utils.AppContextUtils.getNameFull
-import com.lagradost.cloudstream3.utils.DataStoreHelper.fixVisual
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getViewPos
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.VideoDownloadHelper
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.DownloadChildEpisodeBinding
+import com.lagradost.meelstream3.databinding.DownloadHeaderEpisodeBinding
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.download.button.DownloadStatusTell
+import com.lagradost.meelstream3.utils.AppContextUtils.getNameFull
+import com.lagradost.meelstream3.utils.DataStoreHelper.fixVisual
+import com.lagradost.meelstream3.utils.DataStoreHelper.getViewPos
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.VideoDownloadHelper
 
 const val DOWNLOAD_ACTION_PLAY_FILE = 0
 const val DOWNLOAD_ACTION_DELETE_FILE = 1

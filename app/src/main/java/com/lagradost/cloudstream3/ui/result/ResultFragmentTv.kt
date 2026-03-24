@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.result
+package com.lagradost.meelstream3.ui.result
 
 import android.animation.Animator
 import android.annotation.SuppressLint
@@ -19,49 +19,49 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.button.MaterialButton
-import com.lagradost.cloudstream3.CommonActivity
-import com.lagradost.cloudstream3.DubStatus
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.MainActivity.Companion.afterPluginsLoadedEvent
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.databinding.FragmentResultTvBinding
-import com.lagradost.cloudstream3.mvvm.Resource
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.mvvm.observeNullable
-import com.lagradost.cloudstream3.services.SubscriptionWorkManager
-import com.lagradost.cloudstream3.ui.WatchType
-import com.lagradost.cloudstream3.ui.download.DownloadButtonSetup
-import com.lagradost.cloudstream3.ui.player.ExtractorLinkGenerator
-import com.lagradost.cloudstream3.ui.player.GeneratorPlayer
-import com.lagradost.cloudstream3.ui.player.NEXT_WATCH_EPISODE_PERCENTAGE
-import com.lagradost.cloudstream3.ui.quicksearch.QuickSearchFragment
-import com.lagradost.cloudstream3.ui.result.ResultFragment.getStoredData
-import com.lagradost.cloudstream3.ui.result.ResultFragment.updateUIEvent
-import com.lagradost.cloudstream3.ui.search.SEARCH_ACTION_FOCUSED
-import com.lagradost.cloudstream3.ui.search.SearchAdapter
-import com.lagradost.cloudstream3.ui.search.SearchHelper
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.AppContextUtils.getNameFull
-import com.lagradost.cloudstream3.utils.AppContextUtils.html
-import com.lagradost.cloudstream3.utils.AppContextUtils.isRtl
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadCache
-import com.lagradost.cloudstream3.utils.AppContextUtils.updateHasTrailers
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.detachBackPressedCallback
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialog
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialogInstant
-import com.lagradost.cloudstream3.utils.UIHelper
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
-import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
-import com.lagradost.cloudstream3.utils.getImageFromDrawable
-import com.lagradost.cloudstream3.utils.setText
-import com.lagradost.cloudstream3.utils.setTextHtml
+import com.lagradost.meelstream3.CommonActivity
+import com.lagradost.meelstream3.DubStatus
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.MainActivity.Companion.afterPluginsLoadedEvent
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.databinding.FragmentResultTvBinding
+import com.lagradost.meelstream3.mvvm.Resource
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.mvvm.observeNullable
+import com.lagradost.meelstream3.services.SubscriptionWorkManager
+import com.lagradost.meelstream3.ui.WatchType
+import com.lagradost.meelstream3.ui.download.DownloadButtonSetup
+import com.lagradost.meelstream3.ui.player.ExtractorLinkGenerator
+import com.lagradost.meelstream3.ui.player.GeneratorPlayer
+import com.lagradost.meelstream3.ui.player.NEXT_WATCH_EPISODE_PERCENTAGE
+import com.lagradost.meelstream3.ui.quicksearch.QuickSearchFragment
+import com.lagradost.meelstream3.ui.result.ResultFragment.getStoredData
+import com.lagradost.meelstream3.ui.result.ResultFragment.updateUIEvent
+import com.lagradost.meelstream3.ui.search.SEARCH_ACTION_FOCUSED
+import com.lagradost.meelstream3.ui.search.SearchAdapter
+import com.lagradost.meelstream3.ui.search.SearchHelper
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.AppContextUtils.getNameFull
+import com.lagradost.meelstream3.utils.AppContextUtils.html
+import com.lagradost.meelstream3.utils.AppContextUtils.isRtl
+import com.lagradost.meelstream3.utils.AppContextUtils.loadCache
+import com.lagradost.meelstream3.utils.AppContextUtils.updateHasTrailers
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.detachBackPressedCallback
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialog
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialogInstant
+import com.lagradost.meelstream3.utils.UIHelper
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.utils.UIHelper.hideKeyboard
+import com.lagradost.meelstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.utils.getImageFromDrawable
+import com.lagradost.meelstream3.utils.setText
+import com.lagradost.meelstream3.utils.setTextHtml
 
 class ResultFragmentTv : Fragment() {
     private lateinit var viewModel: ResultViewModel2
@@ -160,7 +160,7 @@ class ResultFragmentTv : Fragment() {
                 // very dirty selection
                 resultRecommendationsFilterSelection.isVisible = apiNames.size > 1
                 resultRecommendationsFilterSelection.update(apiNames.map {
-                    com.lagradost.cloudstream3.utils.txt(
+                    com.lagradost.meelstream3.utils.txt(
                         it
                     ) to it
                 })
@@ -622,10 +622,10 @@ class ResultFragmentTv : Fragment() {
                         }
 
                         val name = (viewModel.page.value as? Resource.Success)?.value?.title
-                            ?: com.lagradost.cloudstream3.utils.txt(R.string.no_data)
+                            ?: com.lagradost.meelstream3.utils.txt(R.string.no_data)
                                 .asStringNull(context) ?: ""
                         CommonActivity.showToast(
-                            com.lagradost.cloudstream3.utils.txt(
+                            com.lagradost.meelstream3.utils.txt(
                                 message,
                                 name
                             ), Toast.LENGTH_SHORT
@@ -671,10 +671,10 @@ class ResultFragmentTv : Fragment() {
                         }
 
                         val name = (viewModel.page.value as? Resource.Success)?.value?.title
-                            ?: com.lagradost.cloudstream3.utils.txt(R.string.no_data)
+                            ?: com.lagradost.meelstream3.utils.txt(R.string.no_data)
                                 .asStringNull(context) ?: ""
                         CommonActivity.showToast(
-                            com.lagradost.cloudstream3.utils.txt(
+                            com.lagradost.meelstream3.utils.txt(
                                 message,
                                 name
                             ), Toast.LENGTH_SHORT

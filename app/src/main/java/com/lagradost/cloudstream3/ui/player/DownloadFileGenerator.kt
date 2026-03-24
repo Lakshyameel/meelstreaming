@@ -1,17 +1,17 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.net.Uri
-import com.lagradost.cloudstream3.AcraApplication.Companion.context
-import com.lagradost.cloudstream3.CommonActivity.activity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.ui.player.PlayerSubtitleHelper.Companion.toSubtitleMimeType
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
-import com.lagradost.cloudstream3.utils.SubtitleHelper.fromLanguageToTagIETF
-import com.lagradost.cloudstream3.utils.SubtitleUtils.cleanDisplayName
-import com.lagradost.cloudstream3.utils.SubtitleUtils.isMatchingSubtitle
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.getDownloadFileInfoAndUpdateSettings
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.getFolder
+import com.lagradost.meelstream3.AcraApplication.Companion.context
+import com.lagradost.meelstream3.CommonActivity.activity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.ui.player.PlayerSubtitleHelper.Companion.toSubtitleMimeType
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.utils.SubtitleHelper.fromLanguageToTagIETF
+import com.lagradost.meelstream3.utils.SubtitleUtils.cleanDisplayName
+import com.lagradost.meelstream3.utils.SubtitleUtils.isMatchingSubtitle
+import com.lagradost.meelstream3.utils.VideoDownloadManager.getDownloadFileInfoAndUpdateSettings
+import com.lagradost.meelstream3.utils.VideoDownloadManager.getFolder
 
 class DownloadFileGenerator(
     episodes: List<ExtractorUri>,

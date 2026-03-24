@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.*
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.*
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.network.WebViewResolver
+import com.lagradost.meelstream3.network.WebViewResolver
 
 
 

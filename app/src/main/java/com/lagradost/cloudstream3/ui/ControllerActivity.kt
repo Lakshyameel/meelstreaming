@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui
+package com.lagradost.meelstream3.ui
 
 import android.os.Bundle
 import android.util.Log
@@ -26,26 +26,26 @@ import com.google.android.gms.cast.framework.CastSession
 import com.google.android.gms.cast.framework.media.RemoteMediaClient
 import com.google.android.gms.cast.framework.media.uicontroller.UIController
 import com.google.android.gms.cast.framework.media.widget.ExpandedControllerActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.Resource
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safeApiCall
-import com.lagradost.cloudstream3.sortUrls
-import com.lagradost.cloudstream3.ui.player.LOADTYPE_CHROMECAST
-import com.lagradost.cloudstream3.ui.player.RepoLinkGenerator
-import com.lagradost.cloudstream3.ui.player.SubtitleData
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.ui.subtitles.ChromecastSubtitlesFragment
-import com.lagradost.cloudstream3.utils.AppContextUtils.sortSubs
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.CastHelper.awaitLinks
-import com.lagradost.cloudstream3.utils.CastHelper.getMediaInfo
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.DataStore.toKotlinObject
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.Resource
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safeApiCall
+import com.lagradost.meelstream3.sortUrls
+import com.lagradost.meelstream3.ui.player.LOADTYPE_CHROMECAST
+import com.lagradost.meelstream3.ui.player.RepoLinkGenerator
+import com.lagradost.meelstream3.ui.player.SubtitleData
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.ui.subtitles.ChromecastSubtitlesFragment
+import com.lagradost.meelstream3.utils.AppContextUtils.sortSubs
+import com.lagradost.meelstream3.utils.AppUtils.toJson
+import com.lagradost.meelstream3.utils.CastHelper.awaitLinks
+import com.lagradost.meelstream3.utils.CastHelper.getMediaInfo
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.DataStore.toKotlinObject
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
 import org.json.JSONObject
 
 /*class SkipOpController(val view: ImageView) : UIController() {

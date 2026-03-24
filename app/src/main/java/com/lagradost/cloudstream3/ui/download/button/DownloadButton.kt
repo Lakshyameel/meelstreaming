@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.download.button
+package com.lagradost.meelstream3.ui.download.button
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -6,9 +6,9 @@ import android.util.AttributeSet
 import android.widget.TextView
 import androidx.core.view.isVisible
 import com.google.android.material.button.MaterialButton
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.ui.download.DownloadClickEvent
-import com.lagradost.cloudstream3.utils.VideoDownloadHelper
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.ui.download.DownloadClickEvent
+import com.lagradost.meelstream3.utils.VideoDownloadHelper
 
 class DownloadButton(context: Context, attributeSet: AttributeSet) :
     PieFetchButton(context, attributeSet) {

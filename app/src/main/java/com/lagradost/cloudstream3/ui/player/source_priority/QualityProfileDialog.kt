@@ -1,16 +1,16 @@
-package com.lagradost.cloudstream3.ui.player.source_priority
+package com.lagradost.meelstream3.ui.player.source_priority
 
 import android.app.Dialog
 import androidx.annotation.StyleRes
 import androidx.fragment.app.FragmentActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.PlayerQualityProfileDialogBinding
-import com.lagradost.cloudstream3.ui.player.source_priority.QualityDataHelper.getProfileName
-import com.lagradost.cloudstream3.ui.player.source_priority.QualityDataHelper.getProfiles
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialog
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.PlayerQualityProfileDialogBinding
+import com.lagradost.meelstream3.ui.player.source_priority.QualityDataHelper.getProfileName
+import com.lagradost.meelstream3.ui.player.source_priority.QualityDataHelper.getProfiles
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialog
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
 
 class QualityProfileDialog(
     val activity: FragmentActivity,

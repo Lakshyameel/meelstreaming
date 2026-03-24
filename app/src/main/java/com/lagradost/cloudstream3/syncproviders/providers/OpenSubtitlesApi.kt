@@ -1,23 +1,23 @@
-package com.lagradost.cloudstream3.syncproviders.providers
+package com.lagradost.meelstream3.syncproviders.providers
 
 import android.util.Log
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities
-import com.lagradost.cloudstream3.syncproviders.AuthData
-import com.lagradost.cloudstream3.syncproviders.AuthLoginRequirement
-import com.lagradost.cloudstream3.syncproviders.AuthLoginResponse
-import com.lagradost.cloudstream3.syncproviders.AuthToken
-import com.lagradost.cloudstream3.syncproviders.AuthUser
-import com.lagradost.cloudstream3.syncproviders.SubtitleAPI
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.utils.AppUtils
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
-import com.lagradost.cloudstream3.utils.AppUtils.toJson
-import com.lagradost.cloudstream3.utils.SubtitleHelper.fromCodeToLangTagIETF
-import com.lagradost.cloudstream3.utils.SubtitleHelper.fromCodeToOpenSubtitlesTag
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities
+import com.lagradost.meelstream3.syncproviders.AuthData
+import com.lagradost.meelstream3.syncproviders.AuthLoginRequirement
+import com.lagradost.meelstream3.syncproviders.AuthLoginResponse
+import com.lagradost.meelstream3.syncproviders.AuthToken
+import com.lagradost.meelstream3.syncproviders.AuthUser
+import com.lagradost.meelstream3.syncproviders.SubtitleAPI
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.utils.AppUtils
+import com.lagradost.meelstream3.utils.AppUtils.parseJson
+import com.lagradost.meelstream3.utils.AppUtils.toJson
+import com.lagradost.meelstream3.utils.SubtitleHelper.fromCodeToLangTagIETF
+import com.lagradost.meelstream3.utils.SubtitleHelper.fromCodeToOpenSubtitlesTag
 
 class OpenSubtitlesApi : SubtitleAPI() {
     override val name = "OpenSubtitles"
@@ -38,7 +38,7 @@ class OpenSubtitlesApi : SubtitleAPI() {
         const val TAG = "OPENSUBS"
         const val COOLDOWN_DURATION: Long = 1000L * 30L // CoolDown if 429 error code in ms
         var currentCoolDown: Long = 0L
-        const val userAgent = "Cloudstream3 v0.2"
+        const val userAgent = "meelstream3 v0.2"
         val headers = mapOf("user-agent" to userAgent, "Api-Key" to API_KEY)
     }
 

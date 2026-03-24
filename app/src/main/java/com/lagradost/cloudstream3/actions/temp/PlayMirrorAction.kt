@@ -1,20 +1,20 @@
-package com.lagradost.cloudstream3.actions.temp
+package com.lagradost.meelstream3.actions.temp
 
 import android.app.Activity
 import android.content.Context
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.actions.VideoClickAction
-import com.lagradost.cloudstream3.ui.player.ExtractorUri
-import com.lagradost.cloudstream3.ui.player.GeneratorPlayer
-import com.lagradost.cloudstream3.ui.player.LOADTYPE_INAPP
-import com.lagradost.cloudstream3.ui.player.SubtitleData
-import com.lagradost.cloudstream3.ui.player.VideoGenerator
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.actions.VideoClickAction
+import com.lagradost.meelstream3.ui.player.ExtractorUri
+import com.lagradost.meelstream3.ui.player.GeneratorPlayer
+import com.lagradost.meelstream3.ui.player.LOADTYPE_INAPP
+import com.lagradost.meelstream3.ui.player.SubtitleData
+import com.lagradost.meelstream3.ui.player.VideoGenerator
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.utils.txt
 
 class PlayMirrorAction : VideoClickAction() {
     override val name = txt(R.string.episode_action_play_mirror)

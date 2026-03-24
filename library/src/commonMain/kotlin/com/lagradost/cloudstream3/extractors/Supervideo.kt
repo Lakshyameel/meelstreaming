@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.AppUtils.parseJson
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.*
+import com.lagradost.meelstream3.utils.AppUtils.parseJson
 
 data class Files(
     @JsonProperty("file") val id: String,

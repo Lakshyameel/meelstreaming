@@ -1,17 +1,17 @@
-package com.lagradost.cloudstream3.syncproviders.providers
+package com.lagradost.meelstream3.syncproviders.providers
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities
-import com.lagradost.cloudstream3.subtitles.SubtitleResource
-import com.lagradost.cloudstream3.syncproviders.AuthData
-import com.lagradost.cloudstream3.syncproviders.AuthLoginRequirement
-import com.lagradost.cloudstream3.syncproviders.AuthLoginResponse
-import com.lagradost.cloudstream3.syncproviders.AuthToken
-import com.lagradost.cloudstream3.syncproviders.AuthUser
-import com.lagradost.cloudstream3.syncproviders.SubtitleAPI
-import com.lagradost.cloudstream3.TvType
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities
+import com.lagradost.meelstream3.subtitles.SubtitleResource
+import com.lagradost.meelstream3.syncproviders.AuthData
+import com.lagradost.meelstream3.syncproviders.AuthLoginRequirement
+import com.lagradost.meelstream3.syncproviders.AuthLoginResponse
+import com.lagradost.meelstream3.syncproviders.AuthToken
+import com.lagradost.meelstream3.syncproviders.AuthUser
+import com.lagradost.meelstream3.syncproviders.SubtitleAPI
+import com.lagradost.meelstream3.TvType
 
 class SubDlApi : SubtitleAPI() {
     override val name = "SubDL"

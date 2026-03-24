@@ -1,9 +1,9 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.*
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.*
 
 open class StreamSilk : ExtractorApi() {
     override val name = "StreamSilk"

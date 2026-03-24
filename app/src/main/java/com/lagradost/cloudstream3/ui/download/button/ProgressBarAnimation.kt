@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.download.button
+package com.lagradost.meelstream3.ui.download.button
 
 import android.view.animation.Animation
 import android.view.animation.Transformation

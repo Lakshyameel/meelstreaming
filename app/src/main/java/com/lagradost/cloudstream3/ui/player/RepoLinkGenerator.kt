@@ -1,14 +1,14 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.util.Log
-import com.lagradost.cloudstream3.APIHolder.getApiFromNameNull
-import com.lagradost.cloudstream3.APIHolder.unixTime
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.ui.APIRepository
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.AppContextUtils.html
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.APIHolder.getApiFromNameNull
+import com.lagradost.meelstream3.APIHolder.unixTime
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.ui.APIRepository
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.AppContextUtils.html
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkType
 import kotlin.math.max
 import kotlin.math.min
 

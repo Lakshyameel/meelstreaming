@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings.testing
+package com.lagradost.meelstream3.ui.settings.testing
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,15 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.FragmentTestingBinding
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.mvvm.observeNullable
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.FragmentTestingBinding
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.mvvm.observeNullable
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
 
 
 class TestFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import java.security.cert.X509Certificate
 import javax.net.ssl.X509TrustManager

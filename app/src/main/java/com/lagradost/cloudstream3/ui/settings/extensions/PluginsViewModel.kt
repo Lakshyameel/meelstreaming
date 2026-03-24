@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings.extensions
+package com.lagradost.meelstream3.ui.settings.extensions
 
 import android.app.Activity
 import android.content.Context
@@ -9,20 +9,20 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.PROVIDER_STATUS_DOWN
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.mvvm.launchSafe
-import com.lagradost.cloudstream3.plugins.PluginManager
-import com.lagradost.cloudstream3.plugins.PluginManager.getPluginPath
-import com.lagradost.cloudstream3.plugins.RepositoryManager
-import com.lagradost.cloudstream3.plugins.SitePlugin
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.Coroutines.runOnMainThread
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.PROVIDER_STATUS_DOWN
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.mvvm.launchSafe
+import com.lagradost.meelstream3.plugins.PluginManager
+import com.lagradost.meelstream3.plugins.PluginManager.getPluginPath
+import com.lagradost.meelstream3.plugins.RepositoryManager
+import com.lagradost.meelstream3.plugins.SitePlugin
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.Coroutines.runOnMainThread
 import me.xdrop.fuzzywuzzy.FuzzySearch
 import java.io.File
 

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
@@ -54,37 +54,37 @@ import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
 import com.google.android.gms.common.wrappers.Wrappers
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.lagradost.cloudstream3.APIHolder.apis
-import com.lagradost.cloudstream3.AcraApplication.Companion.getActivity
-import com.lagradost.cloudstream3.AllLanguagesName
-import com.lagradost.cloudstream3.CommonActivity.activity
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.DubStatus
-import com.lagradost.cloudstream3.HomePageList
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.MainActivity.Companion.afterRepositoryLoadedEvent
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.isMovieType
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.plugins.RepositoryManager
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING_RESUME_WATCHING
-import com.lagradost.cloudstream3.syncproviders.providers.Kitsu
-import com.lagradost.cloudstream3.ui.WebviewFragment
-import com.lagradost.cloudstream3.ui.player.SubtitleData
-import com.lagradost.cloudstream3.ui.result.ResultFragment
-import com.lagradost.cloudstream3.ui.settings.Globals
-import com.lagradost.cloudstream3.ui.settings.extensions.PluginsFragment
-import com.lagradost.cloudstream3.ui.settings.extensions.RepositoryData
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getAllResumeStateIds
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getLastWatched
-import com.lagradost.cloudstream3.utils.FillerEpisodeCheck.toClassDir
-import com.lagradost.cloudstream3.utils.JsUnpacker.Companion.load
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.APIHolder.apis
+import com.lagradost.meelstream3.AcraApplication.Companion.getActivity
+import com.lagradost.meelstream3.AllLanguagesName
+import com.lagradost.meelstream3.CommonActivity.activity
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.DubStatus
+import com.lagradost.meelstream3.HomePageList
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.MainAPI
+import com.lagradost.meelstream3.MainActivity.Companion.afterRepositoryLoadedEvent
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.isMovieType
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.plugins.RepositoryManager
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING_RESUME_WATCHING
+import com.lagradost.meelstream3.syncproviders.providers.Kitsu
+import com.lagradost.meelstream3.ui.WebviewFragment
+import com.lagradost.meelstream3.ui.player.SubtitleData
+import com.lagradost.meelstream3.ui.result.ResultFragment
+import com.lagradost.meelstream3.ui.settings.Globals
+import com.lagradost.meelstream3.ui.settings.extensions.PluginsFragment
+import com.lagradost.meelstream3.ui.settings.extensions.RepositoryData
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.DataStoreHelper.getAllResumeStateIds
+import com.lagradost.meelstream3.utils.DataStoreHelper.getLastWatched
+import com.lagradost.meelstream3.utils.FillerEpisodeCheck.toClassDir
+import com.lagradost.meelstream3.utils.JsUnpacker.Companion.load
+import com.lagradost.meelstream3.utils.UIHelper.navigate
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import okhttp3.Cache
@@ -102,7 +102,7 @@ import android.util.Log
 import androidx.biometric.AuthenticationResult
 import androidx.tvprovider.media.tv.PreviewProgram
 import androidx.tvprovider.media.tv.TvContractCompat
-import com.lagradost.cloudstream3.SearchResponse
+import com.lagradost.meelstream3.SearchResponse
 import android.content.ContentUris
 import android.content.Intent
 
@@ -469,7 +469,7 @@ object AppContextUtils {
 
     fun Context.filterProviderByPreferredMedia(hasHomePageIsRequired: Boolean = true): List<MainAPI> {
         // We are getting the weirdest crash ever done:
-        // java.lang.ClassCastException: com.lagradost.cloudstream3.TvType cannot be cast to com.lagradost.cloudstream3.TvType
+        // java.lang.ClassCastException: com.lagradost.meelstream3.TvType cannot be cast to com.lagradost.meelstream3.TvType
         // Trying fixing using classloader fuckery
         val oldLoader = Thread.currentThread().contextClassLoader
         Thread.currentThread().contextClassLoader = TvType::class.java.classLoader

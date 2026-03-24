@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.actions.temp
+package com.lagradost.meelstream3.actions.temp
 
 import android.content.Context
-import com.lagradost.cloudstream3.actions.VideoClickAction
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.UIHelper.clipboardHelper
+import com.lagradost.meelstream3.actions.VideoClickAction
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.UIHelper.clipboardHelper
 
 class CopyClipboardAction: VideoClickAction() {
     override val name = txt("Copy to clipboard")

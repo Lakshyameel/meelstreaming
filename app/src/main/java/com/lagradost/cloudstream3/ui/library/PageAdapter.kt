@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.library
+package com.lagradost.meelstream3.ui.library
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.widget.FrameLayout
 import androidx.core.graphics.ColorUtils
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.databinding.SearchResultGridExpandedBinding
-import com.lagradost.cloudstream3.syncproviders.SyncAPI
-import com.lagradost.cloudstream3.ui.AutofitRecyclerView
-import com.lagradost.cloudstream3.ui.search.SearchClickCallback
-import com.lagradost.cloudstream3.ui.search.SearchResultBuilder
-import com.lagradost.cloudstream3.utils.AppContextUtils
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.databinding.SearchResultGridExpandedBinding
+import com.lagradost.meelstream3.syncproviders.SyncAPI
+import com.lagradost.meelstream3.ui.AutofitRecyclerView
+import com.lagradost.meelstream3.ui.search.SearchClickCallback
+import com.lagradost.meelstream3.ui.search.SearchResultBuilder
+import com.lagradost.meelstream3.utils.AppContextUtils
+import com.lagradost.meelstream3.utils.UIHelper.toPx
 import kotlin.math.roundToInt
 
 

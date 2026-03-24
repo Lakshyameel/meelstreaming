@@ -1,16 +1,16 @@
-package com.lagradost.cloudstream3.ui.player.source_priority
+package com.lagradost.meelstream3.ui.player.source_priority
 
 import android.app.Dialog
 import android.content.Context
 import android.view.LayoutInflater
 import androidx.annotation.StyleRes
 import androidx.appcompat.app.AlertDialog
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.PlayerSelectSourcePriorityBinding
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.PlayerSelectSourcePriorityBinding
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
 
 class SourcePriorityDialog(
     val ctx: Context,

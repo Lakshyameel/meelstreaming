@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.setup
+package com.lagradost.meelstream3.ui.setup
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,11 +9,11 @@ import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.FragmentSetupLayoutBinding
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.FragmentSetupLayoutBinding
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.utils.UIHelper.fixPaddingStatusbar
 import org.acra.ACRA
 
 

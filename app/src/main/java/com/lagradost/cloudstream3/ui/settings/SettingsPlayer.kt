@@ -1,29 +1,29 @@
-package com.lagradost.cloudstream3.ui.settings
+package com.lagradost.meelstream3.ui.settings
 
 import android.os.Bundle
 import android.text.format.Formatter.formatShortFileSize
 import android.view.View
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.actions.VideoClickActionHolder
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.PHONE
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.getFolderSize
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.getPref
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.hideOn
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.hidePrefs
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setPaddingBottom
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
-import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
-import com.lagradost.cloudstream3.ui.subtitles.ChromecastSubtitlesFragment
-import com.lagradost.cloudstream3.ui.subtitles.SubtitlesFragment
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialog
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showDialog
-import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.actions.VideoClickActionHolder
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.PHONE
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.getFolderSize
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.getPref
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.hideOn
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.hidePrefs
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setPaddingBottom
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setToolBarScrollFlags
+import com.lagradost.meelstream3.ui.settings.SettingsFragment.Companion.setUpToolbar
+import com.lagradost.meelstream3.ui.subtitles.ChromecastSubtitlesFragment
+import com.lagradost.meelstream3.ui.subtitles.SubtitlesFragment
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialog
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showDialog
+import com.lagradost.meelstream3.utils.UIHelper.hideKeyboard
 
 class SettingsPlayer : PreferenceFragmentCompat() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

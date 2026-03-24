@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.APIHolder.getCaptchaToken
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.*
-import com.lagradost.cloudstream3.utils.AppUtils.tryParseJson
+import com.lagradost.meelstream3.APIHolder.getCaptchaToken
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.*
+import com.lagradost.meelstream3.utils.AppUtils.tryParseJson
 import java.net.URI
 
 open class Streamplay : ExtractorApi() {

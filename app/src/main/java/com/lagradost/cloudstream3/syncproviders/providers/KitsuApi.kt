@@ -1,8 +1,8 @@
-package com.lagradost.cloudstream3.syncproviders.providers
+package com.lagradost.meelstream3.syncproviders.providers
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.mvvm.logError
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.mvvm.logError
 
 // modified code from from https://github.com/saikou-app/saikou/blob/main/app/src/main/java/ani/saikou/others/Kitsu.kt
 // GNU General Public License v3.0 https://github.com/saikou-app/saikou/blob/main/LICENSE.md

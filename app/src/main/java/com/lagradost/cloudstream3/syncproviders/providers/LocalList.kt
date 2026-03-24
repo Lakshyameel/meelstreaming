@@ -1,20 +1,20 @@
-package com.lagradost.cloudstream3.syncproviders.providers
+package com.lagradost.meelstream3.syncproviders.providers
 
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.syncproviders.AuthData
-import com.lagradost.cloudstream3.syncproviders.SyncAPI
-import com.lagradost.cloudstream3.syncproviders.SyncIdName
-import com.lagradost.cloudstream3.ui.WatchType
-import com.lagradost.cloudstream3.ui.library.ListSorting
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.Coroutines.ioWork
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getAllFavorites
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getAllSubscriptions
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getAllWatchStateIds
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getBookmarkedData
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getResultWatchState
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.syncproviders.AuthData
+import com.lagradost.meelstream3.syncproviders.SyncAPI
+import com.lagradost.meelstream3.syncproviders.SyncIdName
+import com.lagradost.meelstream3.ui.WatchType
+import com.lagradost.meelstream3.ui.library.ListSorting
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.Coroutines.ioWork
+import com.lagradost.meelstream3.utils.DataStoreHelper.getAllFavorites
+import com.lagradost.meelstream3.utils.DataStoreHelper.getAllSubscriptions
+import com.lagradost.meelstream3.utils.DataStoreHelper.getAllWatchStateIds
+import com.lagradost.meelstream3.utils.DataStoreHelper.getBookmarkedData
+import com.lagradost.meelstream3.utils.DataStoreHelper.getResultWatchState
+import com.lagradost.meelstream3.utils.txt
 
 class LocalList : SyncAPI() {
     override val name = "Local"

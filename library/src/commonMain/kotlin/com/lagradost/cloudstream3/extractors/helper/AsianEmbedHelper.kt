@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.extractors.helper
+package com.lagradost.meelstream3.extractors.helper
 
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.loadExtractor
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.loadExtractor
 
 class AsianEmbedHelper {
     companion object {

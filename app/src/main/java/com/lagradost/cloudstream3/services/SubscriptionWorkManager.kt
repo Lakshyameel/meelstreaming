@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.services
+package com.lagradost.meelstream3.services
 
 import android.app.NotificationManager
 import android.content.Context
@@ -9,24 +9,24 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.PendingIntentCompat
 import androidx.core.net.toUri
 import androidx.work.*
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.APIHolder.getApiFromNameNull
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.plugins.PluginManager
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.AppContextUtils.createNotificationChannel
-import com.lagradost.cloudstream3.utils.AppContextUtils.getApiDubstatusSettings
-import com.lagradost.cloudstream3.utils.Coroutines.ioWork
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getAllSubscriptions
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getDub
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.getImageBitmapFromUrl
+import com.lagradost.meelstream3.*
+import com.lagradost.meelstream3.APIHolder.getApiFromNameNull
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.plugins.PluginManager
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.AppContextUtils.createNotificationChannel
+import com.lagradost.meelstream3.utils.AppContextUtils.getApiDubstatusSettings
+import com.lagradost.meelstream3.utils.Coroutines.ioWork
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.DataStoreHelper.getAllSubscriptions
+import com.lagradost.meelstream3.utils.DataStoreHelper.getDub
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.utils.VideoDownloadManager.getImageBitmapFromUrl
 import kotlinx.coroutines.withTimeoutOrNull
 import java.util.concurrent.TimeUnit
 
-const val SUBSCRIPTION_CHANNEL_ID = "cloudstream3.subscriptions"
+const val SUBSCRIPTION_CHANNEL_ID = "meelstream3.subscriptions"
 const val SUBSCRIPTION_WORK_NAME = "work_subscription"
 const val SUBSCRIPTION_CHANNEL_NAME = "Subscriptions"
 const val SUBSCRIPTION_CHANNEL_DESCRIPTION = "Notifications for new episodes on subscribed shows"
@@ -85,7 +85,7 @@ class SubscriptionWorkManager(val context: Context, workerParams: WorkerParamete
             .setAutoCancel(true)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setColor(context.colorFromAttribute(R.attr.colorPrimary))
-            .setSmallIcon(R.drawable.ic_cloudstream_monochrome_big)
+            .setSmallIcon(R.drawable.ic_meelstream_monochrome_big)
 
     private val notificationManager: NotificationManager =
         context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager

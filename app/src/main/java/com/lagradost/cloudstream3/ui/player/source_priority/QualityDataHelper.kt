@@ -1,15 +1,15 @@
-package com.lagradost.cloudstream3.ui.player.source_priority
+package com.lagradost.meelstream3.ui.player.source_priority
 
 import androidx.annotation.StringRes
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.debugAssert
-import com.lagradost.cloudstream3.utils.UiText
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.DataStoreHelper.currentAccount
-import com.lagradost.cloudstream3.utils.Qualities
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.debugAssert
+import com.lagradost.meelstream3.utils.UiText
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.DataStoreHelper.currentAccount
+import com.lagradost.meelstream3.utils.Qualities
 
 object QualityDataHelper {
     private const val VIDEO_SOURCE_PRIORITY = "video_source_priority"

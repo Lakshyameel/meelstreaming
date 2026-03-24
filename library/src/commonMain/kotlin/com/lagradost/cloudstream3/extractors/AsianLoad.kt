@@ -1,11 +1,11 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.M3u8Helper
-import com.lagradost.cloudstream3.utils.getQualityFromName
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.M3u8Helper
+import com.lagradost.meelstream3.utils.getQualityFromName
+import com.lagradost.meelstream3.utils.newExtractorLink
 import java.net.URI
 
 open class AsianLoad : ExtractorApi() {

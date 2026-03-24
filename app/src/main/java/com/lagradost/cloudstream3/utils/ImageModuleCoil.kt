@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
@@ -23,9 +23,9 @@ import coil3.request.ImageRequest
 import coil3.request.allowHardware
 import coil3.request.crossfade
 import coil3.util.DebugLogger
-import com.lagradost.cloudstream3.BuildConfig
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.network.buildDefaultClient
+import com.lagradost.meelstream3.BuildConfig
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.network.buildDefaultClient
 import okhttp3.HttpUrl
 import okio.Path.Companion.toOkioPath
 import java.io.File

@@ -1,7 +1,7 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.base64Decode
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.base64Decode
 import com.lagradost.nicehttp.NiceResponse
 import java.net.URI
 import java.net.URLDecoder

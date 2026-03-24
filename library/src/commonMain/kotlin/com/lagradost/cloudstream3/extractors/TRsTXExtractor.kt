@@ -1,10 +1,10 @@
 // ! Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.utils.*
+import com.lagradost.meelstream3.*
+import com.lagradost.meelstream3.utils.*
 import com.fasterxml.jackson.annotation.JsonProperty
 
 open class TRsTX : ExtractorApi() {

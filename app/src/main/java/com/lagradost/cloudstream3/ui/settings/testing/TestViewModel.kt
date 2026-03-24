@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.ui.settings.testing
+package com.lagradost.meelstream3.ui.settings.testing
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.lagradost.cloudstream3.APIHolder
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.utils.Coroutines.threadSafeListOf
-import com.lagradost.cloudstream3.utils.TestingUtils
+import com.lagradost.meelstream3.APIHolder
+import com.lagradost.meelstream3.MainAPI
+import com.lagradost.meelstream3.utils.Coroutines.threadSafeListOf
+import com.lagradost.meelstream3.utils.TestingUtils
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel

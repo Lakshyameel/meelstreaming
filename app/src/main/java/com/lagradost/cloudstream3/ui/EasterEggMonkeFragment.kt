@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui
+package com.lagradost.meelstream3.ui
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -16,10 +16,10 @@ import android.widget.ImageView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.FragmentEasterEggMonkeBinding
-import com.lagradost.cloudstream3.utils.UIHelper.hideSystemUI
-import com.lagradost.cloudstream3.utils.UIHelper.showSystemUI
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.FragmentEasterEggMonkeBinding
+import com.lagradost.meelstream3.utils.UIHelper.hideSystemUI
+import com.lagradost.meelstream3.utils.UIHelper.showSystemUI
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive

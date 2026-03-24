@@ -1,15 +1,15 @@
-package com.lagradost.cloudstream3.ui.result
+package com.lagradost.meelstream3.ui.result
 
 import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.CommonActivity
-import com.lagradost.cloudstream3.CommonActivity.activity
-import com.lagradost.cloudstream3.FocusDirection
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.CommonActivity
+import com.lagradost.meelstream3.CommonActivity.activity
+import com.lagradost.meelstream3.FocusDirection
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
 
 const val FOCUS_SELF = View.NO_ID - 1
 const val FOCUS_INHERIT = FOCUS_SELF - 1

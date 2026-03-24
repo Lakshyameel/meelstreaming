@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.search
+package com.lagradost.meelstream3.ui.search
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,22 +10,22 @@ import androidx.cardview.widget.CardView
 import androidx.core.view.isVisible
 import androidx.palette.graphics.Palette
 import androidx.preference.PreferenceManager
-import com.lagradost.cloudstream3.AnimeSearchResponse
-import com.lagradost.cloudstream3.DubStatus
-import com.lagradost.cloudstream3.LiveSearchResponse
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.SearchQuality
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.isMovieType
-import com.lagradost.cloudstream3.syncproviders.SyncAPI
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.AppContextUtils.getNameFull
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.DataStoreHelper.fixVisual
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.SubtitleHelper
-import com.lagradost.cloudstream3.utils.getImageFromDrawable
+import com.lagradost.meelstream3.AnimeSearchResponse
+import com.lagradost.meelstream3.DubStatus
+import com.lagradost.meelstream3.LiveSearchResponse
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.SearchQuality
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.isMovieType
+import com.lagradost.meelstream3.syncproviders.SyncAPI
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.AppContextUtils.getNameFull
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.DataStoreHelper.fixVisual
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.SubtitleHelper
+import com.lagradost.meelstream3.utils.getImageFromDrawable
 
 object SearchResultBuilder {
     private val showCache: MutableMap<String, Boolean> = mutableMapOf()

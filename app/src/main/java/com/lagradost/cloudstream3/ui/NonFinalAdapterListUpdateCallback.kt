@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui
+package com.lagradost.meelstream3.ui
 
 import android.annotation.SuppressLint
 import androidx.recyclerview.widget.DiffUtil

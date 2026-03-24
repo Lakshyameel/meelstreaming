@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.app.Activity
 import android.app.Dialog
@@ -16,17 +16,17 @@ import androidx.core.view.marginLeft
 import androidx.core.view.marginRight
 import androidx.core.view.marginTop
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.BottomInputDialogBinding
-import com.lagradost.cloudstream3.databinding.BottomSelectionDialogBinding
-import com.lagradost.cloudstream3.databinding.BottomTextDialogBinding
-import com.lagradost.cloudstream3.databinding.OptionsPopupTvBinding
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
-import com.lagradost.cloudstream3.utils.UIHelper.popupMenuNoIconsAndNoStringRes
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.BottomInputDialogBinding
+import com.lagradost.meelstream3.databinding.BottomSelectionDialogBinding
+import com.lagradost.meelstream3.databinding.BottomTextDialogBinding
+import com.lagradost.meelstream3.databinding.OptionsPopupTvBinding
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.utils.UIHelper.popupMenuNoIconsAndNoStringRes
 
 object SingleSelectionHelper {
     fun Activity?.showOptionSelectStringRes(

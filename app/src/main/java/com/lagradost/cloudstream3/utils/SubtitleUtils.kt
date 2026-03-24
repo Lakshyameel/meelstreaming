@@ -1,8 +1,8 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.content.Context
 import com.lagradost.api.Log
-import com.lagradost.cloudstream3.utils.VideoDownloadManager.getFolder
+import com.lagradost.meelstream3.utils.VideoDownloadManager.getFolder
 import com.lagradost.safefile.SafeFile
 
 object SubtitleUtils {

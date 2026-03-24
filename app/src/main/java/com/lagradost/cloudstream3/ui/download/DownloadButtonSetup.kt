@@ -1,25 +1,25 @@
-package com.lagradost.cloudstream3.ui.download
+package com.lagradost.meelstream3.ui.download
 
 import android.content.DialogInterface
 import android.net.Uri
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.snackbar.Snackbar
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKeys
-import com.lagradost.cloudstream3.CommonActivity.activity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.ui.player.DownloadFileGenerator
-import com.lagradost.cloudstream3.ui.player.ExtractorUri
-import com.lagradost.cloudstream3.ui.player.GeneratorPlayer
-import com.lagradost.cloudstream3.utils.AppContextUtils.getNameFull
-import com.lagradost.cloudstream3.utils.AppContextUtils.setDefaultFocus
-import com.lagradost.cloudstream3.utils.DOWNLOAD_EPISODE_CACHE
-import com.lagradost.cloudstream3.utils.DOWNLOAD_HEADER_CACHE
-import com.lagradost.cloudstream3.utils.SnackbarHelper.showSnackbar
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
-import com.lagradost.cloudstream3.utils.VideoDownloadHelper
-import com.lagradost.cloudstream3.utils.VideoDownloadManager
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.getKeys
+import com.lagradost.meelstream3.CommonActivity.activity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.ui.player.DownloadFileGenerator
+import com.lagradost.meelstream3.ui.player.ExtractorUri
+import com.lagradost.meelstream3.ui.player.GeneratorPlayer
+import com.lagradost.meelstream3.utils.AppContextUtils.getNameFull
+import com.lagradost.meelstream3.utils.AppContextUtils.setDefaultFocus
+import com.lagradost.meelstream3.utils.DOWNLOAD_EPISODE_CACHE
+import com.lagradost.meelstream3.utils.DOWNLOAD_HEADER_CACHE
+import com.lagradost.meelstream3.utils.SnackbarHelper.showSnackbar
+import com.lagradost.meelstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.utils.VideoDownloadHelper
+import com.lagradost.meelstream3.utils.VideoDownloadManager
 import kotlinx.coroutines.MainScope
 
 object DownloadButtonSetup {

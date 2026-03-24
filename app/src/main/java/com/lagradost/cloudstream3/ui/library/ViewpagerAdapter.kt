@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.library
+package com.lagradost.meelstream3.ui.library
 
 import android.os.Build
 import android.os.Bundle
@@ -9,18 +9,18 @@ import androidx.core.view.doOnAttach
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView.OnFlingListener
 import com.google.android.material.appbar.AppBarLayout
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.LibraryViewpagerPageBinding
-import com.lagradost.cloudstream3.syncproviders.SyncAPI
-import com.lagradost.cloudstream3.ui.BaseAdapter
-import com.lagradost.cloudstream3.ui.BaseDiffCallback
-import com.lagradost.cloudstream3.ui.ViewHolderState
-import com.lagradost.cloudstream3.ui.home.getSafeParcelable
-import com.lagradost.cloudstream3.ui.search.SearchClickCallback
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.UIHelper.getSpanCount
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.LibraryViewpagerPageBinding
+import com.lagradost.meelstream3.syncproviders.SyncAPI
+import com.lagradost.meelstream3.ui.BaseAdapter
+import com.lagradost.meelstream3.ui.BaseDiffCallback
+import com.lagradost.meelstream3.ui.ViewHolderState
+import com.lagradost.meelstream3.ui.home.getSafeParcelable
+import com.lagradost.meelstream3.ui.search.SearchClickCallback
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.UIHelper.getSpanCount
 
 class ViewpagerAdapterViewHolderState(val binding: LibraryViewpagerPageBinding) :
     ViewHolderState<Bundle>(binding) {

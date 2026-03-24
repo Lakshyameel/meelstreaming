@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.ui.search
+package com.lagradost.meelstream3.ui.search
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.databinding.SearchHistoryItemBinding
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.databinding.SearchHistoryItemBinding
 
 data class SearchHistoryItem(
     @JsonProperty("searchedAt") val searchedAt: Long,

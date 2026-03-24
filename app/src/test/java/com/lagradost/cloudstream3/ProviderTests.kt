@@ -1,9 +1,9 @@
-package com.lagradost.cloudstream3
+package com.lagradost.meelstream3
 
-// import com.lagradost.cloudstream3.APIHolder.allProviders
-// import com.lagradost.cloudstream3.mvvm.logError
-// import com.lagradost.cloudstream3.utils.Qualities
-// import com.lagradost.cloudstream3.utils.SubtitleHelper
+// import com.lagradost.meelstream3.APIHolder.allProviders
+// import com.lagradost.meelstream3.mvvm.logError
+// import com.lagradost.meelstream3.utils.Qualities
+// import com.lagradost.meelstream3.utils.SubtitleHelper
 // import kotlinx.coroutines.runBlocking
 // import org.junit.Assert
 // import org.junit.Test

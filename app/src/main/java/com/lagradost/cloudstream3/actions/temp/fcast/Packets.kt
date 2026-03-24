@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.actions.temp.fcast
+package com.lagradost.meelstream3.actions.temp.fcast
 
 // See https://gitlab.com/futo-org/fcast/-/wikis/Protocol-version-1
 enum class Opcode(val value: Byte) {

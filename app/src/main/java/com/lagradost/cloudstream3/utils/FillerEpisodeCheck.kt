@@ -1,7 +1,7 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.utils.Coroutines.main
 import org.jsoup.Jsoup
 import java.lang.Thread.sleep
 import java.util.*

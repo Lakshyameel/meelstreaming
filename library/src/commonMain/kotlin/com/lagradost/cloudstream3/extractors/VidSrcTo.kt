@@ -1,14 +1,14 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.extractors.FileMoon
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.newSubtitleFile
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.extractors.FileMoon
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.newSubtitleFile
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
 import java.net.URLDecoder
 import javax.crypto.Cipher
 import javax.crypto.spec.SecretKeySpec

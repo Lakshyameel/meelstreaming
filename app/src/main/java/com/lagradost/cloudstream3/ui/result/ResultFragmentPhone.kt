@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.result
+package com.lagradost.meelstream3.ui.result
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -31,60 +31,60 @@ import com.google.android.gms.cast.framework.CastContext
 import com.google.android.gms.cast.framework.CastState
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.button.MaterialButton
-import com.lagradost.cloudstream3.APIHolder
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.DubStatus
-import com.lagradost.cloudstream3.LoadResponse
-import com.lagradost.cloudstream3.MainActivity.Companion.afterPluginsLoadedEvent
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.Score
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.base64Encode
-import com.lagradost.cloudstream3.databinding.FragmentResultBinding
-import com.lagradost.cloudstream3.databinding.FragmentResultSwipeBinding
-import com.lagradost.cloudstream3.databinding.ResultRecommendationsBinding
-import com.lagradost.cloudstream3.databinding.ResultSyncBinding
-import com.lagradost.cloudstream3.mvvm.Resource
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.mvvm.observeNullable
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.services.SubscriptionWorkManager
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING_SHARE
-import com.lagradost.cloudstream3.ui.WatchType
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_DOWNLOAD
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_LONG_CLICK
-import com.lagradost.cloudstream3.ui.download.DownloadButtonSetup
-import com.lagradost.cloudstream3.ui.player.CSPlayerEvent
-import com.lagradost.cloudstream3.ui.player.FullScreenPlayer
-import com.lagradost.cloudstream3.ui.quicksearch.QuickSearchFragment
-import com.lagradost.cloudstream3.ui.result.ResultFragment.getStoredData
-import com.lagradost.cloudstream3.ui.result.ResultFragment.updateUIEvent
-import com.lagradost.cloudstream3.ui.search.SearchAdapter
-import com.lagradost.cloudstream3.ui.search.SearchHelper
-import com.lagradost.cloudstream3.utils.AppContextUtils.getNameFull
-import com.lagradost.cloudstream3.utils.AppContextUtils.isCastApiAvailable
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadCache
-import com.lagradost.cloudstream3.utils.AppContextUtils.openBrowser
-import com.lagradost.cloudstream3.utils.AppContextUtils.updateHasTrailers
-import com.lagradost.cloudstream3.utils.BatteryOptimizationChecker.openBatteryOptimizationSettings
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialog
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialogInstant
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showDialog
-import com.lagradost.cloudstream3.utils.UIHelper
-import com.lagradost.cloudstream3.utils.UIHelper.clipboardHelper
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
-import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
-import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
-import com.lagradost.cloudstream3.utils.UIHelper.populateChips
-import com.lagradost.cloudstream3.utils.UIHelper.popupMenuNoIconsAndNoStringRes
-import com.lagradost.cloudstream3.utils.VideoDownloadHelper
-import com.lagradost.cloudstream3.utils.getImageFromDrawable
-import com.lagradost.cloudstream3.utils.setText
-import com.lagradost.cloudstream3.utils.setTextHtml
+import com.lagradost.meelstream3.APIHolder
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.DubStatus
+import com.lagradost.meelstream3.LoadResponse
+import com.lagradost.meelstream3.MainActivity.Companion.afterPluginsLoadedEvent
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.Score
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.base64Encode
+import com.lagradost.meelstream3.databinding.FragmentResultBinding
+import com.lagradost.meelstream3.databinding.FragmentResultSwipeBinding
+import com.lagradost.meelstream3.databinding.ResultRecommendationsBinding
+import com.lagradost.meelstream3.databinding.ResultSyncBinding
+import com.lagradost.meelstream3.mvvm.Resource
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.mvvm.observeNullable
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.services.SubscriptionWorkManager
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING_SHARE
+import com.lagradost.meelstream3.ui.WatchType
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_DOWNLOAD
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_LONG_CLICK
+import com.lagradost.meelstream3.ui.download.DownloadButtonSetup
+import com.lagradost.meelstream3.ui.player.CSPlayerEvent
+import com.lagradost.meelstream3.ui.player.FullScreenPlayer
+import com.lagradost.meelstream3.ui.quicksearch.QuickSearchFragment
+import com.lagradost.meelstream3.ui.result.ResultFragment.getStoredData
+import com.lagradost.meelstream3.ui.result.ResultFragment.updateUIEvent
+import com.lagradost.meelstream3.ui.search.SearchAdapter
+import com.lagradost.meelstream3.ui.search.SearchHelper
+import com.lagradost.meelstream3.utils.AppContextUtils.getNameFull
+import com.lagradost.meelstream3.utils.AppContextUtils.isCastApiAvailable
+import com.lagradost.meelstream3.utils.AppContextUtils.loadCache
+import com.lagradost.meelstream3.utils.AppContextUtils.openBrowser
+import com.lagradost.meelstream3.utils.AppContextUtils.updateHasTrailers
+import com.lagradost.meelstream3.utils.BatteryOptimizationChecker.openBatteryOptimizationSettings
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialog
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialogInstant
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showDialog
+import com.lagradost.meelstream3.utils.UIHelper
+import com.lagradost.meelstream3.utils.UIHelper.clipboardHelper
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.utils.UIHelper.hideKeyboard
+import com.lagradost.meelstream3.utils.UIHelper.popCurrentPage
+import com.lagradost.meelstream3.utils.UIHelper.populateChips
+import com.lagradost.meelstream3.utils.UIHelper.popupMenuNoIconsAndNoStringRes
+import com.lagradost.meelstream3.utils.VideoDownloadHelper
+import com.lagradost.meelstream3.utils.getImageFromDrawable
+import com.lagradost.meelstream3.utils.setText
+import com.lagradost.meelstream3.utils.setTextHtml
 import java.net.URLEncoder
 import java.nio.charset.Charset
 import kotlin.io.encoding.Base64
@@ -493,10 +493,10 @@ open class ResultFragmentPhone : FullScreenPlayer() {
                     }
 
                     val name = (viewModel.page.value as? Resource.Success)?.value?.title
-                        ?: com.lagradost.cloudstream3.utils.txt(R.string.no_data)
+                        ?: com.lagradost.meelstream3.utils.txt(R.string.no_data)
                             .asStringNull(context) ?: ""
                     showToast(
-                        com.lagradost.cloudstream3.utils.txt(message, name),
+                        com.lagradost.meelstream3.utils.txt(message, name),
                         Toast.LENGTH_SHORT
                     )
                 }
@@ -513,10 +513,10 @@ open class ResultFragmentPhone : FullScreenPlayer() {
                     }
 
                     val name = (viewModel.page.value as? Resource.Success)?.value?.title
-                        ?: com.lagradost.cloudstream3.utils.txt(R.string.no_data)
+                        ?: com.lagradost.meelstream3.utils.txt(R.string.no_data)
                             .asStringNull(context) ?: ""
                     showToast(
-                        com.lagradost.cloudstream3.utils.txt(message, name),
+                        com.lagradost.meelstream3.utils.txt(message, name),
                         Toast.LENGTH_SHORT
                     )
                 }
@@ -823,7 +823,7 @@ open class ResultFragmentPhone : FullScreenPlayer() {
                                     "UTF-8"
                                 )
                                 val redirectUrl =
-                                    "https://recloudstream.github.io/csredirect?redirectto=$encodedUri"
+                                    "https://remeelstream.github.io/csredirect?redirectto=$encodedUri"
                                 i.type = "text/plain"
                                 i.putExtra(Intent.EXTRA_SUBJECT, d.title)
                                 i.putExtra(Intent.EXTRA_TEXT, redirectUrl)
@@ -855,7 +855,7 @@ open class ResultFragmentPhone : FullScreenPlayer() {
 
                 resultTitle.setOnLongClickListener {
                     clipboardHelper(
-                        com.lagradost.cloudstream3.utils.txt(R.string.title),
+                        com.lagradost.meelstream3.utils.txt(R.string.title),
                         resultTitle.text
                     )
                     true

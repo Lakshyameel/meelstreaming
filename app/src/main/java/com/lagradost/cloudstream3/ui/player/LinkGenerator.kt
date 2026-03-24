@@ -1,16 +1,16 @@
-package com.lagradost.cloudstream3.ui.player
+package com.lagradost.meelstream3.ui.player
 
 import android.net.Uri
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.actions.temp.CloudStreamPackage
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
-import com.lagradost.cloudstream3.utils.INFER_TYPE
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.loadExtractor
-import com.lagradost.cloudstream3.utils.newExtractorLink
-import com.lagradost.cloudstream3.utils.unshortenLinkSafe
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.actions.temp.meelstreamPackage
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.utils.INFER_TYPE
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.loadExtractor
+import com.lagradost.meelstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.utils.unshortenLinkSafe
 
 data class ExtractorUri(
     val uri: Uri,
@@ -76,8 +76,8 @@ class LinkGenerator(
 }
 
 class MinimalLinkGenerator(
-    private val links: List<CloudStreamPackage.MinimalVideoLink>,
-    private val subs: List<CloudStreamPackage.MinimalSubtitleLink>,
+    private val links: List<meelstreamPackage.MinimalVideoLink>,
+    private val subs: List<meelstreamPackage.MinimalSubtitleLink>,
     private val id: Int? = null
 ) : NoVideoGenerator() {
     override fun getCurrentId(): Int? = id

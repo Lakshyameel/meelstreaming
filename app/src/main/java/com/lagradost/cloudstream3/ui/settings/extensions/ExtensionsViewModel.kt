@@ -1,20 +1,20 @@
-package com.lagradost.cloudstream3.ui.settings.extensions
+package com.lagradost.meelstream3.ui.settings.extensions
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.amap
-import com.lagradost.cloudstream3.mvvm.debugAssert
-import com.lagradost.cloudstream3.plugins.PluginManager
-import com.lagradost.cloudstream3.plugins.PluginManager.getPluginsOnline
-import com.lagradost.cloudstream3.plugins.RepositoryManager
-import com.lagradost.cloudstream3.plugins.RepositoryManager.PREBUILT_REPOSITORIES
-import com.lagradost.cloudstream3.utils.UiText
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.amap
+import com.lagradost.meelstream3.mvvm.debugAssert
+import com.lagradost.meelstream3.plugins.PluginManager
+import com.lagradost.meelstream3.plugins.PluginManager.getPluginsOnline
+import com.lagradost.meelstream3.plugins.RepositoryManager
+import com.lagradost.meelstream3.plugins.RepositoryManager.PREBUILT_REPOSITORIES
+import com.lagradost.meelstream3.utils.UiText
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
 
 data class RepositoryData(
     @JsonProperty("iconUrl") val iconUrl: String?,

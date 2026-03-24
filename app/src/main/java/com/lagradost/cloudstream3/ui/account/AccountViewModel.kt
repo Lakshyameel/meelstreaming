@@ -1,17 +1,17 @@
-package com.lagradost.cloudstream3.ui.account
+package com.lagradost.meelstream3.ui.account
 
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.lagradost.cloudstream3.AcraApplication.Companion.context
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKeys
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.ui.account.AccountHelper.showPinInputDialog
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getAccounts
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getDefaultAccount
-import com.lagradost.cloudstream3.utils.DataStoreHelper.setAccount
+import com.lagradost.meelstream3.AcraApplication.Companion.context
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKeys
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.ui.account.AccountHelper.showPinInputDialog
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.DataStoreHelper.getAccounts
+import com.lagradost.meelstream3.utils.DataStoreHelper.getDefaultAccount
+import com.lagradost.meelstream3.utils.DataStoreHelper.setAccount
 
 class AccountViewModel : ViewModel() {
     private fun getAllAccounts(): List<DataStoreHelper.Account> {

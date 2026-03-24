@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui
+package com.lagradost.meelstream3.ui
 
 import android.content.Context
 import android.os.Bundle
@@ -8,10 +8,10 @@ import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import com.google.android.gms.cast.framework.media.widget.MiniControllerFragment
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.utils.UIHelper.adjustAlpha
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.utils.UIHelper.adjustAlpha
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.utils.UIHelper.toPx
 import java.lang.ref.WeakReference
 
 

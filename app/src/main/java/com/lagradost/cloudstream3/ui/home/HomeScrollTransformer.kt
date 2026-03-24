@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.home
+package com.lagradost.meelstream3.ui.home
 
 import android.view.View
 import androidx.viewpager2.widget.ViewPager2

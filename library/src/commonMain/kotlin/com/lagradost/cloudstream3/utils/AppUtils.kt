@@ -1,7 +1,7 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import com.fasterxml.jackson.module.kotlin.readValue
-import com.lagradost.cloudstream3.mapper
+import com.lagradost.meelstream3.mapper
 import java.io.Reader
 
 object AppUtils {

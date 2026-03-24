@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.extractors.helper
+package com.lagradost.meelstream3.extractors.helper
 
 import java.util.Arrays
 import java.util.Base64

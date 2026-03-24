@@ -1,10 +1,10 @@
-package com.lagradost.cloudstream3.ui.settings.utils
+package com.lagradost.meelstream3.ui.settings.utils
 
 import android.content.Intent
 import android.net.Uri
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
-import com.lagradost.cloudstream3.AcraApplication
+import com.lagradost.meelstream3.AcraApplication
 import com.lagradost.safefile.SafeFile
 
 fun Fragment.getChooseFolderLauncher(dirSelected: (uri: Uri?, path: String?) -> Unit) =

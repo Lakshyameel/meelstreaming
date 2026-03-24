@@ -1,17 +1,17 @@
-package com.lagradost.cloudstream3.actions.temp.fcast
+package com.lagradost.meelstream3.actions.temp.fcast
 
 import android.content.Context
-import com.lagradost.cloudstream3.AcraApplication.Companion.getActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.actions.VideoClickAction
-import com.lagradost.cloudstream3.ui.result.LinkLoadingResult
-import com.lagradost.cloudstream3.ui.result.ResultEpisode
-import com.lagradost.cloudstream3.utils.txt
-import com.lagradost.cloudstream3.utils.DataStoreHelper.getViewPos
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.ExtractorLinkType
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialog
+import com.lagradost.meelstream3.AcraApplication.Companion.getActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.actions.VideoClickAction
+import com.lagradost.meelstream3.ui.result.LinkLoadingResult
+import com.lagradost.meelstream3.ui.result.ResultEpisode
+import com.lagradost.meelstream3.utils.txt
+import com.lagradost.meelstream3.utils.DataStoreHelper.getViewPos
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.ExtractorLinkType
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialog
 
 class FcastAction: VideoClickAction() {
     override val name = txt("Fcast to device")

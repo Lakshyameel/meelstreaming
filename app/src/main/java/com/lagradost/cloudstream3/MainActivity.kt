@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3
+package com.lagradost.meelstream3
 
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
@@ -62,118 +62,118 @@ import com.google.android.material.navigationrail.NavigationRailView
 import com.google.android.material.snackbar.Snackbar
 import com.google.common.collect.Comparators.min
 import com.jaredrummler.android.colorpicker.ColorPickerDialogListener
-import com.lagradost.cloudstream3.APIHolder.allProviders
-import com.lagradost.cloudstream3.APIHolder.apis
-import com.lagradost.cloudstream3.APIHolder.initAll
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.removeKey
-import com.lagradost.cloudstream3.AcraApplication.Companion.setKey
-import com.lagradost.cloudstream3.CommonActivity.loadThemes
-import com.lagradost.cloudstream3.CommonActivity.onColorSelectedEvent
-import com.lagradost.cloudstream3.CommonActivity.onDialogDismissedEvent
-import com.lagradost.cloudstream3.CommonActivity.onUserLeaveHint
-import com.lagradost.cloudstream3.CommonActivity.screenHeight
-import com.lagradost.cloudstream3.CommonActivity.setActivityInstance
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.CommonActivity.updateLocale
-import com.lagradost.cloudstream3.CommonActivity.updateTheme
-import com.lagradost.cloudstream3.actions.temp.fcast.FcastManager
-import com.lagradost.cloudstream3.databinding.ActivityMainBinding
-import com.lagradost.cloudstream3.databinding.ActivityMainTvBinding
-import com.lagradost.cloudstream3.databinding.BottomResultviewPreviewBinding
-import com.lagradost.cloudstream3.mvvm.Resource
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.mvvm.safe
-import com.lagradost.cloudstream3.mvvm.observe
-import com.lagradost.cloudstream3.mvvm.observeNullable
-import com.lagradost.cloudstream3.network.initClient
-import com.lagradost.cloudstream3.plugins.PluginManager
-import com.lagradost.cloudstream3.plugins.PluginManager.___DO_NOT_CALL_FROM_A_PLUGIN_loadAllOnlinePlugins
-import com.lagradost.cloudstream3.plugins.PluginManager.loadSinglePlugin
-import com.lagradost.cloudstream3.receivers.VideoDownloadRestartReceiver
-import com.lagradost.cloudstream3.services.SubscriptionWorkManager
-import com.lagradost.cloudstream3.syncproviders.AccountManager
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING_PLAYER
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING_REPO
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING_RESUME_WATCHING
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING_SEARCH
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.APP_STRING_SHARE
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.localListApi
-import com.lagradost.cloudstream3.syncproviders.SyncAPI
-import com.lagradost.cloudstream3.ui.APIRepository
-import com.lagradost.cloudstream3.ui.SyncWatchType
-import com.lagradost.cloudstream3.ui.WatchType
-import com.lagradost.cloudstream3.ui.account.AccountHelper.showAccountSelectLinear
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_NAVIGATE_TO
-import com.lagradost.cloudstream3.ui.home.HomeViewModel
-import com.lagradost.cloudstream3.ui.library.LibraryViewModel
-import com.lagradost.cloudstream3.ui.player.BasicLink
-import com.lagradost.cloudstream3.ui.player.GeneratorPlayer
-import com.lagradost.cloudstream3.ui.player.LinkGenerator
-import com.lagradost.cloudstream3.ui.result.LinearListLayout
-import com.lagradost.cloudstream3.ui.result.ResultViewModel2
-import com.lagradost.cloudstream3.ui.result.START_ACTION_RESUME_LATEST
-import com.lagradost.cloudstream3.ui.result.SyncViewModel
-import com.lagradost.cloudstream3.ui.search.SearchFragment
-import com.lagradost.cloudstream3.ui.search.SearchResultBuilder
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.PHONE
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.ui.settings.Globals.updateTv
-import com.lagradost.cloudstream3.ui.settings.SettingsGeneral
-import com.lagradost.cloudstream3.ui.setup.HAS_DONE_SETUP_KEY
-import com.lagradost.cloudstream3.ui.setup.SetupFragmentExtensions
-import com.lagradost.cloudstream3.utils.ApkInstaller
-import com.lagradost.cloudstream3.utils.AppContextUtils.getApiDubstatusSettings
-import com.lagradost.cloudstream3.utils.AppContextUtils.html
-import com.lagradost.cloudstream3.utils.AppContextUtils.isCastApiAvailable
-import com.lagradost.cloudstream3.utils.AppContextUtils.isLtr
-import com.lagradost.cloudstream3.utils.AppContextUtils.isNetworkAvailable
-import com.lagradost.cloudstream3.utils.AppContextUtils.isRtl
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadCache
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadRepository
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadResult
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadSearchResult
-import com.lagradost.cloudstream3.utils.AppContextUtils.setDefaultFocus
-import com.lagradost.cloudstream3.utils.AppContextUtils.updateHasTrailers
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
-import com.lagradost.cloudstream3.utils.BackPressedCallbackHelper.detachBackPressedCallback
-import com.lagradost.cloudstream3.utils.BackupUtils.backup
-import com.lagradost.cloudstream3.utils.BackupUtils.setUpBackup
-import com.lagradost.cloudstream3.utils.BiometricAuthenticator.BiometricCallback
-import com.lagradost.cloudstream3.utils.BiometricAuthenticator.biometricPrompt
-import com.lagradost.cloudstream3.utils.BiometricAuthenticator.deviceHasPasswordPinLock
-import com.lagradost.cloudstream3.utils.BiometricAuthenticator.isAuthEnabled
-import com.lagradost.cloudstream3.utils.BiometricAuthenticator.promptInfo
-import com.lagradost.cloudstream3.utils.BiometricAuthenticator.startBiometricAuthentication
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Coroutines.main
-import com.lagradost.cloudstream3.utils.DataStore.getKey
-import com.lagradost.cloudstream3.utils.DataStore.setKey
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.DataStoreHelper.accounts
-import com.lagradost.cloudstream3.utils.DataStoreHelper.migrateResumeWatching
-import com.lagradost.cloudstream3.utils.Event
-import com.lagradost.cloudstream3.utils.ImageLoader.loadImage
-import com.lagradost.cloudstream3.utils.InAppUpdater.Companion.runAutoUpdate
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showBottomDialog
-import com.lagradost.cloudstream3.utils.SnackbarHelper.showSnackbar
-import com.lagradost.cloudstream3.utils.UIHelper.changeStatusBarState
-import com.lagradost.cloudstream3.utils.UIHelper.checkWrite
-import com.lagradost.cloudstream3.utils.UIHelper.colorFromAttribute
-import com.lagradost.cloudstream3.utils.UIHelper.dismissSafe
-import com.lagradost.cloudstream3.utils.UIHelper.getResourceColor
-import com.lagradost.cloudstream3.utils.UIHelper.hideKeyboard
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
-import com.lagradost.cloudstream3.utils.UIHelper.requestRW
-import com.lagradost.cloudstream3.utils.UIHelper.toPx
-import com.lagradost.cloudstream3.utils.USER_PROVIDER_API
-import com.lagradost.cloudstream3.utils.USER_SELECTED_HOMEPAGE_API
-import com.lagradost.cloudstream3.utils.setText
-import com.lagradost.cloudstream3.utils.setTextHtml
-import com.lagradost.cloudstream3.utils.txt
+import com.lagradost.meelstream3.APIHolder.allProviders
+import com.lagradost.meelstream3.APIHolder.apis
+import com.lagradost.meelstream3.APIHolder.initAll
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.AcraApplication.Companion.removeKey
+import com.lagradost.meelstream3.AcraApplication.Companion.setKey
+import com.lagradost.meelstream3.CommonActivity.loadThemes
+import com.lagradost.meelstream3.CommonActivity.onColorSelectedEvent
+import com.lagradost.meelstream3.CommonActivity.onDialogDismissedEvent
+import com.lagradost.meelstream3.CommonActivity.onUserLeaveHint
+import com.lagradost.meelstream3.CommonActivity.screenHeight
+import com.lagradost.meelstream3.CommonActivity.setActivityInstance
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.CommonActivity.updateLocale
+import com.lagradost.meelstream3.CommonActivity.updateTheme
+import com.lagradost.meelstream3.actions.temp.fcast.FcastManager
+import com.lagradost.meelstream3.databinding.ActivityMainBinding
+import com.lagradost.meelstream3.databinding.ActivityMainTvBinding
+import com.lagradost.meelstream3.databinding.BottomResultviewPreviewBinding
+import com.lagradost.meelstream3.mvvm.Resource
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.mvvm.safe
+import com.lagradost.meelstream3.mvvm.observe
+import com.lagradost.meelstream3.mvvm.observeNullable
+import com.lagradost.meelstream3.network.initClient
+import com.lagradost.meelstream3.plugins.PluginManager
+import com.lagradost.meelstream3.plugins.PluginManager.___DO_NOT_CALL_FROM_A_PLUGIN_loadAllOnlinePlugins
+import com.lagradost.meelstream3.plugins.PluginManager.loadSinglePlugin
+import com.lagradost.meelstream3.receivers.VideoDownloadRestartReceiver
+import com.lagradost.meelstream3.services.SubscriptionWorkManager
+import com.lagradost.meelstream3.syncproviders.AccountManager
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING_PLAYER
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING_REPO
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING_RESUME_WATCHING
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING_SEARCH
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.APP_STRING_SHARE
+import com.lagradost.meelstream3.syncproviders.AccountManager.Companion.localListApi
+import com.lagradost.meelstream3.syncproviders.SyncAPI
+import com.lagradost.meelstream3.ui.APIRepository
+import com.lagradost.meelstream3.ui.SyncWatchType
+import com.lagradost.meelstream3.ui.WatchType
+import com.lagradost.meelstream3.ui.account.AccountHelper.showAccountSelectLinear
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_NAVIGATE_TO
+import com.lagradost.meelstream3.ui.home.HomeViewModel
+import com.lagradost.meelstream3.ui.library.LibraryViewModel
+import com.lagradost.meelstream3.ui.player.BasicLink
+import com.lagradost.meelstream3.ui.player.GeneratorPlayer
+import com.lagradost.meelstream3.ui.player.LinkGenerator
+import com.lagradost.meelstream3.ui.result.LinearListLayout
+import com.lagradost.meelstream3.ui.result.ResultViewModel2
+import com.lagradost.meelstream3.ui.result.START_ACTION_RESUME_LATEST
+import com.lagradost.meelstream3.ui.result.SyncViewModel
+import com.lagradost.meelstream3.ui.search.SearchFragment
+import com.lagradost.meelstream3.ui.search.SearchResultBuilder
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.PHONE
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.ui.settings.Globals.updateTv
+import com.lagradost.meelstream3.ui.settings.SettingsGeneral
+import com.lagradost.meelstream3.ui.setup.HAS_DONE_SETUP_KEY
+import com.lagradost.meelstream3.ui.setup.SetupFragmentExtensions
+import com.lagradost.meelstream3.utils.ApkInstaller
+import com.lagradost.meelstream3.utils.AppContextUtils.getApiDubstatusSettings
+import com.lagradost.meelstream3.utils.AppContextUtils.html
+import com.lagradost.meelstream3.utils.AppContextUtils.isCastApiAvailable
+import com.lagradost.meelstream3.utils.AppContextUtils.isLtr
+import com.lagradost.meelstream3.utils.AppContextUtils.isNetworkAvailable
+import com.lagradost.meelstream3.utils.AppContextUtils.isRtl
+import com.lagradost.meelstream3.utils.AppContextUtils.loadCache
+import com.lagradost.meelstream3.utils.AppContextUtils.loadRepository
+import com.lagradost.meelstream3.utils.AppContextUtils.loadResult
+import com.lagradost.meelstream3.utils.AppContextUtils.loadSearchResult
+import com.lagradost.meelstream3.utils.AppContextUtils.setDefaultFocus
+import com.lagradost.meelstream3.utils.AppContextUtils.updateHasTrailers
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.attachBackPressedCallback
+import com.lagradost.meelstream3.utils.BackPressedCallbackHelper.detachBackPressedCallback
+import com.lagradost.meelstream3.utils.BackupUtils.backup
+import com.lagradost.meelstream3.utils.BackupUtils.setUpBackup
+import com.lagradost.meelstream3.utils.BiometricAuthenticator.BiometricCallback
+import com.lagradost.meelstream3.utils.BiometricAuthenticator.biometricPrompt
+import com.lagradost.meelstream3.utils.BiometricAuthenticator.deviceHasPasswordPinLock
+import com.lagradost.meelstream3.utils.BiometricAuthenticator.isAuthEnabled
+import com.lagradost.meelstream3.utils.BiometricAuthenticator.promptInfo
+import com.lagradost.meelstream3.utils.BiometricAuthenticator.startBiometricAuthentication
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.utils.DataStore.getKey
+import com.lagradost.meelstream3.utils.DataStore.setKey
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.DataStoreHelper.accounts
+import com.lagradost.meelstream3.utils.DataStoreHelper.migrateResumeWatching
+import com.lagradost.meelstream3.utils.Event
+import com.lagradost.meelstream3.utils.ImageLoader.loadImage
+import com.lagradost.meelstream3.utils.InAppUpdater.Companion.runAutoUpdate
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showBottomDialog
+import com.lagradost.meelstream3.utils.SnackbarHelper.showSnackbar
+import com.lagradost.meelstream3.utils.UIHelper.changeStatusBarState
+import com.lagradost.meelstream3.utils.UIHelper.checkWrite
+import com.lagradost.meelstream3.utils.UIHelper.colorFromAttribute
+import com.lagradost.meelstream3.utils.UIHelper.dismissSafe
+import com.lagradost.meelstream3.utils.UIHelper.getResourceColor
+import com.lagradost.meelstream3.utils.UIHelper.hideKeyboard
+import com.lagradost.meelstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.utils.UIHelper.requestRW
+import com.lagradost.meelstream3.utils.UIHelper.toPx
+import com.lagradost.meelstream3.utils.USER_PROVIDER_API
+import com.lagradost.meelstream3.utils.USER_SELECTED_HOMEPAGE_API
+import com.lagradost.meelstream3.utils.setText
+import com.lagradost.meelstream3.utils.setTextHtml
+import com.lagradost.meelstream3.utils.txt
 import com.lagradost.safefile.SafeFile
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -191,8 +191,8 @@ import androidx.tvprovider.media.tv.TvContractCompat
 import android.content.ComponentName
 import android.content.ContentUris
 
-import com.lagradost.cloudstream3.ui.home.HomeFragment
-import com.lagradost.cloudstream3.utils.TvChannelUtils
+import com.lagradost.meelstream3.ui.home.HomeFragment
+import com.lagradost.meelstream3.utils.TvChannelUtils
 
 class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCallback {
     companion object {
@@ -312,7 +312,7 @@ class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCa
                             }
                         }
                         // This specific intent is used for the gradle deployWithAdb
-                        // https://github.com/recloudstream/gradle/blob/master/src/main/kotlin/com/lagradost/cloudstream3/gradle/tasks/DeployWithAdbTask.kt#L46
+                        // https://github.com/remeelstream/gradle/blob/master/src/main/kotlin/com/lagradost/meelstream3/gradle/tasks/DeployWithAdbTask.kt#L46
                         if (str == "$APP_STRING:") {
                             ioSafe {
                                 PluginManager.___DO_NOT_CALL_FROM_A_PLUGIN_hotReloadAllLocalPlugins(
@@ -1588,7 +1588,7 @@ class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCa
 
 //        ioSafe {
 //            val plugins =
-//                RepositoryParser.getRepoPlugins("https://raw.githubusercontent.com/recloudstream/TestPlugin/master/repo.json")
+//                RepositoryParser.getRepoPlugins("https://raw.githubusercontent.com/remeelstream/TestPlugin/master/repo.json")
 //                    ?: emptyList()
 //            plugins.map {
 //                println("Load plugin: ${it.name} ${it.url}")
@@ -1912,7 +1912,7 @@ class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCa
         val castContext = CastContext.getSharedInstance(applicationContext)
          fun buildMediaQueueItem(video: String): MediaQueueItem {
            // val movieMetadata = MediaMetadata(MediaMetadata.MEDIA_TYPE_PHOTO)
-            //movieMetadata.putString(MediaMetadata.KEY_TITLE, "CloudStream")
+            //movieMetadata.putString(MediaMetadata.KEY_TITLE, "meelstream")
             val mediaInfo = MediaInfo.Builder(Uri.parse(video).toString())
                 .setStreamType(MediaInfo.STREAM_TYPE_NONE)
                 .setContentType(MimeTypes.IMAGE_JPEG)
@@ -2051,7 +2051,7 @@ class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCa
     suspend fun checkGithubConnectivity(): Boolean {
         return try {
             app.get(
-                "https://raw.githubusercontent.com/recloudstream/.github/master/connectivitycheck",
+                "https://raw.githubusercontent.com/remeelstream/.github/master/connectivitycheck",
                 timeout = 5
             ).text.trim() == "ok"
         } catch (t: Throwable) {

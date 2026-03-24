@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.utils
+package com.lagradost.meelstream3.utils
 
 import android.annotation.SuppressLint
 import android.app.PendingIntent
@@ -11,11 +11,11 @@ import android.content.pm.PackageInstaller
 import android.os.Build
 import android.util.Log
 import android.widget.Toast
-import com.lagradost.cloudstream3.AcraApplication.Companion.context
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.mvvm.logError
-import com.lagradost.cloudstream3.services.PackageInstallerService
-import com.lagradost.cloudstream3.utils.Coroutines.main
+import com.lagradost.meelstream3.AcraApplication.Companion.context
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.mvvm.logError
+import com.lagradost.meelstream3.services.PackageInstallerService
+import com.lagradost.meelstream3.utils.Coroutines.main
 import java.io.InputStream
 
 const val INSTALL_ACTION = "ApkInstaller.INSTALL_ACTION"

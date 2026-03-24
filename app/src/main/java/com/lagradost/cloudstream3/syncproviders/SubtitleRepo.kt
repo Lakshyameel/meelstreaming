@@ -1,12 +1,12 @@
-package com.lagradost.cloudstream3.syncproviders
+package com.lagradost.meelstream3.syncproviders
 
 import androidx.annotation.WorkerThread
-import com.lagradost.cloudstream3.APIHolder.unixTime
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities.SubtitleEntity
-import com.lagradost.cloudstream3.subtitles.AbstractSubtitleEntities.SubtitleSearch
-import com.lagradost.cloudstream3.subtitles.SubtitleResource
-import com.lagradost.cloudstream3.utils.Coroutines.threadSafeListOf
+import com.lagradost.meelstream3.APIHolder.unixTime
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities.SubtitleEntity
+import com.lagradost.meelstream3.subtitles.AbstractSubtitleEntities.SubtitleSearch
+import com.lagradost.meelstream3.subtitles.SubtitleResource
+import com.lagradost.meelstream3.utils.Coroutines.threadSafeListOf
 
 /** Stateless safe abstraction of SubtitleAPI */
 class SubtitleRepo(override val api: SubtitleAPI) : AuthRepo(api) {

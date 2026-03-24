@@ -1,17 +1,17 @@
-package com.lagradost.cloudstream3.ui.search
+package com.lagradost.meelstream3.ui.search
 
 import android.widget.Toast
-import com.lagradost.cloudstream3.CommonActivity.activity
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.MainActivity
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.ui.download.DOWNLOAD_ACTION_PLAY_FILE
-import com.lagradost.cloudstream3.ui.download.DownloadButtonSetup.handleDownloadClick
-import com.lagradost.cloudstream3.ui.download.DownloadClickEvent
-import com.lagradost.cloudstream3.ui.result.START_ACTION_LOAD_EP
-import com.lagradost.cloudstream3.utils.AppContextUtils.loadSearchResult
-import com.lagradost.cloudstream3.utils.DataStoreHelper
-import com.lagradost.cloudstream3.utils.VideoDownloadHelper
+import com.lagradost.meelstream3.CommonActivity.activity
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.MainActivity
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.ui.download.DOWNLOAD_ACTION_PLAY_FILE
+import com.lagradost.meelstream3.ui.download.DownloadButtonSetup.handleDownloadClick
+import com.lagradost.meelstream3.ui.download.DownloadClickEvent
+import com.lagradost.meelstream3.ui.result.START_ACTION_LOAD_EP
+import com.lagradost.meelstream3.utils.AppContextUtils.loadSearchResult
+import com.lagradost.meelstream3.utils.DataStoreHelper
+import com.lagradost.meelstream3.utils.VideoDownloadHelper
 
 object SearchHelper {
     fun handleSearchClickCallback(callback: SearchClickCallback) {

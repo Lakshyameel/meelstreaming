@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.settings.testing
+package com.lagradost.meelstream3.ui.settings.testing
 
 import android.app.AlertDialog
 import android.view.LayoutInflater
@@ -8,18 +8,18 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.ProviderTestItemBinding
-import com.lagradost.cloudstream3.mvvm.getAllMessages
-import com.lagradost.cloudstream3.mvvm.getStackTracePretty
-import com.lagradost.cloudstream3.plugins.PluginManager
-import com.lagradost.cloudstream3.utils.AppContextUtils
-import com.lagradost.cloudstream3.utils.Coroutines.ioSafe
-import com.lagradost.cloudstream3.utils.Coroutines.runOnMainThread
-import com.lagradost.cloudstream3.utils.SubtitleHelper.getFlagFromIso
-import com.lagradost.cloudstream3.utils.TestingUtils
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.MainAPI
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.ProviderTestItemBinding
+import com.lagradost.meelstream3.mvvm.getAllMessages
+import com.lagradost.meelstream3.mvvm.getStackTracePretty
+import com.lagradost.meelstream3.plugins.PluginManager
+import com.lagradost.meelstream3.utils.AppContextUtils
+import com.lagradost.meelstream3.utils.Coroutines.ioSafe
+import com.lagradost.meelstream3.utils.Coroutines.runOnMainThread
+import com.lagradost.meelstream3.utils.SubtitleHelper.getFlagFromIso
+import com.lagradost.meelstream3.utils.TestingUtils
 import java.io.File
 
 class TestResultAdapter(override val items: MutableList<Pair<MainAPI, TestingUtils.TestResultProvider>>) :

@@ -1,16 +1,16 @@
-package com.lagradost.cloudstream3.syncproviders
+package com.lagradost.meelstream3.syncproviders
 
 import androidx.annotation.WorkerThread
-import com.lagradost.cloudstream3.ActorData
-import com.lagradost.cloudstream3.NextAiring
-import com.lagradost.cloudstream3.Score
-import com.lagradost.cloudstream3.SearchQuality
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.ShowStatus
-import com.lagradost.cloudstream3.TvType
-import com.lagradost.cloudstream3.ui.SyncWatchType
-import com.lagradost.cloudstream3.ui.library.ListSorting
-import com.lagradost.cloudstream3.utils.UiText
+import com.lagradost.meelstream3.ActorData
+import com.lagradost.meelstream3.NextAiring
+import com.lagradost.meelstream3.Score
+import com.lagradost.meelstream3.SearchQuality
+import com.lagradost.meelstream3.SearchResponse
+import com.lagradost.meelstream3.ShowStatus
+import com.lagradost.meelstream3.TvType
+import com.lagradost.meelstream3.ui.SyncWatchType
+import com.lagradost.meelstream3.ui.library.ListSorting
+import com.lagradost.meelstream3.utils.UiText
 import me.xdrop.fuzzywuzzy.FuzzySearch
 import java.util.Date
 

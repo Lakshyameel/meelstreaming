@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.syncproviders
+package com.lagradost.meelstream3.syncproviders
 
 enum class SyncIdName {
     Anilist,

@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.widget
+package com.lagradost.meelstream3.widget
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.core.view.marginEnd
-import com.lagradost.cloudstream3.R
+import com.lagradost.meelstream3.R
 import kotlin.math.max
 
 class FlowLayout : ViewGroup {

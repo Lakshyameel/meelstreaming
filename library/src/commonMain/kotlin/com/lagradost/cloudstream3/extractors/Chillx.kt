@@ -1,16 +1,16 @@
-package com.lagradost.cloudstream3.extractors
+package com.lagradost.meelstream3.extractors
 
 
-import com.lagradost.cloudstream3.ErrorLoadingException
-import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.USER_AGENT
-import com.lagradost.cloudstream3.app
-import com.lagradost.cloudstream3.newSubtitleFile
-import com.lagradost.cloudstream3.utils.ExtractorApi
-import com.lagradost.cloudstream3.utils.ExtractorLink
-import com.lagradost.cloudstream3.utils.INFER_TYPE
-import com.lagradost.cloudstream3.utils.Qualities
-import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.meelstream3.ErrorLoadingException
+import com.lagradost.meelstream3.SubtitleFile
+import com.lagradost.meelstream3.USER_AGENT
+import com.lagradost.meelstream3.app
+import com.lagradost.meelstream3.newSubtitleFile
+import com.lagradost.meelstream3.utils.ExtractorApi
+import com.lagradost.meelstream3.utils.ExtractorLink
+import com.lagradost.meelstream3.utils.INFER_TYPE
+import com.lagradost.meelstream3.utils.Qualities
+import com.lagradost.meelstream3.utils.newExtractorLink
 import java.security.MessageDigest
 
 

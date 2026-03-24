@@ -1,4 +1,4 @@
-package com.lagradost.cloudstream3.ui.subtitles
+package com.lagradost.meelstream3.ui.subtitles
 
 import android.app.Activity
 import android.content.Context
@@ -21,22 +21,22 @@ import com.google.android.gms.cast.TextTrackStyle.EDGE_TYPE_NONE
 import com.google.android.gms.cast.TextTrackStyle.EDGE_TYPE_OUTLINE
 import com.google.android.gms.cast.TextTrackStyle.EDGE_TYPE_RAISED
 import com.jaredrummler.android.colorpicker.ColorPickerDialog
-import com.lagradost.cloudstream3.AcraApplication.Companion.getKey
-import com.lagradost.cloudstream3.CommonActivity.onColorSelectedEvent
-import com.lagradost.cloudstream3.CommonActivity.onDialogDismissedEvent
-import com.lagradost.cloudstream3.CommonActivity.showToast
-import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.databinding.ChromecastSubtitleSettingsBinding
-import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
-import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.isLayout
-import com.lagradost.cloudstream3.utils.DataStore.setKey
-import com.lagradost.cloudstream3.utils.Event
-import com.lagradost.cloudstream3.utils.SingleSelectionHelper.showDialog
-import com.lagradost.cloudstream3.utils.UIHelper.fixPaddingStatusbar
-import com.lagradost.cloudstream3.utils.UIHelper.hideSystemUI
-import com.lagradost.cloudstream3.utils.UIHelper.navigate
-import com.lagradost.cloudstream3.utils.UIHelper.popCurrentPage
+import com.lagradost.meelstream3.AcraApplication.Companion.getKey
+import com.lagradost.meelstream3.CommonActivity.onColorSelectedEvent
+import com.lagradost.meelstream3.CommonActivity.onDialogDismissedEvent
+import com.lagradost.meelstream3.CommonActivity.showToast
+import com.lagradost.meelstream3.R
+import com.lagradost.meelstream3.databinding.ChromecastSubtitleSettingsBinding
+import com.lagradost.meelstream3.ui.settings.Globals.EMULATOR
+import com.lagradost.meelstream3.ui.settings.Globals.TV
+import com.lagradost.meelstream3.ui.settings.Globals.isLayout
+import com.lagradost.meelstream3.utils.DataStore.setKey
+import com.lagradost.meelstream3.utils.Event
+import com.lagradost.meelstream3.utils.SingleSelectionHelper.showDialog
+import com.lagradost.meelstream3.utils.UIHelper.fixPaddingStatusbar
+import com.lagradost.meelstream3.utils.UIHelper.hideSystemUI
+import com.lagradost.meelstream3.utils.UIHelper.navigate
+import com.lagradost.meelstream3.utils.UIHelper.popCurrentPage
 
 const val CHROME_SUBTITLE_KEY = "chome_subtitle_settings"
 
