@@ -1,4 +1,4 @@
-# MeelStreaming
+# 🌊 MeelStreaming
 
 **⚠️ Warning: By default, this app doesn't provide any video sources; you have to install extensions to add functionality to the app.**
 
@@ -19,12 +19,12 @@
 
 ## About us: 
 
-**MeelStreaming is a media center that prioritizes and emphasizes complete freedom and flexibility for users and developers.** MeelStreaming is an extension-based multimedia player with tracking support. There are extensions to view videos from: 
+**MeelStreaming is a media center that prioritizes and emphasizes complete freedom and flexibility for users and developers.** MeelStreaming is an advanced evolution of open-source streaming technology, integrated with the **Oracle AI Intelligence Agent**. There are extensions to view videos from: 
 
 + [Librevox (audio-books)](https://librivox.org/) 
 + [YouTube](https://www.youtube.com/)
 + [Twitch](https://www.twitch.tv/)
-+ [iptv-org (A collection of publicly available IPTV channels)](https://github.com/iptv-org/iptv) 
++ [iptv-org (Global IPTV Channels)](https://github.com/iptv-org/iptv) 
 + [nginx](https://nginx.org/)
 + And more... 
 
@@ -33,15 +33,16 @@
 
 #### Important Copyright Note: 
 
-Our documentation is unmaintained and open to contributions; therefore, apps and sources, extensions in recommended sources, and recommended apps are not officially moderated or endorsed by MeelStreaming; if you or another copyright owner identify an extension that breaches your copyright, please let us know. 
+Our documentation is open to contributions; therefore, apps and sources, extensions in recommended sources, and recommended apps are not officially moderated or endorsed by MeelStreaming; if you identify an extension that breaches your copyright, please let us know. 
 
 
 #### Features:
++ **Oracle AI Agent:** Smart discovery and media summarization.
++ **Deep Navy UI:** Custom-built high-contrast interface for efficiency.
 + **AdFree**, No ads whatsoever
 + No tracking/analytics
 + Bookmarks
 + Phone and TV support
-+ Chromecast
 + Extension system for personal customization
 
 
@@ -51,7 +52,7 @@ Our documentation is unmaintained and open to contributions; therefore, apps and
 
 Our documentation provides the steps to install and configure MeelStreaming for your streaming needs.
 
-[Getting Started With MeelStreaming:](#installation)
+**[Download Latest MeelStreaming APK:](https://github.com/Lakshyameel/meelstreaming/releases/latest)**
 
 <a id="contributing"></a>
 
@@ -68,8 +69,7 @@ While we **actively** accept issues and pull requests, we do require you fill ou
 <a id="bug_report"></a>
 
 - [Bug Report Template: ](https://github.com/Lakshyameel/meelstreaming/issues/new/choose)
-  - For bug reports, we want as much info as possible, including your downloaded version of MeelStreaming, device and updated version (if possible, current API),
-    expected behavior of the program, and the actual behavior that the program did, most importantly we require clear, reproducible steps of the bug. If your bug can't be reproduced, it is unlikely we'll work on your issue.
+  - For bug reports, we want as much info as possible, including your version of MeelStreaming, device, and clear, reproducible steps of the bug. If your bug can't be reproduced, it is unlikely we'll work on your issue.
     
 <a id="enhancment"></a>
   
@@ -91,17 +91,18 @@ As well as providing clear install steps, our [GitHub](https://github.com/Lakshy
 - [Troubleshooting](https://github.com/Lakshyameel/meelstreaming/issues)
 - [Further MeelStreaming Repositories](https://github.com/Lakshyameel/meelstreaming) 
 - Set-Up for other devices, such as:
-  - [Android TV Support](https://github.com/Lakshyameel/meelstreaming/releases/latest)
-  - [Windows Support](https://github.com/Lakshyameel/meelstreaming)
-  - [Linux Support](https://github.com/Lakshyameel/meelstreaming)
+  - [Android TV](https://github.com/Lakshyameel/meelstreaming/releases)
+  - [Windows / Linux Support](https://github.com/Lakshyameel/meelstreaming)
 - And more...
 
 <a id="languages"> </a>  
 
 ### Supported languages:
 
-Even if you can't contribute to the code or documentation, we always look for those who can contribute to translation and language support. Your contribution is exceptionally appreciated; you can check our translation from the figure below. 
+Even if you can't contribute to the code or documentation, we always look for those who can contribute to translation and language support. Your contribution is exceptionally appreciated. 
 
 <a href="https://github.com/Lakshyameel/meelstreaming">
   <img src="https://img.shields.io/badge/MeelStreaming-Translations-blue.svg" alt="Translation status" />
 </a>
+
+© 2026 MeelStreaming | Developed with ❤️ for the AI Community.
